@@ -438,3 +438,18 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* Show Hide Text */
+
+.complete{
+    display:none;
+}
+
+.more{
+    background:lightblue;
+    color:navy;
+    font-size:13px;
+    padding:3px;
+    cursor:pointer;
+}
