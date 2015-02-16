@@ -438,35 +438,3 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-
-/* Read More */
-.extended{
-  display:inline;
-  opacity:0;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter:alpha(opacity=0);
-  display:none;
-  cursor:pointer;
-  -webkit-transition:0.3s ease;
-  -moz-transition:0.3s ease;
-  -o-transition:0.3s ease;
-  -ms-transition:0.3s ease;
-  transition:0.3s ease;
-}
-
-.extended.loaded{
-  opacity:1 !important;
-  -ms-filter:none;
-  filter:none;
-  display:inline
-}
-
-.more{margin-bottom: 35px;
-  font-size: 14px;
-  color: #1e2e50;
-  line-height: 28px;
-  font-family: Cousine;
-  font-weight: 400;
-  font-style: normal;
-  display:inline;}
