@@ -126,10 +126,10 @@ body {
   font-weight: 400;
   font-family: "Ropa Sans", "RopaSans", Helvetica, Arial, sans-serif;
   color: #f5e6af; 
-  background: -webkit-linear-gradient(#081f37, #3a7597); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#081f37, #3a7597); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#081f37, #3a7597); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#081f37, #3a7597); /* Standard syntax (must be last) */
+  background: -webkit-linear-gradient(#081f37, #1e2e50); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#081f37, #1e2e50); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#081f37, #1e2e50); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#081f37, #1e2e50); /* Standard syntax (must be last) */
 
 }
 
