@@ -157,7 +157,7 @@ p {
 p.weights {
     letter-spacing: 2px;
     font-size: 13px;
-    color: #1e2e50;
+    color: #f5e5af;
     margin-bottom: 35px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
@@ -167,7 +167,7 @@ p.weights {
 p.intro {
   margin-bottom: 35px;
   font-size: 14px;
-  color: #1e2e50;
+  color: #f5e5af;
   line-height: 28px;
   font-family: Cousine;
   font-weight: 400;
@@ -178,9 +178,9 @@ p.intro {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1e2e50; }
+  color: #f5e5af; }
 a:hover {
-  color: #1e2e50; 
+  color: #f5e5af; 
   font-weight:bold;
   text-decoration:underline;}
 
