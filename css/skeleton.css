@@ -447,9 +447,18 @@ there.
 }
 
 .more{
-    background:lightblue;
-    color:navy;
-    font-size:13px;
-    padding:3px;
-    cursor:pointer;
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #1e2e50;
+  line-height: 28px;
+  font-family: Cousine;
+  font-weight: 400;
+  font-style: underline;
 }
+
+
+$(".more").toggle(function(){
+    $(this).text("less..").siblings(".complete").show();    
+}, function(){
+    $(this).text("more..").siblings(".complete").hide();    
+});
