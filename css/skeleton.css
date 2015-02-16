@@ -438,20 +438,3 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-
-/* Show Hide Text */
-
-.complete{
-    display:none;
-}
-
-.more{
-  margin-bottom: 35px;
-  font-size: 14px;
-  color: #1e2e50;
-  line-height: 28px;
-  font-family: Cousine;
-  font-weight: 400;
-  font-weight:bold;
-}
