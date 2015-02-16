@@ -2,6 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Show / Hide Text Script -->
+  <script language="javascript" type="text/javascript">
+function showHide(shID) {
+   if (document.getElementById(shID)) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID).style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID).style.display = 'none';
+      }
+   }
+}
+</script>
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -35,10 +52,11 @@
     <div class="row" style="margin-top: 25%">
       <p class="weights">INTRODUCTION</p>
       <h1>Hello, internet explorer –</h1>
-      <p class="intro">Welcome to Pangcake Land, the digital dwelling of designer <a href="#" onclick="$('divID').toggle();">Janice Pang.</a>
-<div id="divID" style="display: none;">In the real world, Janice lives in the beautiful & bike-friendly city of Davis, California and attends the University of Californis Davis, where she studies Professional Writing and Design with an emphasis in Visual Communication.</div></p>
-<p class="intro"><a href="http://twitter.com/@janicejpang">@janicejpang</a>
-    </div>
+      <p class="intro">Welcome to Pangcake Land, the digital dwelling of designer <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Janice Pang.</a></p>
+      <div id="example" class="more">
+         <p  class="intro">In the real world, Janice lives in the beautiful & bike-friendly city of Davis, California and attends the University of Californis Davis, where she studies Professional Writing and Design with an emphasis in Visual Communication.</p></div>
+  <p class="intro"><a href="http://twitter.com/@janicejpang">@janicejpang</a>
+</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
