@@ -442,16 +442,6 @@ there.
 
 /* Show Hide Text */
 
-$(".more").toggle(function(){
-    $(this).text("less..").siblings(".complete").show();    
-}, function(){
-    $(this).text("more..").siblings(".complete").hide();    
-});
-
-.complete{
-    display:none;
-}
-
 .more{
   margin-bottom: 35px;
   font-size: 14px;
