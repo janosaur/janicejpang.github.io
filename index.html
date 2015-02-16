@@ -3,6 +3,47 @@
 <html lang="en">
 <head>
 
+<script type="text/javascript">
+        try {Typekit.load();} catch(e) {}
+    </script>
+
+    <style type="text/css">
+        body {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+        div {
+            word-wrap: break-word;
+            -webkit-nbsp-mode: space;
+            -webkit-line-break: after-white-space;
+        }
+    </style>
+
+    <script>
+        // Load in active fonts
+        var activeFonts =   [{"id":5819,"cssFontFamily":"'Ropa Sans'","fontFamily":"Ropa Sans","provider":"google","provider_pretty":"Google","fontWeight":"400","fontStyle":"normal"},{"id":5819,"cssFontFamily":"'Ropa Sans'","fontFamily":"Ropa Sans","provider":"google","provider_pretty":"Google","fontWeight":"400","fontStyle":"italic"},{"id":5557,"cssFontFamily":"Cousine","fontFamily":"Cousine","provider":"google","provider_pretty":"Google","fontWeight":"400","fontStyle":"normal"}];
+        var fontManager =   new FontManager();
+
+        fontManager.loadFonts(activeFonts, function(cssFontFamilies, loadedFontVariations) {
+            if (typeof loadedFontVariations !== 'undefined') {
+                for (var i = 0, l = activeFonts.length; i < l; i++) {i
+                    var fontObject = activeFonts[i];
+                    if (typeof loadedFontVariations[fontObject.fontFamily] !== 'undefined') {
+                        fontManager.loadFontVariations(fontObject, _.keys(loadedFontVariations[fontObject.fontFamily]));
+                    }
+                }
+            }
+        });
+
+        // Refresh the page every 15 mins
+        setInterval(function() {window.location.reload();}, 900000);
+
+    </script>
+
+
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
