@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<script>
+$(".more").toggle(function(){
+    $(this).text("less..").siblings(".complete").show();    
+}, function(){
+    $(this).text("more..").siblings(".complete").hide();    
+});
+</script>
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -27,14 +36,6 @@
 
 </head>
 <body>
-
-<script>
-$(".more").toggle(function(){
-    $(this).text("less..").siblings(".complete").show();    
-}, function(){
-    $(this).text("more..").siblings(".complete").hide();    
-});
-</script>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
