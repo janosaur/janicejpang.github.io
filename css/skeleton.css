@@ -442,6 +442,10 @@ there.
 
 /* Show Hide Text */
 
+.complete{
+    display:none;
+}
+
 .more{
   margin-bottom: 35px;
   font-size: 14px;
