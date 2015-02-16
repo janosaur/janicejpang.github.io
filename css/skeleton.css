@@ -153,6 +153,16 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0; }
+ 
+p.weights {
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: rgba(173,173,173,1);
+    margin-bottom: 35px;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+    margin-top: 45px;
+}
   
 p.intro {
   margin-bottom: 35px;
