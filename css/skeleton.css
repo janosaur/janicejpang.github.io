@@ -125,7 +125,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Ropa Sans", "RopaSans", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #1e2e50; }
 
 
 /* Typography
@@ -157,7 +157,7 @@ p {
 p.weights {
     letter-spacing: 2px;
     font-size: 13px;
-    color: rgba(173,173,173,1);
+    color: #1e2e50;
     margin-bottom: 35px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
@@ -167,6 +167,7 @@ p.weights {
 p.intro {
   margin-bottom: 35px;
   font-size: 14px;
+  color: #1e2e50;
   line-height: 28px;
   font-family: Cousine;
   font-weight: 400;
@@ -177,9 +178,11 @@ p.intro {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #1e2e50; }
 a:hover {
-  color: #0FA0CE; }
+  color: #1e2e50; 
+  font-weight:bold;
+  text-decoration:underline;}
 
 
 /* Buttons
