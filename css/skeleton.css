@@ -442,6 +442,12 @@ there.
 
 /* Show Hide Text */
 
+$(".more").toggle(function(){
+    $(this).text("less..").siblings(".complete").show();    
+}, function(){
+    $(this).text("more..").siblings(".complete").hide();    
+});
+
 .complete{
     display:none;
 }
@@ -455,10 +461,3 @@ there.
   font-weight: 400;
   font-style: underline;
 }
-
-
-$(".more").toggle(function(){
-    $(this).text("less..").siblings(".complete").show();    
-}, function(){
-    $(this).text("more..").siblings(".complete").hide();    
-});
