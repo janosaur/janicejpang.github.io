@@ -263,6 +263,7 @@ a {
 }
 a:hover {
   color: #f5e6af; /* Or whatever color you want */
+  border-bottom: 0px solid #f5e6af;
   text-decoration: none;}
 
 
