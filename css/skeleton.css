@@ -28,6 +28,7 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .container {
   position: relative;
   width: 100%;
@@ -134,7 +135,13 @@ body {
   background: linear-gradient(#1e2e50, #28618a); /* Standard syntax (must be last) */
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 
 
