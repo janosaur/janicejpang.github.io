@@ -174,6 +174,22 @@ p.weights {
     border-style: dotted;
     margin-top: 45px;
 }
+  
+  
+  p.intro {
+  margin-bottom: 35px;
+  font-size: 14px;
+  color: #f5e6af;
+  line-height: 28px;
+  font-family: Cousine;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  
+  
+/* Mountains of Achievement
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 p.weightsmountains {
     font-family: Ropa Sans;
@@ -194,22 +210,7 @@ p.weightsmountainstwo {
     margin-bottom: 35px;
     border-width: 0px 0px 1px 0px;
 }
-  
-  
-  p.intro {
-  margin-bottom: 35px;
-  font-size: 14px;
-  color: #f5e6af;
-  line-height: 28px;
-  font-family: Cousine;
-  font-weight: 400;
-  font-style: normal;
-}
 
-  
-  
-/* Mountains of Achievement
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 p.date {
     text-transform: uppercase;
     font-size: 10px;
@@ -217,17 +218,17 @@ p.date {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 p.place {
     text-transform: uppercase;
     font-size: 10px;
     font-family: Ropa Sans;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 p.bullet {
