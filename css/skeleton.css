@@ -126,7 +126,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Ropa Sans", "RopaSans", Helvetica, Arial, sans-serif;
+  font-family: "ABeeZee", Helvetica, Arial, sans-serif;
   color: #f5e6af; 
   background: -webkit-linear-gradient(#1e2e50, #28618a); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#1e2e50, #28618a); /* For Opera 11.1 to 12.0 */
