@@ -142,6 +142,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
+  height:215px;
   background-image: url("http://f.cl.ly/items/3t3m0l1T2T3p1y2n122g/Portfolio-Mountains.png");
   background-repeat: repeat-x;
 }
