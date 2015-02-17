@@ -132,7 +132,6 @@ body {
   background: linear-gradient(#1e2e50, #28618a); /* Standard syntax (must be last) */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: fixed;
 
 }
 
