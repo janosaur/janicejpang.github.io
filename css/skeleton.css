@@ -165,6 +165,7 @@ p {
   margin-top: 0; }
  
 p.weights {
+    font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
     color: #f5e6af;
@@ -175,6 +176,7 @@ p.weights {
 }
 
 p.weightstwo {
+    font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
     color: #f5e6af;
