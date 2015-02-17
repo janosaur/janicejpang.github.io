@@ -257,11 +257,14 @@ p.bullet {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #f5e6af; }
+  color: #f5e6af; 
+  border-bottom: 1px solid #f5e6af; /* Or whatever color you want */
+  text-decoration: none;
+}
 a:hover {
   color: #f5e6af; 
-  font-weight:bold;
-  text-decoration:underline;}
+  border-bottom: 1px solid #ffffff; /* Or whatever color you want */
+  text-decoration: none;}
 
 
 /* Buttons
