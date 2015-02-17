@@ -173,6 +173,15 @@ p.weights {
     border-style: dotted;
     margin-top: 45px;
 }
+
+p.weightstwo {
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: #f5e6af;
+    margin-bottom: 35px;
+    border-width: 0px 0px 1px 0px;
+    margin-top: 15px;
+}
   
   
   p.intro {
