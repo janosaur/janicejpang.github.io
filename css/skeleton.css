@@ -179,8 +179,9 @@ p.weights {
   p.intro {
   margin-bottom: 35px;
   font-size: 14px;
+  letter-spacing: 2px;
   color: #f5e6af;
-  line-height: 28px;
+  line-height: 30px;
   font-family: Armata;
   font-weight: 400;
   font-style: normal;
