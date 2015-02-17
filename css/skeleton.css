@@ -214,21 +214,21 @@ p.weightsmountainstwo {
 
 p.date {
     text-transform: uppercase;
-    font-size: 10px;
-    font-family: Ropa Sans;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 11px;
     letter-spacing: 2px;
-    margin-bottom: 8px;
+    font-family: Ropa Sans;
+    font-weight: 700;
+    font-style: normal;
+margin-bottom: 8px;
 }
 
 p.place {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
     font-family: Ropa Sans;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: 2px;
     margin-bottom: 18px;
 }
 
