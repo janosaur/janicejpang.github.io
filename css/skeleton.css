@@ -34,7 +34,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0px 20px 0px 50px;
+  padding: 0px;
   box-sizing: border-box;
   height: 100vh;
 }
@@ -129,7 +129,7 @@ body {
   font-weight: 400;
   font-family: "Armata", Helvetica, Arial, sans-serif;
   color: #f5e6af; 
-  background: -webkit-linear-gradient(#1e2e50, #28618a); /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(#1e2e50, #1e2e50); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#1e2e50, #28618a); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#1e2e50, #28618a); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#1e2e50, #28618a); /* Standard syntax (must be last) */
@@ -194,9 +194,6 @@ p.weights {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 p.breaker {
-    font-family: Ropa Sans;
-    letter-spacing: 2px;
-    font-size: 13px;
     color: #f5e6af;
     margin-bottom: 35px;
     margin-top:35px;
@@ -205,6 +202,7 @@ p.breaker {
 }
 
 p.weightsmountains {
+    text-transform: uppercase;
     font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
@@ -215,7 +213,8 @@ p.weightsmountains {
     margin-top: 45px;
 }
 
-p.weightsmountainstwo {
+p.weightsmountainstwo {    
+    text-transform: uppercase;
     font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
@@ -412,7 +411,7 @@ li {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2rem .5rem;
+  padding: 0rem;
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
@@ -429,7 +428,7 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
+  padding: 0px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
