@@ -280,7 +280,8 @@ p.bullet {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #f5e6af;  /* Or whatever color you want */
+  color: #f5e6af;
+  border-bottom: 1px solid #f5e6af;/* Or whatever color you want */
   text-decoration: none;
 }
 a:hover {
