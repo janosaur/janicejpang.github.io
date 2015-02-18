@@ -136,15 +136,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-footer {
-  position: fixed;
-  right: 0;
-  bottom: 0px;
-  left: 0;
-  padding-bottom:100px;
-  background-image: url("http://f.cl.ly/items/402J2V200p3237083j3V/Portfolio-MountainsNew.png");
-  background-repeat: no-repeat;
-}
 
 
 /* Typography
