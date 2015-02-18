@@ -1,1 +1,9 @@
-http://f.cl.ly/items/0T0F333G0t2T3G2v1d1O/Portfolio-Wheat.png
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  padding-bottom:100px;
+  background-image: url("http://f.cl.ly/items/0T0F333G0t2T3G2v1d1O/Portfolio-Wheat.png");
+  background-repeat: no-repeat;
+}
