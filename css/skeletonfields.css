@@ -137,7 +137,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Armata", Helvetica, Arial, sans-serif;
-  color: #f5e6af; 
+  color: #ffffff; 
   background: -webkit-linear-gradient(#1e2e50, #28618a); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#1e2e50, #28618a); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#1e2e50, #28618a); /* For Firefox 3.6 to 15 */
@@ -189,7 +189,7 @@ p.weights {
     font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
-    color: #f5e6af;
+    color: #ffffff;
     margin-bottom: 35px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
@@ -201,7 +201,7 @@ p.weights {
   margin-bottom: 35px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #f5e6af;
+  color: #ffffff;
   line-height: 30px;
   font-family: Armata;
   font-weight: 400;
@@ -214,7 +214,7 @@ p.weights {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 p.breaker {
-    color: #f5e6af;
+    color: #ffffff;
     margin-bottom: 35px;
     margin-top:35px;
     border-width: 0px 0px 1px 0px;
@@ -226,7 +226,7 @@ p.weightsmountains {
     font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
-    color: #f5e6af;
+    color: #ffffff;
     margin-bottom: 15px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
@@ -238,7 +238,7 @@ p.weightsmountainstwo {
     font-family: Ropa Sans;
     letter-spacing: 2px;
     font-size: 13px;
-    color: #f5e6af;
+    color: #ffffff;
     margin-bottom: 50px;
     border-width: 0px 0px 1px 0px;
 }
@@ -279,11 +279,11 @@ p.bullet {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #f5e6af;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: #f5e6af; /* Or whatever color you want */
+  color: #ffffff; /* Or whatever color you want */
   text-decoration: none;}
 
 
