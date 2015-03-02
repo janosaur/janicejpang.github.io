@@ -127,7 +127,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "", Helvetica, Arial, sans-serif;
+  font-family: "Armata", Helvetica, Arial, sans-serif;
   color: #ffffff; 
   
     
@@ -181,7 +181,7 @@ p.weights {
   
   p.intro {
   margin-bottom: 35px;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
   color: #ffffff;
   line-height: 30px;
