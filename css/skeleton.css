@@ -182,10 +182,10 @@ p.weights {
   p.intro {
   margin-bottom: 35px;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #ffffff;
-  line-height: 25px;
-  font-family: Cousine;
+  line-height: 30px;
+  font-family: Armata;
   font-weight: 400;
   font-style: normal;
 }
@@ -251,7 +251,7 @@ p.bullet {
   font-size: 12px;
   color: #ffffff;
   line-height: 24px;
-  font-family: Cousine;
+  font-family: Armata;
   font-weight: 400;
   font-style: normal;
 }
