@@ -20,14 +20,6 @@
   box-sizing: border-box;
   height: 100vh;
 }
-.row {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0px;
-  box-sizing: border-box;
-  height: 100vh;
-}
 .column,
 .columns {
   width: 100%;
