@@ -26,6 +26,7 @@
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
+  height: 100vh;
 }
 .column,
 .columns {
