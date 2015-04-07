@@ -1,0 +1,142 @@
+/*
+
+=^. .^=
+
+*/
+
+
+/* GENERAL STYLING */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff9e7 ;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+section {
+    width: 70vw;
+    margin-left:15vw;
+    margin-right:15vw;
+    margin-bottom: 4vh;
+}
+
+footer {
+    display: inline-block;
+    text-align:center;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    color: #1b1e27;
+    font-family: "Droid Sans Mono", sans-serif;
+    font-size: 13px;
+    letter-spacing: .02em;
+}
+
+h1 {
+    font-family: "Karla", sans-serif;
+    font-size: 64px;
+    line-height: 73px;
+    margin-bottom: 25px;
+    margin-top:0px;
+    float:none;
+    display: inline-block;
+}
+
+a {
+    color: #363e4b;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p.section-title {
+    font-family: "Karla", sans-serif;    
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: .65vw;
+
+}
+
+
+/* BANNER */
+
+header {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 4vh;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    float: right;
+}
+
+nav li {
+    width: auto;
+    padding: .42vh;
+}
+
+nav ul{
+    padding-left:1.5vw;
+    margin-bottom: 3vh;
+}
+
+nav[role="main"] {
+    float: left;
+}
+
+
+/* PORTAL PAGE */
+
+.about {
+    float: left;
+    width: 28vw;
+    padding-right: 12vw;
+    margin-bottom: 6vh;
+}
+
+.about p {
+    line-height: 25px;
+    margin-bottom:23px;
+}
+
+
+/* BLOG PAGE */
+
+.blog {
+    float: left;
+    width: 50vw;
+    margin-bottom: 6vh;
+}
+
+.blog p {
+    line-height: 25px;
+    margin-bottom:23px;
+    text-align: justify;
+}
+
+.date {
+    color: #c6ad97;
+    font-sze: 10px;
+    float: right;
+    display: inline-block;
+    margin-top:2.55vh;
+}
+
+.linebreak {   
+    margin: 55px 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+}
