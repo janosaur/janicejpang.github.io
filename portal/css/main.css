@@ -1,7 +1,5 @@
 /*
-
 =^. .^=
-
 */
 
 
@@ -74,6 +72,11 @@ header {
     overflow-x: hidden;
     overflow-y: scroll;
     margin-bottom: 4vh;
+}
+
+header img {
+    width: 100vw;
+    height: auto;
 }
 
 
