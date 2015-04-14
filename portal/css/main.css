@@ -140,6 +140,11 @@ nav[role="main"] {
     text-align: justify;
 }
 
+.blog img {
+    display: block;
+    horizontal-align: center;
+}
+
 .date {
     color: #c6ad97;
     float: right;
