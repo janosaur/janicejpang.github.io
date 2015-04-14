@@ -100,6 +100,12 @@ today = mm+'/'+dd+'/'+yyyy;
     return false;
     
   }
+  
+  document.card.onreset=cleanScreen;
+  
+  function cleanScreen(){
+      result.innerHTML="";
+  }
 
     // Is JS running?
 console.log("JS has processed.");   
