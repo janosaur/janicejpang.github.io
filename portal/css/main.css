@@ -144,7 +144,7 @@ nav[role="main"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    max-width: 50vw;
 }
 
 .date {
