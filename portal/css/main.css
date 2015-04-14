@@ -156,7 +156,7 @@ nav[role="main"] {
 
 
 .linebreak {   
-    margin: 55px 0px;
+    margin: 55px 0px 75px 0px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
 }
