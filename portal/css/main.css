@@ -51,6 +51,10 @@ a {
     font-weight: bold;
 }
 
+a #noLink {
+    color: #d4cfaf;
+}
+
 a:hover {
     text-decoration: none;
 }
