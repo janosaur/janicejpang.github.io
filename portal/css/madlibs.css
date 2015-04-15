@@ -153,3 +153,9 @@ label[for=textTerrifies]{
     line-height: 22px;
     font-size:12px;
 }
+
+/* RESET */
+
+#cardBegin {
+    display:none;
+}
