@@ -53,6 +53,7 @@ a {
 
 #noLink {
     color: #c6ad97;
+    text-decoration: none;
 }
 
 a:hover {
