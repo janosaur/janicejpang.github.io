@@ -51,12 +51,7 @@ a {
     font-weight: bold;
 }
 
-#noLink {
-    color: #c6ad97;
-    text-decoration: none;
-}
-
-a:hover {
+a:hover, #noLink {
     text-decoration: none;
 }
 
