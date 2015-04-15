@@ -105,6 +105,8 @@ today = mm+'/'+dd+'/'+yyyy;
   
   function cleanScreen(){
       result.innerHTML="";
+      window.location.replace('#cardBegin'); 
+      
   }
 
     // Is JS running?
