@@ -46,6 +46,19 @@ h1 {
     display: inline-block;
 }
 
+h1 a {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+    padding-bottom: 3px;
+}
+
+h2 {
+    font-size: 36px;
+    padding-left: .65vw;
+    margin-bottom: 20px;
+}
+
 a {
     color: #363e4b;
     font-weight: bold;
@@ -149,6 +162,7 @@ nav[role="main"] {
 
 .date {
     color: #c6ad97;
+    font-family: "Karla", sans-serif;
     float: right;
     display: inline-flex;
     margin-top:2.55vh;
