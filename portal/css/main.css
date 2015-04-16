@@ -59,6 +59,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+h2 a {
+    text-decoration: none;
+}
+
 a {
     color: #363e4b;
     font-weight: bold;
