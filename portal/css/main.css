@@ -106,8 +106,11 @@ header img {
 /* NAVIGATION */
 
 nav {
-    margin-top:10px;
     float: right;
+}
+
+nav img {
+    margin-bottom:30px;
 }
 
 nav li {
