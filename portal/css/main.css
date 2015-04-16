@@ -82,6 +82,10 @@ p.section-title {
 
 }
 
+p.section-title a {
+    text-decoration:none;
+}
+
 p.section-titleNext {
     font-family: "Karla", sans-serif;    
     font-size: 10px;
