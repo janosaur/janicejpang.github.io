@@ -26,6 +26,18 @@ footer {
     text-align:center;
 }
 
+footer .badge {
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  padding-bottom:100px;
+  background-image: url("http://f.cl.ly/items/000t050A3w0D2b3j0b0Y/Badge.gif");
+  background-repeat: no-repeat;
+}
+
 
 /* TYPOGRAPHY */
 
