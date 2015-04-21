@@ -1,4 +1,7 @@
-
+.description {
+    color: #c6ad97;
+    line-height: 20px;
+}
 
 .items {
     display: inline-table;
