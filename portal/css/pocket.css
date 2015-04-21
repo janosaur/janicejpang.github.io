@@ -177,7 +177,7 @@ nav[role="main"] {
 }
 
 .musicDetail, .lightDetail, .memoryDetail, .protectionDetail, .wealthDetail, .knowledgeDetail {
-    width: 44vw;
+    width: 43vw;
     margin: 0px 0px 9px 0px;
     padding:40px 50px 0px 70px;
     height: 300px;
