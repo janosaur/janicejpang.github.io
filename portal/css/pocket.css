@@ -1,0 +1,74 @@
+
+
+.items {
+    display: inline-table;
+    width: 15vw;
+    margin-bottom: 9px;
+    border: dashed 1px;
+}
+
+.items img {
+    width: 150px;
+    height: 150px;
+}
+
+.music, .light, .memory, .protection, .wealth, .knowledge {
+    cursor: pointer;
+    padding: 25px 20px 10px;
+    font-size: 1.25em;
+    font-weight: 800;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.musicDetail, .lightDetail, .memoryDetail, .protectionDetail, .wealthDetail, .knowledgeDetail {
+    width: 39.2vw;
+    margin: 0px 0px 9px 0px;
+    padding:40px 50px 0px 70px;
+    height: 300px;
+    background-color: white;
+    background-image: url();
+    color: white;
+    line-height: 22px;
+    letter-spacing:.5px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Karla';
+    font-size: 30px;
+    padding:0px;
+}
+
+footer{
+margin: 50px 0px 0px 0px;
+}
+
+/* MUSIC */
+
+.nowPlaying {
+    font-family: 'Karla';
+    font-size: 15px;
+    margin-top:50px;
+    letter-spacing:.5px;
+}
+
+.musicInfo {
+    font-family: 'Karla';
+    font-size: 20px;
+    letter-spacing:.75px;
+    line-height: 30px;
+}
+
+
+.musicDetail a, .musicInfo a {
+    color: #d4cfaf;
+    text-decoration: none;
+}
+
+.musicDetail a:hover, .musicInfo a:hover  {
+    color: white;
+    text-decoration: none;
+}
