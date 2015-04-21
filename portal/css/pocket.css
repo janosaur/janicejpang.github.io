@@ -177,13 +177,13 @@ nav[role="main"] {
 }
 
 .musicDetail, .lightDetail, .memoryDetail, .protectionDetail, .wealthDetail, .knowledgeDetail {
-    width: 42.2vw;
+    width: 49vw;
     margin: 0px 0px 9px 0px;
     padding:40px 50px 0px 70px;
     height: 300px;
     background-color: white;
     background-image: url();
-    background-size: 110%;
+    background-size: 100%;
     color: white;
     line-height: 22px;
     letter-spacing:.5px;
