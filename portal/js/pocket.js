@@ -1,4 +1,4 @@
-/* 
+/*
 =^. .^=
 */
 
@@ -22,9 +22,11 @@ $(document).ready(function() {
             $('.protectionDetail').slideUp();
             $('.wealthDetail').slideUp();
             $('.knowledgeDetail').slideUp();
+            $('.items .music').css('background-color', '#d5d0af');
             $('.musicDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255651/75722f8e-e7ff-11e4-9b7f-e3988652d027.png)');
             $('.musicDetail').slideDown();
         } else {
+            $('.items .music').css('background-color', '#fff9e7');
             $('.musicDetail').slideUp();
         }
     }); // end MUSIC click
@@ -38,9 +40,11 @@ $(document).ready(function() {
             $('.protectionDetail').slideUp();
             $('.wealthDetail').slideUp();
             $('.knowledgeDetail').slideUp();
+                        $('.items .light').css('background-color', '#d5d0af');
             $('.lightDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255650/756f9878-e7ff-11e4-80b5-c8b83ae5536b.png)');
             $('.lightDetail').slideDown();
         } else {
+                        $('.items .light').css('background-color', '#fff9e7');
             $('.lightDetail').slideUp();
         }
     }); // end LIGHT click
@@ -54,9 +58,11 @@ $(document).ready(function() {
             $('.protectionDetail').slideUp();
             $('.wealthDetail').slideUp();
             $('.knowledgeDetail').slideUp();
+            $('.items .memory').css('background-color', '#d5d0af');
             $('.memoryDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255656/7583ea12-e7ff-11e4-9812-ee3ce6e119c3.png)');
             $('.memoryDetail').slideDown();
         } else {
+                        $('.items .memory').css('background-color', '#fff9e7');
             $('.memoryDetail').slideUp();
         }
     }); // end MEMORY click
@@ -70,9 +76,11 @@ $(document).ready(function() {
             $('.memoryDetail').slideUp();
             $('.wealthDetail').slideUp();
             $('.knowledgeDetail').slideUp();
+            $('.items .protection').css('background-color', '#d5d0af');
             $('.protectionDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255646/756eb750-e7ff-11e4-9cd9-63882c4208cb.png)');
             $('.protectionDetail').slideDown();
         } else {
+                        $('.items .protection').css('background-color', '#fff9e7');
             $('.protectionDetail').slideUp();
         }
     }); // end PROTECTION click
@@ -86,9 +94,11 @@ $(document).ready(function() {
             $('.memoryDetail').slideUp();
             $('.protectionDetail').slideUp();
             $('.knowledgeDetail').slideUp();
+            $('.items .wealth').css('background-color', '#d5d0af');
             $('.wealthDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255653/758325b4-e7ff-11e4-9daf-564dcae9d025.png)');
             $('.wealthDetail').slideDown();
         } else {
+                        $('.items .wealth').css('background-color', '#fff9e7');
             $('.wealthDetail').slideUp();
         }
     }); // end WEALTH click
@@ -102,9 +112,11 @@ $(document).ready(function() {
             $('.memoryDetail').slideUp();
             $('.protectionDetail').slideUp();
             $('.wealthDetail').slideUp();
+            $('.items .knowledge').css('background-color', '#d5d0af');
             $('.knowledgeDetail').css('background-image', 'url(https://cloud.githubusercontent.com/assets/7544281/7255647/756f3dec-e7ff-11e4-97ab-ea4ddcc638e1.png)');
             $('.knowledgeDetail').slideDown();
         } else {
+                        $('.items .knowledge').css('background-color', '#fff9e7');
             $('.knowledgeDetail').slideUp();
         }
     }); // end KNOWLEDGE click
