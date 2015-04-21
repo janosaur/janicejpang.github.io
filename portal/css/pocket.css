@@ -136,69 +136,7 @@ nav[role="main"] {
 }
 
 
-/* PORTAL PAGE */
 
-.about {
-    float: left;
-    width: 28vw;
-    padding-right: 12vw;
-    margin-bottom: 6vh;
-}
-
-.about p {
-    line-height: 25px;
-    margin-bottom:23px;
-}
-
-
-/* BLOG PAGE */
-
-.blog {
-    float: left;
-    width: 50vw;
-    margin-bottom: 6vh;
-}
-
-.blog p {
-    line-height: 25px;
-    margin-bottom:23px;
-    text-align: justify;
-}
-
-.blog img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-}
-
-.date {
-    color: #c6ad97;
-    float: right;
-    display: inline-flex;
-    margin-top:2.55vh;
-}
-
-
-.linebreak {
-    margin: 55px 0px 75px 0px;
-    border-width: 0px 0px 1px 0px;
-    border-style: dotted;
-}
-
-
-/* MAD LIBS PAGE */
-
-.fopl {
-    float: left;
-    width: 50vw;
-    margin-bottom: 3vh;
-}
-
-
-.fopl h1 {
-    letter-spacing: -1px;
-}
 
 /* MUSEUM */
 
