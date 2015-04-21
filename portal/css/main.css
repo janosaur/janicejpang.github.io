@@ -43,7 +43,7 @@ h1 {
     margin-bottom: 25px;
     margin-top:0px;
     float:none;
-    display: inline-block;
+
 }
 
 h1 a {
@@ -73,7 +73,7 @@ a:hover, #noLink {
 }
 
 p.section-title {
-    font-family: "Karla", sans-serif;    
+    font-family: "Karla", sans-serif;
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -159,6 +159,10 @@ nav[role="main"] {
     margin-bottom: 6vh;
 }
 
+.post h1 {
+    display: inline-block;
+}
+
 .post p {
     line-height: 25px;
     margin-bottom:23px;
@@ -180,7 +184,7 @@ nav[role="main"] {
 }
 
 
-.linebreak {   
+.linebreak {
     margin: 55px 0px 75px 0px;
     border-width: 0px 0px 1px 0px;
     border-style: dotted;
@@ -198,4 +202,22 @@ nav[role="main"] {
 
 .fopl h1 {
     letter-spacing: -1px;
+}
+
+/* GENERAL STORE PAGE */
+
+.content {
+    float: left;
+    width: 50vw;
+    margin-bottom: 6vh;
+}
+
+.content h1 {
+    display: block;
+}
+
+.content p {
+    line-height: 25px;
+    margin-bottom:23px;
+    text-align: justify;
 }
