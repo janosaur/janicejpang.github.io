@@ -271,7 +271,7 @@ tr:hover td:nth-child(2) {
 }
 
 .inTransit:hover td:nth-child(2) {
-    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380093/6d2f7b60-edae-11e4-9f57-dcaa9df16701.gif);
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380093/6d2f7b60-edae-11e4-9f57-dcaa9df16701.gif");
     background-size:23px;
 }
 
