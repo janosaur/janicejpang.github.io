@@ -6,15 +6,15 @@
 $(document).ready(function () {
 
   var plage = new Howl({
-  urls: ['assets/Plage.mp3']
+  urls: ['https://a.tumblr.com/tumblr_m61pynRtCK1qhp6n1o1.mp3']
 });
 
   var kites = new Howl({
-  urls: ['assets/Kites.mp3']
+  urls: ['http://audio.heargasm.info/geographer_kites2.mp3']
 });
 
   var created = new Howl({
-  urls: ['assets/Created.mp3']
+  urls: ['https://a.tumblr.com/tumblr_n81vtohSdA1te7e5qo1.mp3']
 });
 
 
