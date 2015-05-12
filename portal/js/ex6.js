@@ -17,6 +17,11 @@ $(document).ready(function () {
   urls: ['https://a.tumblr.com/tumblr_n81vtohSdA1te7e5qo1.mp3']
 });
 
+  // ---------- FADE IN
+  $('#topTitle').fadeIn();
+  
+  
+  // ---------- HIDES
 
   $('#musicName1').hide(); //hide music info
   $('#musicNext1').hide();
