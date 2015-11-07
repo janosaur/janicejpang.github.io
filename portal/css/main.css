@@ -73,29 +73,21 @@ a:hover, #noLink {
     text-decoration: none;
 }
 
-p.section-title {
+nav p {
     font-family: "Karla", sans-serif;    
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-left: .65vw;
-
+    padding-left: .65vw;    
 }
-
-p.section-title a {
+    
+nav p a {
     text-decoration:none;
 }
 
-p.section-titleNext {
-    font-family: "Karla", sans-serif;    
-    font-size: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding-left: .65vw;
+nav p:not(:first-of-type) {
     margin-top: 30px;
-
 }
 
 /* BANNER */
@@ -215,5 +207,17 @@ nav[role="main"] {
     }
     nav {
         float: none;
+    }
+    nav ul, nav p {
+        padding:0;
+    }
+    nav li {
+        display: inline-block; 
+    }
+    nav li:not(:last-of-type):after {
+        content: ",";
+    }
+    nav li:last-of-type:before {
+        content: "and ";
     }
 }
