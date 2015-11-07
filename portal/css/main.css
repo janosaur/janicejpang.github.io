@@ -212,7 +212,7 @@ nav[role="main"] {
         padding:0;
     }
     nav li {
-        display: inline-block; 
+        display: inline; 
     }
     nav li:not(:last-of-type):after {
         content: ",";
