@@ -135,10 +135,10 @@ nav[role="main"] {
   text-align: justify; }
 
 .date {
+  margin-top: 1em;
   color: #c6ad97;
   float: right;
-  display: inline-flex;
-  margin-top: 2.55vh; }
+  display: inline-flex; }
 
 .linebreak {
   margin: 55px 0px 75px 0px;
