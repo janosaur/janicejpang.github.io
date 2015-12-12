@@ -29,7 +29,7 @@ body {
 
 h1 {
   font-family: "Karla", sans-serif;
-  font-size: 48px;
+  font-size: 24px;
   line-height: 1.5;
   margin-top: 0px;
   float: none;
@@ -112,6 +112,15 @@ nav[role="main"] {
 /* PROJECTS aka DOES */
 .does .mainContent .project {
   margin-bottom: 40px; }
+  .does .mainContent .project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .does .mainContent .project a {
+    display: block; }
+  .does .mainContent .project h1 {
+    margin-right: 40px; }
 
 /* BLOG PAGE */
 .mainContent {
@@ -124,12 +133,6 @@ nav[role="main"] {
   line-height: 25px;
   margin-bottom: 23px;
   text-align: justify; }
-
-.mainContent img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw; }
 
 .date {
   color: #c6ad97;

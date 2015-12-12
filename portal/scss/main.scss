@@ -2,6 +2,8 @@
 =^. .^=
 */
 
+@import "library";
+
 
 /* GENERAL STYLING */
 
@@ -39,7 +41,7 @@ body {
 
 h1 {
     font-family: "Karla", sans-serif;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.5;
 
     margin-top:0px;
@@ -149,9 +151,24 @@ nav[role="main"] {
     .mainContent {
         .project {
             margin-bottom: 40px;
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+            a {
+                display: block;
+            }
+            h1 {
+                margin-right: 40px;
+                @include small-browser {
+                }
+            }
         }
     }
 }
+
 
 /* BLOG PAGE */
 
@@ -166,13 +183,6 @@ nav[role="main"] {
     line-height: 25px;
     margin-bottom:23px;
     text-align: justify;
-}
-
-.mainContent img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
 }
 
 .date {
