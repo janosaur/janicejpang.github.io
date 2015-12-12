@@ -145,9 +145,9 @@ nav[role="main"] {
 }
 
 
-/* PROJECTS aka DOES */
+/* PROJECTS + PROJECT PAGES */
 
-.does {
+.does, .projectPage {
     .mainContent {
         .project {
             margin-bottom: 40px;
@@ -157,7 +157,7 @@ nav[role="main"] {
                 margin-right: auto;
                 width: 100%;
             }
-            a {
+            a.imageWrapper {
                 display: block;
             }
             h1 {

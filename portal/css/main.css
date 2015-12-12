@@ -109,17 +109,17 @@ nav[role="main"] {
   line-height: 25px;
   margin-bottom: 23px; }
 
-/* PROJECTS aka DOES */
-.does .mainContent .project {
+/* PROJECTS + PROJECT PAGES */
+.does .mainContent .project, .projectPage .mainContent .project {
   margin-bottom: 40px; }
-  .does .mainContent .project img {
+  .does .mainContent .project img, .projectPage .mainContent .project img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%; }
-  .does .mainContent .project a {
+  .does .mainContent .project a.imageWrapper, .projectPage .mainContent .project a.imageWrapper {
     display: block; }
-  .does .mainContent .project h1 {
+  .does .mainContent .project h1, .projectPage .mainContent .project h1 {
     margin-right: 40px; }
 
 /* BLOG PAGE */
