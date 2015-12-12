@@ -122,6 +122,9 @@ nav[role="main"] {
   .does .mainContent .project h1, .projectPage .mainContent .project h1 {
     margin-right: 40px; }
 
+.projectPage {
+  padding-top: 10vh; }
+
 /* BLOG PAGE */
 .mainContent {
   float: left;
