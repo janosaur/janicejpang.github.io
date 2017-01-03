@@ -304,15 +304,14 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-    list-style: disc inside; }
+    list-style: disc outside; }
 ol {
     list-style: decimal inside; }
 ol, ul {
-    padding-left: .27rem; 
+    padding-left: 2.25rem; 
 }
 li span {
     position: relative;
-    left: -20px;
     font-size: 90%;
 }
 
