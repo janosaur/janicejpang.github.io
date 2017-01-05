@@ -65,14 +65,15 @@ a:hover, a:active {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-    list-style: disc outside; }
+    list-style: disc inside; }
 ol {
     list-style: decimal inside; }
 ol, ul {
-    padding-left: 2.25rem; 
+    padding-left: .27rem; 
 }
 li span {
     position: relative;
+    left: -20px;
     font-size: 90%;
 }
 
