@@ -12,7 +12,7 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0px;
     box-sizing: border-box; }
 .row {
     margin-bottom: 4.75rem;
@@ -75,15 +75,6 @@ li span {
     position: relative;
     font-size: 90%;
 }
-
-
-
-/* Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-p,
-ul,
-ol {
-    margin-bottom: 2.5rem;}
 
 
 /* Utilities
