@@ -103,7 +103,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
     font-size: 62.5%; }
 body {
-    background-color: #eee;
+    background-color: #fff;
     font-family:"Karla", sans-serif;
     font-size: 2.3rem; /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
