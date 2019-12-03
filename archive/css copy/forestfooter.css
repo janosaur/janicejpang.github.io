@@ -1,0 +1,9 @@
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  padding-bottom:100px;
+  background-image: url("https://cloud.githubusercontent.com/assets/7544281/6431621/115d031c-bfea-11e4-99b9-87c9186420dd.png");
+  background-repeat: no-repeat;
+}
