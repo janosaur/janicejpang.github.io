@@ -1,12 +1,34 @@
 /*
-* Based on Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
+Based on Skeleton V2.0.4 by Dave Gamache
 */
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+    font-size: 62.5%; }
+
+body {
+    background-color: white;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2.3rem;
+    line-height: 1.6;
+    letter-spacing: -.025rem;
+    color: black;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+    padding-top: 15%; 
+    padding-bottom: 5%;
+}
+
+footer {
+    margin-top:20rem;
+}
+
 .container {
     width: 100%;
     max-width: 1024px;
@@ -14,12 +36,11 @@
     padding: 0 20px;
     box-sizing: border-box; }
 
-
 .row {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
-.even {
+.project {
     margin-bottom: 3rem;
 }
 
@@ -27,10 +48,10 @@
 .columns {
     width: 100%;
     float: left;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+}
 
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
     .container {
@@ -39,11 +60,14 @@
 
     hr {
         opacity:100;
-        padding-top: 300px; 
+        margin-bottom: 350px; 
     }
 
     .row.nav {
-        position:relative;
+        position: fixed;
+        background-color:white;
+        padding: 50px 0px;
+        z-index:100;
     }
 }
 
@@ -112,42 +136,28 @@
     .offset-by-one-half.columns     { margin-left: 52%; }
 
     hr {
-        opacity:0;
-        padding-top: 200px; 
+        opacity:25%;
+        margin-bottom: 200px; 
     }
+    
+    /*.row:nth-child(1){
+        height:50vh;
+    }*/
 
     .row.nav {
-        position: fixed;
         background-color:white;
-        padding: 50px 0px;
-        z-index:100;
+        padding: 30px 0px 40px 0px;
+  
     }
 
 }
 
-
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
-html {
-    font-size: 62.5%; }
-body {
-    background-color: white;
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 2.3rem;
-    line-height: 1.6;
-    letter-spacing: -.01rem;
-    color: black;
-}
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h1 {
-    color: black;
     font-family: 'IBM Plex Serif', serif;
     font-style:italic;
     font-size: 5rem;
@@ -159,7 +169,6 @@ h1 {
 }
 
 h3 {
-    color: black;
     font-style: italic;
     font-weight: 400;
     font-size: 2.5rem;
@@ -191,11 +200,6 @@ p.eyebrow a {
 }
 
 
-.project {
-    text-align:center;
-}
-
-
 .architecture {
     font-size:1.5rem;
     line-height:2rem;
@@ -212,18 +216,19 @@ a, a:link, a:visited, a h3 {
     transition: color .35s;
 }
 
-a:hover, a:focus, a:active, a h3:hover{
+a:hover, a:focus, a:active, a h3:hover {
     color: #fdc53a;
 }
 
-.project a {
-    border-bottom-style: none;
+.project a:hover {
+    color: black;
 }
+
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-    list-style: cir outside; }
+    list-style: circle outside; }
 ol {
     list-style: decimal inside; }
 ol, ul {
