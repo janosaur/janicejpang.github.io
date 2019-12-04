@@ -20,11 +20,6 @@ body {
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-body {
-    padding-top: 15%; 
-    padding-bottom: 5%;
-}
-
 footer {
     margin-top:20rem;
 }
@@ -34,6 +29,8 @@ footer {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 15%; 
+    padding-bottom: 5%;
     box-sizing: border-box; }
 
 .row {
@@ -139,15 +136,15 @@ footer {
         opacity:25%;
         margin-bottom: 200px; 
     }
-    
+
     /*.row:nth-child(1){
-        height:50vh;
-    }*/
+    height:50vh;
+}*/
 
     .row.nav {
         background-color:white;
         padding: 30px 0px 40px 0px;
-  
+
     }
 
 }
