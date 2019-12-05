@@ -11,7 +11,7 @@ html {
 body {
     background-color: white;
     font-family: 'IBM Plex Serif', serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     line-height: 1.6;
     letter-spacing: -.025rem;
     color: black;
@@ -21,20 +21,20 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer {
+    border-top: 1px dashed lightgrey;
+    padding-top:5rem;
     margin-top:20rem;
+    margin-bottom:5rem;
 }
 
 .container {
     width: 100%;
-    max-width: 1024px;
     margin: 0 auto;
-    padding-top: 15%; 
-    padding-bottom: 5%;
     box-sizing: border-box; 
 }
 
 .row {
-    margin-bottom: 0rem;
+    margin-bottom: 4rem;
 }
 
 .row.nav {
@@ -58,8 +58,10 @@ footer {
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
+    .text {
+        padding:0% 5%;
+    }
     .container {
-        width: 85%;
     }
 
     hr {
@@ -74,8 +76,13 @@ footer {
 
 /* For devices larger than 550px */
 @media (min-width: 768px) {
+    .text {
+        max-width: 1024px;
+        margin: 5rem auto;
+    }
+
     .container {
-        width: 80%; }
+    }
     .column,
     .columns {
         margin-left: 4%; 
@@ -161,8 +168,8 @@ h1 {
     font-style:italic;
     font-size: 5rem;
     font-weight: 400;
-    margin-top:-1.25rem;
-    margin-bottom:0;
+    margin-top:.5rem;
+    margin-bottom:0rem;
     line-height:120%;
     letter-spacing:-0.05rem;
 }
@@ -189,6 +196,7 @@ p.eyebrow a {
     letter-spacing: .05rem;
     text-transform: uppercase;
     float: none;
+    padding: auto;
 }
 
 .nav a {
@@ -229,15 +237,53 @@ a:hover, a:focus, a:active, a h3:hover {
 ul {
     list-style: circle outside; }
 ol {
-    list-style: decimal inside; }
+    list-style: disc outside; }
 ol, ul {
     padding-left: 2.1rem;
 }
+ol.users {
+    list-style:decimal;
+}
+ul.info {
+    list-style: disc outside; 
+}
+ul.sub {
+    margin-top: 1rem;
+    font-size:1.75rem;
+}
+
+li#superuser, li#engageduser, li#occasionaluser {
+    list-style: none;
+}
+#superuser::before {
+    content: "\2022";
+    color: #4285F4;
+    position: relative;
+    top: 3px;
+    font-size: 3rem;
+    margin-left:-2.2rem;
+    padding-right:1rem;
+}
+#engageduser::before {
+    content: "\2022";
+    color: #57B972;
+    position: relative;
+    top: 3px;
+    font-size: 3rem;
+    margin-left:-2.2rem;
+    padding-right:1rem;
+}
+#occasionaluser::before {
+    content: "\2022";
+    color: #FBBC05;
+    position: relative;
+    top: 3px;
+    font-size: 3rem;
+    margin-left:-2.2rem;
+    padding-right:1rem;
+}
 li {
     margin-bottom:.4rem;
-}
-li span {
-    font-size: 90%;
 }
 
 
