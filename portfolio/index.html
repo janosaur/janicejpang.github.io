@@ -32,14 +32,18 @@
 
 
     <body id="home">
-        <!-- Navigationˆ ----------------------------------->
+        <!-- Navigation ----------------------------------->
         <nav>
-            <div id="navcontent">
-                <a href="#home">Home</a>
-                <a href="#client">Client Work</a>
-                <a href="#community">Community Projects</a>
-                <a href="#personal">Personal Experiments</a>
-                <a href="#contact">Reach Out</a>
+            <div id="left">
+                <a href="#home"><img src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:10px;" id="rotate"></a>
+            </div>
+            <div id="right">
+                <ul id="navcontent">
+                    <li><a href="#client">Client Work</a></li>
+                    <li><a href="#community">Community Projects</a></li>
+                    <li><a href="#personal">Personal Experiments</a></li>
+                    <li><a href="#contact">Reach Out</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -50,8 +54,9 @@
             <div class="row" id="about">
                 <div class="twelve columns">
                     <h1>Hello, Internet explorer!</h1>
-                    <p>Welcome to my digital dwelling. My name is Janice Pang. I'm a designer & educator living in the beautiful, bike-friendly city of Norfolk, VA. I'm passionate about building people-first products and experiences.</p>
-                    <p>You can find my resume <a href="assets/resume-janicepang.pdf" target="_blank" style="font-style: italic;">here</a>, or you can see my select works below.</p>
+                    <h2>Welcome to my digital dwelling. My name is Janice Pang. I'm a designer & educator living in the beautiful, bike-friendly city of Norfolk, VA. I'm passionate about building people-first products and experiences.</h2>
+                    <p>You can find my resume <a href="assets/resume-janicepang.pdf" target="_blank" style="font-style: italic;">here</a> and my select works below.</p>
+                    <p><a href="#client" id="arrow">↓</a></p>
                 </div>
             </div>
 
@@ -166,70 +171,65 @@
 
             <!-- Reach Out ----------------------------------->
             <hr id="contact">
-            <div class="row">
+            <div class="row" id="reachout">
                 <div class="twelve columns">
                     <h1>Reach Out</h1>
                     <p>I'd love to hear from you. You can reach me by email at <em><a href="mailto:janice@goodatbeing.studio?Subject=Hello!" style="margin-left:3px;">janice@goodatbeing.studio</a>.</em></p>
-                    <p>Elsewhere on the Internet, you can find...
-                    <ul>
-                        <li>My monthly playlists on <em><a href="https://open.spotify.com/user/janicejpang" target="_self">Spotify</a></em></li> 
-                        <li>My design musings on <em><a href="https://open.spotify.com/user/janicejpang" target="_self">Medium</a></em></li> 
-                        <li>My credentials on <em><a href="https://open.spotify.com/user/janicejpang" target="_self">LinkedIn</a></em></li> 
-                    </ul></p>
+                </div>
             </div>
         </div>
 
         <!-- Footer - Site Architecture ----------------------------------->
         <footer>
-            <div class="row">
-                <p class="eyebrow">Site Map</p>
+            <div id="footercontent">
+                <p class="eyebrow row">Site Map</p>
+                <div class="row">
+                    <div class="four columns architecture">
+                        <p><em>Client Work</em></p>
+                        <ul>
+                            <li>
+                                <a href="enjoy.html">Google Trust & Safety Research</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">Think with Google - Travel</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">Google Retail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="four columns architecture">
+                        <p><em>Community Projects</em></p>
+                        <ul>
+                            <li>
+                                <a href="enjoy.html">ENJOY:</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">Elizabeth River Trail</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">On-Screen: Digital Design Bootcamp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="four columns architecture">
+                        <p><em>Personal Experiments</em></p>
+                        <ul>
+                            <li>
+                                <a href="enjoy.html">Zine Swap</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">Sleep & Creativity</a>
+                            </li>
+                            <li>
+                                <a href="enjoy.html">Show & Tell</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="four columns architecture">
-                    <p><em>Client Work</em></p>
-                    <ul>
-                        <li>
-                            <a href="enjoy.html">Google Trust & Safety Research</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">Think with Google - Travel</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">Google Retail</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="four columns architecture">
-                    <p><em>Community Projects</em></p>
-                    <ul>
-                        <li>
-                            <a href="enjoy.html">ENJOY:</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">Elizabeth River Trail</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">On-Screen: Digital Design Bootcamp</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="four columns architecture">
-                    <p><em>Personal Experiments</em></p>
-                    <ul>
-                        <li>
-                            <a href="enjoy.html">Zine Swap</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">Sleep & Creativity</a>
-                        </li>
-                        <li>
-                            <a href="enjoy.html">Show & Tell</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
         </footer>
+
 
 
 
