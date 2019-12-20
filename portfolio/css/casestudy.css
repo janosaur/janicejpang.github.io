@@ -48,6 +48,10 @@ footer {
     margin-bottom: 3rem;
 }
 
+#intro {
+    margin-bottom:15rem;
+}
+
 .column,
 .columns {
     width: 100%;
@@ -78,7 +82,7 @@ footer {
 @media (min-width: 768px) {
     .text {
         max-width: 1024px;
-        margin: 5rem auto;
+        margin: 1rem auto;
     }
 
     .container {
@@ -174,6 +178,9 @@ h1 {
     letter-spacing:-0.05rem;
 }
 
+h2 {
+}
+
 h3 {
     font-style: italic;
     font-weight: 400;
@@ -212,6 +219,17 @@ p.eyebrow a {
     line-height:2rem;
 }
 
+.quote {
+    margin-top:5rem;
+}
+
+.quotation {
+    color: slategrey;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .05rem;
+}
 
 
 

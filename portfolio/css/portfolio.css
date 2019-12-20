@@ -193,6 +193,7 @@ body {
     font-family: 'IBM Plex Serif', serif;
     letter-spacing: -.025rem;
     color: black;
+    font-size:2rem;
 }
 
 /* Mobile */
@@ -371,9 +372,14 @@ a:hover, a:focus, a:active, a h3:hover {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ol {
+    list-style-type: "💌   ";
+    padding-left: 3.5rem;
+}
 ul {
     list-style: circle outside; 
-    padding-left: 2.1rem;}
+    padding-left: 2.1rem;
+}
 li {
     margin-bottom:.4rem;
 }
