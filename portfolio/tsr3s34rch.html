@@ -23,34 +23,59 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/casestudy.css">
 
+        <!-- JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+        <script src='js/jquery.zoom.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('.ex1').zoom();
+            });
+        </script>
+
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="images/star-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/star-16x16.png" sizes="16x16" />
 
+
+
     </head>
 
     <body>
 
-        <!-- Nav ----------------------------------->
-   <div class="row nav" style="position: sticky; padding:4px 0px; margin-bottom:0;">
-            <div class="twelve columns" style="padding:0% 0% 0% 3rem;">
-                <a href="index.html" alt="Home"><img src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:10px;" id="rotate"></a>
-                <p class="eyebrow" style="margin-top:2.25rem;"> 
-                    <a href="#contact" style="float:right;">See all projects<span style="margin-left: 1rem; font-size: 1.25rem;">⤵</span></a>
-                </p>
+
+        <!-- Navigation ----------------------------------->
+        <nav>
+            <div id="left">
+                <a href="index.html"><img src="assets/itme.png" data-src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:6px;" class="me" id="rotate"></a>
             </div>
-        </div>
-        
-        
+            <div id="right">
+                <ul id="navcontent">
+                    <li><a href="index.html#client">Client Work</a></li>
+                    <li><a href="index.html#community">Community Projects</a></li>
+                    <li><a href="#contact">Reach Out</a></li>
+                </ul>
+                <!--altnav
+<ul id="navcontent">
+<li><a href="#intro">Intro</a></li>
+<li><a href="#audience">The Audience</a></li>
+<li><a href="#contentstrategy">Content Strategy</a></li>
+<li><a href="#wireframes">Wireframes</a></li>
+<li><a href="#designs">Designs</a></li>
+<li><a href="#takeaways">Takeaways</a></li>
+</ul>-->
+            </div>
+        </nav>
+
+
 
         <!-- Primary Page Layout ----------------------------------->
         <div class="container">
 
             <!-- About ----------------------------------->
 
-            <img src="assets/ts-hero.png" alt="Trust & Safety Research website comps">
-
+            <img data-src="assets/ts-hero.png" alt="Header image of Trust & Safety Research website comps">
             <div class="text row" style="margin-top:0%;" id="intro">
                 <div class="seven columns">
                     <h1>Bringing awareness to Google's best-kept secret.</h1>
@@ -58,9 +83,9 @@
                     <p>Billions of people trust Google's products to help them every day — that’s why helpfulness is at the core of their mission. Being helpful also means being responsible and preventing harm for their users and for society as a whole. That’s where the Google Trust & Safety team comes in.
                     </p>
                     <p>The Trust & Safety team produces critical research to inform policies on online issues like abuse, fraud, and spam. This research has profound impact within and beyond Google, yet it suffers from being unknown.</p>
-                    <p>My team worked closely with the Trust & Safety  (T & S) team to create a digital platform that brings and their research to light, extending the reach and impact of their work.</p>
+                    <p>My team worked closely with the Trust & Safety (T & S) team to create a digital platform that brings their research to light, extending the reach and impact of their work.</p>
                 </div>
-                <div class="offset-by-two three columns architecture">
+                <div class="offset-by-two three columns architecture" style="margin-top:1rem;">
                     <p class="eyebrow">My contributions</p>
                     <ul class="info">
                         <li>Content Strategy</li>
@@ -91,25 +116,33 @@
                     </ul>
                 </div>
             </div>
+
+            <img data-src="assets/ts-wave.gif" alt="Color-changing wave animation">
+
+            <!---Audience + Barriers--->
             <div class="text row">
                 <div class="seven columns">
-                    <h2>Getting to know our audience</h2>
-                    <p>Before diving into the content, we needed to know who we would be designing for. We interviewed 9 stakeholders to familiarize ourselves with the team, their research, and their audience. Here's what we learned:</p>
+                    <h2>Gathering context</h2>
+                    <p>Before deciding what we were going to create, we needed to know who we would be designing for. We interviewed 9 stakeholders to familiarize ourselves with the T & S team, their research, and the audience they were trying to reach. Here's what we learned:</p>
+                </div>
+            </div>
+            <div class="text row">
+                <div class="seven columns">
+                    <h3>Key Audiences</h3>
+                    <p>The T & S research team has 3 key audiences. We define these audiences by how they interface with the research.</p>
                 </div>
             </div>
             <div class="text row">
                 <div class="four columns">
-                    <p class="eyebrow">Key Audiences</p>
-                    <p>The T & S research team has 3 key audiences. We define these audiences by how they interface with the research.</p>
+                    <p style="color:#4285F4">Super Users</p>
+                    <ul class="sub">
+                        <li>T & S researchers within Google</li>
+                        <li>Other Google researchers</li>
+                        <li>Researchers in academia, non-profits, and think tanks</li>
+                    </ul>
+                </div>
+                <div class="four columns">
                     <ol>
-                        <li id="superuser">Super Users
-                            <ul class="sub">
-                                <li>T & S researchers within Google</li>
-                                <li>Other Google researchers</li>
-                                <li>Researchers in academia, non-profits, and think tanks</li>
-                            </ul>
-                        </li>
-                        <br>
                         <li id="engageduser">
                             Engaged Users
                             <ul class="sub">
@@ -117,7 +150,10 @@
                                 <li>Tech industry T & S teams</li>
                             </ul>
                         </li>
-                        <br>
+                    </ol>
+                </div>
+                <div class="four columns">
+                    <ol>
                         <li id="occasionaluser">
                             Occasional Users
                             <ul class="sub">
@@ -128,58 +164,201 @@
                         </li>
                     </ol>
                 </div>
-                <div class="offset-by-two six columns">
-                    <img src="assets/ts-audience3.png">
-                </div>
+                <!--<div class="offset-by-two six columns">
+<img data-src="assets/ts-audience.png">
+</div>-->
             </div>
-            <br><br>
+
+
+            <!--- Barriers --->
             <div class="text row">
-                <div class="seven columns quote">
-                    <h3>We were surprised to find that though the key audiences vary in role, they experience similar barriers to engagement with the T & S team and their research.</h3>
+                <div class="seven columns">
+                    <p>We were surprised to find that though the key audiences vary in role, they experience similar barriers to engagement with the T & S team and their research.</p>
+                    <br>
                 </div></div>
             <div class="text row">
                 <div class="four columns">
                     <p class="eyebrow">Barrier 1</p>
-                    <p>External and internal audiences struggle to describe the mission and the scope of Trust & Safety Research. This lack of clarity creates <em>confusion</em>.</p>
+                    <p>External and internal audiences struggle to describe the mission and the scope of Trust & Safety research. This lack of clarity creates <em>confusion</em>.</p>
                 </div>
-
                 <div class="four columns">
                     <p class="eyebrow">Barrier 2</p>
                     <p>Each audience has varying levels of access to the research. This lack of transparency creates <em>frustration</em>.</p>
                 </div>
-
                 <div class="four columns">
                     <p class="eyebrow">Barrier 3</p>
                     <p>When audiences can access the research, they don't necessarily know how to apply it to their own work. This lack of guidance creates <em>apathy</em>.</p>
                 </div>
             </div>
 
+
+            <!---Content Strategy--->
             <hr>
             <div class="text row">
                 <div class="seven columns">
-                    <h2>Sketching solutions</h2>
-                    <p>We wireframed a 6-page website.</p>
+                    <h2>Formulating the content strategy</h2>
+                    <p>The barriers our audiences experienced guided our content strategy, leading with a series of principles & recommendations to inform the platform's architecture.</p>
+                    <br>
                 </div>
             </div>
             <div class="text row">
-                <p class="eyebrow">Landing Page</p>
-                <p>The Landing Page needed to accomplish several goals.</p>
-                <ul>
-                    <li>Establish the mission and purpose of the Trust & Safety Research team.</li>
-                    <li>For our Super Users...</li>
-                    <li>For our Engaged Users...</li>
-                    <li>For our Occasional Users...</li></ul>
+                <h3>Guiding principles</h3>
             </div>
             <div class="text row">
-                <div class="six columns">
-                    <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
-                    <p class="caption">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
+                <div class="four columns">
+                    <p class="eyebrow">Principle 1</p>
+                    <p>Our audience should feel <em>confident</em> in their choice to engage with the T & S team and their research.</p>
+                    <p class="eyebrow">Recommendation 1</p>
+                    <p class="bodysub">The platform should clearly position who the T & S team is, what their work encompasses, and how their audiences can reach them.</p>
+                    <br>
                 </div>
-                <div class="six columns">
-                    <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
-                    <p class="caption">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
+                <div class="four columns">
+                    <p class="eyebrow">Principle 2</p>
+                    <p>Our audience should feel <em>empowered</em> to find the research they need.</p>
+                    <p class="eyebrow">Recommendation 2</p>
+                    <p class="bodysub">The platform should guide audiences down pathways based on their needs and give them appropriate ways to engage with the research.</p>
+                    <br>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow">Principle 3</p>
+                    <p>Our audience should feel <em>compelled</em> to discover new research.</p>
+                    <p class="eyebrow">Recommendation 3</p>
+                    <p class="bodysub">The platform's content should evolve with the T & S landscape and should surface the most helpful research for our audiences.</p>
+                    <br><br>
                 </div>
             </div>
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Information architecture</h3>
+                    <p>We put our principles into action, mapping our recommendations onto 3 page types.</p>
+                </div>
+                <div class="eight columns">
+                    <img data-src="assets/ts-ia.png" alt="Diagram of the Information Architecture for the Trust & Safety research plaform" style="margin-top:6rem;" id="ia">
+                </div>
+            </div>
+
+            <!---Wireframes--->
+            <hr>
+            <div class="text row">
+                <div class="seven columns">
+                    <h2>Wireframing solutions</h2>
+                    <p>With an architectural plan to build on, we wireframed content layouts for each of the 3 page types – evaluating the hierarchy in each iteration for usability and clarity.</p>
+                    <p>During this 1-week wireframe sprint, we designed our wireframes in <u><a href="https://figma.com" target="_blank" alt="Link to the collaborative design tool Figma.com">Figma</a></u>. This enabled the design team to rapidly build on one another's ideas, and promoted co-creation between the design and development teams.</p>
+                    <br>
+                </div>
+            </div>
+            <!-------LANDING------->
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Landing Page</h3>
+                    <p>As the first touchpoint for the majority of our audiences, the Landing Page had to do a lot of heavy lifting. With this page, we explored ways to:</p>
+                    <ol class="bodysub">
+                        <li>Establish the mission of T & S research.</li>
+                        <li>Highlight the impact of the work.</li>
+                        <li>Surface the most notable research.</li>
+                        <li>Provide multiple ways to engage with the research based on audience needs.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:74%; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="bodysub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="caption">Selected Landing Page</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-landing-select.png" data-src="assets/ts-wires-landing-select_2x.png" width="auto"/>
+                    </span>
+                </div>
+                <div class="four columns shadow">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1"><img src="assets/ts-wires-landing-alt.png" data-src="assets/ts-wires-landing-alt_2x.png" width="auto"/>
+                    </span>
+                </div>
+            </div>
+            <br><br>
+            <!-------SEARCH------->
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Search Page</h3>
+                    <p>[When/why do people go to Search?] With this page, we explored ways to:</p>
+                    <ol class="bodysub">
+                        <li>Give viewers the most relevant search result information</li>
+                        <li>Let viewers preview the research content before committing to it.</li>
+                        <li>Give viewers tools to refine their search through a powerful tagging system.</li>
+
+                        <li>Call out the levels of access for each piece of content.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:74%; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="bodysub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns shadow">
+                    <p class="caption">Selected Search Page</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-search-select.png" data-src="assets/ts-wires-search-select_2x.png" width="auto"/>
+                    </span>
+                </div>
+                <div class="four columns shadow">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-search-alt.png" data-src="assets/ts-wires-search-alt_2x.png" width="auto"/>
+                    </span>
+                </div>
+            </div>   
+            <br><br>
+            <!-------DETAIL------->
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Detail Page</h3>
+                    <p>[When/why do people go to Detail page?]  With this page, we explored ways to:</p>
+                    <ol class="bodysub">
+                        <li>Establish the mission of T & S research.</li>
+                        <li>Highlight the impact of the work.</li>
+                        <li>Surface the most notable research.</li>
+                        <li>Provide multiple ways to engage with the research based on audience needs.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:74%; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="bodysub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns shadow">
+                    <p class="caption">Selected Detail Page</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-detail.png" data-src="assets/ts-wires-detail.png" width="auto"/>
+                    </span>
+                </div>
+                <div class="four columns shadow">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-search-alt.png" data-src="assets/ts-wires-search-alt_2x.png" width="auto"/>
+                    </span>
+                </div>
+            </div>   
+            <br><br>
+            <!--userflow-->
+            <div class="text row">
+                <div class="seven columns">
+                    <p>To walk the Trust & Safety team through our wireframe, we created user flows for each audience.</p></div>
+            </div>
+            <div class="threefourths">
+                <img data-src="assets/ts-wires-search-select.png" alt="Four wireframe options for the platform Landing Page">
+            </div>
+            <!--quote-->
+            <div class="text row">
+                <div class="twelve columns quote">
+                    <h1>Thank you for your awesome creativity in the wireframes. I could see all our prior thoughts and discussions manifested!</h1>
+                    <p class="quotation">– Kalpa Raj, Google T & S Project Manager</p>
+                </div>
+            </div>
+
             <hr>
             <div class="text row">
                 <div class="seven columns">
@@ -189,11 +368,11 @@
             </div>
             <div class="text row">
                 <div class="six columns">
-                    <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+                    <img data-src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
                     <p class="caption">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
                 </div>
                 <div class="six columns">
-                    <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+                    <img data-src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
                     <p class="caption">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
                 </div>
             </div>
@@ -202,10 +381,12 @@
 
             <div class="text row">
                 <div class="twelve columns quote">
-                    <h3>Quote quote quote Quote quote quote Quote quote quote Quote quote quote Quote quote quote</h3>
+                    <h1>This is amazing work. Let's continue this partnership for the external launch.</h1>
                     <p class="quotation">– Kalpa Raj, Google Trust & Safety Project Manager</p>
                 </div>
             </div>
+
+
 
 
         </div>
@@ -266,8 +447,55 @@
             </div>
         </footer>
 
-        <!-- End Document
+        <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <!--LAZY LOAD-->
+        <script src="js/lazyload.js"></script>
+        <script>
+            (function() {
+                function logElementEvent(eventName, element) {
+                    console.log(
+                        Date.now(),
+                        eventName,
+                        element.getAttribute("data-src")
+                    );
+                }
+                var callback_enter = function(element) {
+                    logElementEvent("🔑 ENTERED", element);
+                };
+                var callback_exit = function(element) {
+                    logElementEvent("🚪 EXITED", element);
+                };
+                var callback_reveal = function(element) {
+                    logElementEvent("👁️ REVEALED", element);
+                };
+                var callback_loaded = function(element) {
+                    logElementEvent("👍 LOADED", element);
+                };
+                var callback_error = function(element) {
+                    logElementEvent("💀 ERROR", element);
+                    element.src =
+                        "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+                };
+                var callback_finish = function() {
+                    logElementEvent("✔️ FINISHED", document.documentElement);
+                };
+                var ll = new LazyLoad({
+                    threshold: 0,
+                    // Assign the callbacks defined above
+                    callback_enter: callback_enter,
+                    callback_exit: callback_exit,
+                    callback_reveal: callback_reveal,
+                    callback_loaded: callback_loaded,
+                    callback_error: callback_error,
+                    callback_finish: callback_finish
+                });
+            })();
+        </script>
+
+
+        <!--PW PROTECTION-->
         <script>
 
             var pass=new Array()
@@ -307,20 +535,18 @@
                 var indicate=true
                 for (i=(1&2);i<window.max(Math.LOG10E);i++)
                     t3+=testit(verification.charAt(i))
-                    for (i=(1&2);i<lim;i++){
-                        if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-                            indicate=false
-                            }
+                for (i=(1&2);i<lim;i++){
+                    if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
+                        indicate=false
+                }
                 if (verification.length!=window.max(Math.LOG10E))
                     indicate=false
-                    if (indicate)
-                        window.location=verification+extension
-                        else
-                            alert("Invalid password. Please try again")
-                            }
+                if (indicate)
+                    window.location=verification+extension
+                else
+                    alert("Invalid password. Please try again")
+            }
         </script>
-
-
 
 
         <!-- End Document

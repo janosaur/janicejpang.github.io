@@ -2,6 +2,75 @@
 Based on Skeleton V2.0.4 by Dave Gamache
 */
 
+/* NAV BAR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* nav bar background */
+nav {
+    z-index:100;
+    width:100%;
+    height: 40px;
+    position: fixed;
+    background-color:white;
+    box-shadow: 0px -6px 10px rgb(0,0,0,0.75);
+
+    /*vertically centering box*/
+    padding: 15px 0px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items:center;
+}
+
+/* memoji animation! */
+#rotate {
+    width:40px;
+    height:auto;
+    transition: transform 1s ease-out;
+}
+#rotate:hover {
+    transform: rotate(25deg) scale(1.15);
+}
+
+/* nav items - left*/
+#right {
+    margin-top:-1px;
+    margin-left:2.25rem;
+}
+
+/* nav item spacing */
+ul#navcontent li {
+    display: inline;
+    margin-right:4rem;
+}
+
+/* nav item text styling */
+ul#navcontent a {
+    font-family: 'Karla', sans-serif;
+    font-style:normal;
+    font-size: 1.5rem;
+    letter-spacing: .025rem;
+}
+
+
+/* Media Queries ––––––––––––––––––––––––––– */
+
+/* Mobile: Hide nav */
+@media (min-width: 320px) {
+    nav{
+        display:none;
+    }
+}
+
+/* Tablet + larger: Show nav */
+@media (min-width: 768px) {
+    nav{
+        display:flex;
+    }
+}
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -34,23 +103,16 @@ footer {
 }
 
 .row {
-    margin-bottom: 4rem;
-}
-
-.row.nav {
-    position: fixed;
-    background-color:white;
-    z-index:100;
-    border-bottom: 1px dashed lightgrey;
+    margin-bottom: rem;
 }
 
 .project {
     margin-bottom: 3rem;
 }
 
-#intro {
-    margin-bottom:15rem;
-}
+/*#intro {
+margin-bottom:15rem;
+}*/
 
 .column,
 .columns {
@@ -60,21 +122,18 @@ footer {
 }
 
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+/* For devices larger than 320 */
+@media (min-width: 320px) {
     .text {
         padding:0% 5%;
     }
     .container {
+        padding-top:0px;
     }
 
     hr {
         opacity:0;
-        margin-bottom: 350px; 
-    }
-
-    .row.nav {
-        padding: 50px 0px;
+        margin-bottom: 50px; 
     }
 }
 
@@ -82,10 +141,11 @@ footer {
 @media (min-width: 768px) {
     .text {
         max-width: 1024px;
-        margin: 1rem auto;
+        margin: 0rem auto;
     }
 
     .container {
+        padding-top:75px;
     }
     .column,
     .columns {
@@ -149,11 +209,7 @@ footer {
 
     hr {
         opacity:0;
-        margin-bottom: 200px; 
-    }
-
-    #about {
-        height:50vh;
+        margin-bottom: 30rem; 
     }
 
     .row.nav {
@@ -179,14 +235,15 @@ h1 {
 }
 
 h2 {
+    font-size: 3.5rem;
 }
 
 h3 {
     font-style: italic;
     font-weight: 400;
     font-size: 2.5rem;
-    line-height:140%;
-    margin-top:-.75rem;
+    line-height:140%rem;
+    margin:0rem;
 }
 
 p.eyebrow {
@@ -214,6 +271,11 @@ p.eyebrow a {
 }
 
 
+.bodysub {
+    font-size:1.5rem;
+    line-height:2.25rem;
+}
+
 .architecture {
     font-size:1.5rem;
     line-height:2rem;
@@ -221,6 +283,7 @@ p.eyebrow a {
 
 .quote {
     margin-top:5rem;
+    text-align: center;
 }
 
 .quotation {
@@ -235,18 +298,25 @@ p.eyebrow a {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a, a:link, a:visited, a h3 {
+a, a:link, a:visited {
     color: black;
     text-decoration: none;   
     transition: color .35s;
 }
 
-a:hover, a:focus, a:active, a h3:hover {
+a:hover, a:focus, a:active {
     color: #fdc53a;
 }
 
 .project a:hover {
     color: black;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: dashed 1px slategrey;
+    display: inline-block;
+    line-height: 1;
 }
 
 
@@ -310,16 +380,89 @@ li {
 
 img {
     width:100%;
+    margin: auto;
     margin-bottom:5%;
+    display: block;
+    opacity: 0;
 }
 
-.project img {
-    margin-bottom:0%;
+
+/* Mobile: Hide nav */
+@media (min-width: 320px) {
+    .threefourths {
+        margin: auto;
+        width: 90%;
+    }
+    .threefourths img {
+        box-shadow: 0px 2px 10px rgb(0,0,0,0.25);
+    }
+    .imghover {
+        visibility:hidden;
+    }
+    .zoom {
+        display:inline-block;
+        position: relative;
+        box-shadow: 0px 2px 10px rgb(0,0,0,0.25);
+    }
+
+    .zoom img {
+        display: block;
+    }
+
+    .zoom img::selection { background-color: transparent; }
+
 }
+
+/* Tablet + larger: Show nav */
+@media (min-width: 768px) {
+    .threefourths {
+        width: 85%;
+    }
+    .imghover {
+        visibility:visible;
+    }
+
+    .zoom {
+        display:inline-block;
+        position: relative;
+        box-shadow: 0px 2px 10px rgb(0,0,0,0.25);
+    }
+
+    .zoom img {
+        display: block;
+    }
+
+    .zoom img::selection { background-color: transparent; }
+
+}
+
+
+
+/*--Image Lazy Load Animation--*/
+img:not(.initial) {
+    transition: opacity 1s;
+}
+img.initial,
+img.loaded,
+img.error {
+    opacity: 1;
+}
+img:not([src]) {
+    visibility: hidden;
+}
+
+/*emoji - no load in*/
+.me {
+    opacity: 1;
+    /*visibility:visible;*/
+}
+
+/*etc styling*/
 
 .caption {
-    margin-top: -5%;
-    text-align: right;
+    margin-top:3.5rem;
+    margin-bottom:2.05rem;
+    text-align:center;
     color: slategrey;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
@@ -397,9 +540,18 @@ html {
 }
 
 
+
+/*--- fade in ---*/
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 300ms;
+    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
 /*---- rows ----*/
 
-.row {
+.container {
     opacity:0%;
     position: relative;
     -webkit-animation-name: row;
@@ -420,20 +572,4 @@ html {
 @keyframes row {
     0% {opacity: 0%; top:2rem;}
     100% {opacity: 100%; top:0;}
-}
-
-.row:nth-child(2) {
-    animation-delay: .15s;
-}
-
-}.row:nth-child(3) {
-    animation-delay: .3s;
-}
-
-.row:nth-child(5) {
-    animation-delay: .4s;
-}
-
-.row:nth-child(7) {
-    animation-delay: .5s;
 }
