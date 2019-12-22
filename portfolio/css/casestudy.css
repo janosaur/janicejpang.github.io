@@ -81,7 +81,7 @@ body {
     background-color: white;
     font-family: 'IBM Plex Serif', serif;
     font-size: 2rem;
-    line-height: 1.6;
+    line-height: 3.5rem;
     letter-spacing: -.025rem;
     color: black;
 }
@@ -99,20 +99,7 @@ footer {
 .container {
     width: 100%;
     margin: 0 auto;
-    box-sizing: border-box; 
 }
-
-.row {
-    margin-bottom: rem;
-}
-
-.project {
-    margin-bottom: 3rem;
-}
-
-/*#intro {
-margin-bottom:15rem;
-}*/
 
 .column,
 .columns {
@@ -143,7 +130,10 @@ margin-bottom:15rem;
         max-width: 1024px;
         margin: 0rem auto;
     }
-
+    hr {
+        opacity:0;
+        margin-bottom: 30rem; 
+    }
     .container {
         padding-top:75px;
     }
@@ -206,16 +196,6 @@ margin-bottom:15rem;
 
     .offset-by-one-half.column,
     .offset-by-one-half.columns     { margin-left: 52%; }
-
-    hr {
-        opacity:0;
-        margin-bottom: 30rem; 
-    }
-
-    .row.nav {
-        padding: 30px 0px 40px 0px;
-    }
-
 }
 
 
@@ -223,34 +203,40 @@ margin-bottom:15rem;
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#title {
+    font-size: 5.85rem;
+    letter-spacing:-0.15rem;
+    margin-bottom: 3.5rem;
+}
+
 h1 {
     font-family: 'IBM Plex Serif', serif;
-    font-style:italic;
-    font-size: 5rem;
-    font-weight: 400;
-    margin-top:.5rem;
-    margin-bottom:0rem;
+    font-weight:400;
+    font-size: 4.5rem;
+    margin: 0;
     line-height:120%;
     letter-spacing:-0.05rem;
 }
 
+
 h2 {
     font-size: 3.5rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-style: italic;
-    font-weight: 400;
+    font-weight:700;
     font-size: 2.5rem;
     line-height:140%rem;
-    margin:0rem;
 }
 
 p.eyebrow {
     font-family: 'Karla', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
+    font-weight: 800;
     letter-spacing: .05rem;
     text-transform: uppercase;
+    margin:auto;
 }
 
 p.eyebrow a {
@@ -263,30 +249,55 @@ p.eyebrow a {
     padding: auto;
 }
 
-.nav a {
-    float:left;
-    font-size: 2.5rem;
-    margin-right: 3rem;
-    font-style: italic;
+.sub {
+    font-size:1.7rem;
+    line-height:2.7rem;
 }
 
 
-.bodysub {
-    font-size:1.5rem;
-    line-height:2.25rem;
+.projectdetails {
+margin-top:2.5rem;
 }
 
-.architecture {
+.projectdetails, .footernotes {
     font-size:1.5rem;
     line-height:2rem;
 }
 
-.quote {
+.caption {
     margin-top:5rem;
+    margin-bottom:1rem;
+    text-align:center;
+    color: slategrey;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+.walkthrough {
+    margin-top:0;
+    text-align:left;
+    color: slategrey;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+/*#credit {
+    color: slategrey;
+}
+
+#credit:hover{
+    color: black;
+}*/
+
+.testimonial {
     text-align: center;
 }
 
-.quotation {
+.attribution {
     color: slategrey;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
@@ -314,10 +325,16 @@ a:hover, a:focus, a:active {
 
 u {
     text-decoration: none;
-    border-bottom: dashed 1px slategrey;
+    border-bottom: dashed 1px lightgrey;
     display: inline-block;
     line-height: 1;
+    transition: border-bottom .35s;
 }
+
+u:hover {
+    border-bottom: dashed 1px slategrey;
+}
+
 
 
 /* Lists
@@ -335,41 +352,7 @@ ol.users {
 ul.info {
     list-style: disc outside; 
 }
-ul.sub {
-    margin-top: 1rem;
-    font-size:1.75rem;
-}
 
-li#superuser, li#engageduser, li#occasionaluser {
-    list-style: none;
-}
-#superuser::before {
-    content: "\2022";
-    color: #4285F4;
-    position: relative;
-    top: 3px;
-    font-size: 3rem;
-    margin-left:-2.2rem;
-    padding-right:1rem;
-}
-#engageduser::before {
-    content: "\2022";
-    color: #57B972;
-    position: relative;
-    top: 3px;
-    font-size: 3rem;
-    margin-left:-2.2rem;
-    padding-right:1rem;
-}
-#occasionaluser::before {
-    content: "\2022";
-    color: #FBBC05;
-    position: relative;
-    top: 3px;
-    font-size: 3rem;
-    margin-left:-2.2rem;
-    padding-right:1rem;
-}
 li {
     margin-bottom:.4rem;
 }
@@ -378,10 +361,13 @@ li {
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+#hero {
+     margin-bottom:5%;
+}
+
 img {
     width:100%;
     margin: auto;
-    margin-bottom:5%;
     display: block;
     opacity: 0;
 }
@@ -414,12 +400,11 @@ img {
 }
 
 /* Tablet + larger: Show nav */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .threefourths {
         width: 85%;
     }
-    .imghover {
-        visibility:visible;
+    .imghover { visibility:visible;
     }
 
     .zoom {
@@ -457,26 +442,6 @@ img:not([src]) {
     /*visibility:visible;*/
 }
 
-/*etc styling*/
-
-.caption {
-    margin-top:3.5rem;
-    margin-bottom:2.05rem;
-    text-align:center;
-    color: slategrey;
-    font-family: 'Karla', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .05rem;
-}
-
-#credit {
-    color: slategrey;
-}
-
-#credit:hover{
-    color: black;
-}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -495,7 +460,6 @@ img:not([src]) {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Self Clearing Goodness */
 .container:after,
 .row:after,
 .u-cf {
