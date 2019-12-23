@@ -230,7 +230,18 @@ h3 {
     line-height:140%rem;
 }
 
-p.eyebrow {
+
+h4 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    margin:0;
+}
+
+p {
+    /*--NEEDS STYLING--*/
+}
+
+.eyebrow {
     font-family: 'Karla', sans-serif;
     font-size: 1.45rem;
     font-weight: 800;
@@ -239,14 +250,14 @@ p.eyebrow {
     margin:auto;
 }
 
-p.eyebrow a {
+.eyebrow-light {
     font-family: 'Karla', sans-serif;
-    font-style:normal;
     font-size: 1.4rem;
+    font-weight: 800;
     letter-spacing: .05rem;
     text-transform: uppercase;
-    float: none;
-    padding: auto;
+    color:lightgray;
+    margin:auto;
 }
 
 .sub {
@@ -256,12 +267,16 @@ p.eyebrow a {
 
 
 .projectdetails {
-margin-top:2.5rem;
+    margin-top:2.5rem;
 }
 
 .projectdetails, .footernotes {
     font-size:1.5rem;
     line-height:2rem;
+}
+
+.scenario {
+    font-style:italic;
 }
 
 .caption {
@@ -277,22 +292,22 @@ margin-top:2.5rem;
 
 .walkthrough {
     margin-top:0;
-    text-align:left;
-    color: slategrey;
     font-family: 'Karla', sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .05rem;
+    font-size: 1.5rem;
+    letter-spacing: 0rem;
+    line-height:2rem;
 }
 
 /*#credit {
-    color: slategrey;
+color: slategrey;
 }
 
 #credit:hover{
-    color: black;
+color: black;
 }*/
 
+
+/*--Pull Quote Styling--*/
 .testimonial {
     text-align: center;
 }
@@ -316,7 +331,7 @@ a, a:link, a:visited {
 }
 
 a:hover, a:focus, a:active {
-    color: #fdc53a;
+    color: cornflowerblue;
 }
 
 .project a:hover {
@@ -362,7 +377,7 @@ li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #hero {
-     margin-bottom:5%;
+    margin-bottom:5%;
 }
 
 img {
