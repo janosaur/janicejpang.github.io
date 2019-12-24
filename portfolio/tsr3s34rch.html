@@ -45,7 +45,7 @@
         <!-- Navigation ----------------------------------->
         <nav>
             <div id="left">
-                <a href="index.html"><img src="assets/itme.png" data-src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:6px;" class="me" id="rotate"></a>
+                <a href="index.html"><img src="assets/itme.png" data-src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:4px;" class="noload" id="rotate"></a>
             </div>
             <div id="right">
                 <ul id="navcontent">
@@ -64,14 +64,13 @@
 </ul>-->
             </div>
         </nav>
-
         <!-- Content ----------------------------------->
+        <!----------------------Wave: Header-------------------->
+        <img src="assets/ts-breaker1.svg" data-src="assets/ts-breaker1.svg" style="padding-top:75px;" class="noload fade-in" alt="Blue layered waves">
         <div class="container">
-
             <!----------------------0: Intro---------------------->
-            <img data-src="assets/ts-hero.png" alt="Header image of Trust & Safety Research website comps" id="hero">
-            <!----------0.1: Project Overview---------->
             <div class="text row" style="margin-top:0%;">
+                <!----------0.1: Project Overview---------->
                 <div class="eight columns">
                     <h1 id="title">Bringing awareness to Google's best-kept secret.</h1>
                     <p>Billions of people trust Google's products to help them every day — that’s why helpfulness is at the core of their mission. Being helpful also means being responsible and preventing harm for their users and for society as a whole. That’s where the Google Trust & Safety team comes in.
@@ -109,10 +108,8 @@
                     </ul>
                 </div>
             </div>
-            <!----------------------Breaker Wave-------------------->
-            <div class="text row">
-                <img data-src="assets/ts-wave.gif" alt="Color-changing wave animation">
-            </div>
+            <!----------------------Wave: Breaker-------------------->
+            <img data-src="assets/ts-breaker2.svg" alt="Green layered waves">
 
             <!----------------------1: Gathering Context---------------------->
             <div class="text row">
@@ -171,21 +168,22 @@
                 </div></div>
             <div class="text row">
                 <div class="four columns">
-                    <p class="eyebrow">Barrier 1</p>
+                    <h4>Barrier 1</h4>
                     <p>External and internal audiences struggle to describe the mission and the scope of Trust & Safety research. This lack of clarity creates <em>confusion</em>.</p>
                 </div>
                 <div class="four columns">
-                    <p class="eyebrow">Barrier 2</p>
+                    <h4>Barrier 2</h4>
                     <p>Each audience has varying levels of access to the research. This lack of transparency creates <em>frustration</em>.</p>
                 </div>
                 <div class="four columns">
-                    <p class="eyebrow">Barrier 3</p>
+                    <h4>Barrier 3</h4>
                     <p>When audiences can access the research, they don't necessarily know how to apply it to their own work. This lack of guidance creates <em>apathy</em>.</p>
                 </div>
             </div>
+            <!----------------------Wave: Breaker-------------------->
+            <img data-src="assets/ts-breaker3.svg" alt="Yellow layered waves">
 
             <!----------------------2: Content Strategy---------------------->
-            <hr>
             <div class="text row">
                 <div class="eight columns">
                     <h2>Formulating the content strategy</h2>
@@ -429,6 +427,7 @@
             <hr>
             <div class="text row">
                 <div class="twelve columns testimonial">
+                    <img src="assets/ts-logo.png" data-src="assets/ts-logo.svg" style="width:50px;">
                     <h1>Thank you for your awesome creativity in the wireframes. I could see all our prior thoughts and discussions manifested!</h1>
                     <p class="attribution">– Kalpa Raj, Google T & S Project Manager</p>
                 </div>
@@ -745,17 +744,17 @@
             var indicate=true
             for (i=(1&2);i<window.max(Math.LOG10E);i++)
                 t3+=testit(verification.charAt(i))
-                for (i=(1&2);i<lim;i++){
-                    if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-                        indicate=false
-                        }
+            for (i=(1&2);i<lim;i++){
+                if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
+                    indicate=false
+            }
             if (verification.length!=window.max(Math.LOG10E))
                 indicate=false
-                if (indicate)
-                    window.location=verification+extension
-                    else
-                        alert("Invalid password. Please try again")
-                        }
+            if (indicate)
+                window.location=verification+extension
+            else
+                alert("Invalid password. Please try again")
+        }
     </script>
 
 

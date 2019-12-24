@@ -36,7 +36,7 @@ nav {
 
 /* nav items - left*/
 #right {
-    margin-top:-1px;
+    margin-top:1px;
     margin-left:2.25rem;
 }
 
@@ -90,7 +90,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 footer {
-    border-top: 1px dashed lightgrey;
+    border-top: 1px dashed #919191;
     padding-top:5rem;
     margin-top:20rem;
     margin-bottom:5rem;
@@ -222,6 +222,7 @@ h1 {
 h2 {
     font-size: 3.5rem;
     font-weight: 700;
+    font-style:italic;
 }
 
 h3 {
@@ -254,9 +255,9 @@ p {
     font-family: 'Karla', sans-serif;
     font-size: 1.4rem;
     font-weight: 800;
-    letter-spacing: .05rem;
+    letter-spacing: .076rem;
     text-transform: uppercase;
-    color:lightgray;
+    color:#919191;
     margin:auto;
 }
 
@@ -284,7 +285,7 @@ p {
     margin-top:5rem;
     margin-bottom:1rem;
     text-align:center;
-    color: slategrey;
+    color: #919191;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -299,14 +300,6 @@ p {
     line-height:2rem;
 }
 
-/*#credit {
-color: slategrey;
-}
-
-#credit:hover{
-color: black;
-}*/
-
 
 /*--Pull Quote Styling--*/
 .testimonial {
@@ -314,7 +307,7 @@ color: black;
 }
 
 .attribution {
-    color: slategrey;
+    color: #919191;
     font-family: 'Karla', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -332,7 +325,7 @@ a, a:link, a:visited {
 }
 
 a:hover, a:focus, a:active {
-    color: cornflowerblue;
+    color: #4285F4;
 }
 
 .project a:hover {
@@ -348,7 +341,7 @@ u {
 }
 
 u:hover {
-    border-bottom: dashed 1px slategrey;
+    border-bottom: dashed 1px #919191;
 }
 
 
@@ -452,12 +445,24 @@ img:not([src]) {
     visibility: hidden;
 }
 
-/*emoji - no load in*/
-.me {
+/*img - no load in fade*/
+.noload {
     opacity: 1;
     /*visibility:visible;*/
 }
 
+.fade-in {
+    animation-name: fadeIn;
+ animation-duration: 1150ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0%; top:0rem;}
+    100% {opacity: 100%; top:0;}
+}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -520,15 +525,6 @@ html {
 }
 
 
-
-/*--- fade in ---*/
-.fade-in {
-    animation-name: fadeIn;
-    animation-duration: 300ms;
-    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-    animation-fill-mode: forwards;
-}
-
 /*---- rows ----*/
 
 .container {
@@ -538,18 +534,18 @@ html {
     -webkit-animation-duration: .5s;
     -webkit-animation-timing-function: ease-out;
     -webkit-animation-fill-mode: forwards;
-    animation-name: row;
+    animation-name: container;
     animation-duration: .5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes row {
+@-webkit-keyframes container {
     0% {opacity: 0%; top:2rem;}
     100% {opacity: 100%; top:0;}
 }
 
-@keyframes row {
+@keyframes container {
     0% {opacity: 0%; top:2rem;}
     100% {opacity: 100%; top:0;}
 }
