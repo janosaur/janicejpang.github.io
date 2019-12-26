@@ -1,4 +1,4 @@
-<svg width="1440" height="350" viewBox="0 0 1440 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1440" height="400" viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <g style="mix-blend-mode:multiply" opacity="0.5">
 <path d="M-532.408 282.633C1774.18 298.158 1402.37 141.639 2127.68 146.521L2129.29 300.548L-532.408 282.633Z" fill="#FCDE8D"/>
@@ -9,7 +9,7 @@
 <g style="mix-blend-mode:multiply" opacity="0.5">
 <path d="M-293.719 360.583L2113.59 292.331L2107.35 232.552C1909.45 248.327 1690.81 264.043 1376.15 272.964C554.156 296.269 297.084 204.333 -311.655 188.73L-293.719 360.583Z" fill="#FCDE8D"/>
 </g>
-<path d="M2104.54 421.649L-522 372.311L-520.015 268.43C-153.953 294.918 175.31 228.75 651.993 237.704C1353.48 250.881 1337.24 314.776 2106.89 298.823L2104.54 421.649Z" fill="white"/>
+<path d="M2104.54 421.649L-522 432L-520.015 268.43C-153.953 294.918 175.31 228.75 651.993 237.704C1353.48 250.881 1337.24 314.776 2106.89 298.823L2104.54 421.649Z" fill="white"/>
 <circle cx="1151.5" cy="166.5" r="6" fill="#FBBC05" stroke="#FBBC05"/>
 <circle r="17" transform="matrix(1 0 0 -1 1360.5 54.5)" fill="#FBBC05" stroke="#FBBC05"/>
 <circle cx="140" cy="184" r="8.5" fill="#FBBC05" stroke="#FBBC05"/>
@@ -27,7 +27,7 @@
 </g>
 <defs>
 <clipPath id="clip0">
-<rect width="1440" height="350" fill="white"/>
+<rect width="1440" height="400" fill="white"/>
 </clipPath>
 </defs>
 </svg>
