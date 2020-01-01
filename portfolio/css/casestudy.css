@@ -24,6 +24,7 @@ nav {
     align-items:center;
 }
 
+
 /* memoji animation! */
 #rotate {
     width:40px;
@@ -62,12 +63,42 @@ ul#navcontent a {
     nav{
         display:none;
     }
+    /* styling container of progress bar */
+    #scroll_container {
+        position:fixed;
+        margin-top:0px;
+        z-index:100;
+        width:100%;
+    }
+    /* styling progress bar */
+    #horizontal_scroll {
+        height: 5px;
+        background-color: #4285F4;
+        transition: transform 1s ease-out;
+    }
+    #breaker1 {
+        padding-top:0px;
+    }
 }
 
 /* Tablet + larger: Show nav */
 @media (min-width: 768px) {
     nav{
         display:flex;
+    }
+    #scroll_container {
+        position:fixed;
+        margin-top:75px;
+        z-index:99;
+        width:100%;
+    }
+    /* styling progress bar */
+    #horizontal_scroll {
+        height: 5px;
+        background-color: #4285F4;
+    }
+    #breaker1 {
+        padding-top:75px;
     }
 }
 
@@ -276,13 +307,17 @@ p {
 }
 
 .eyebrow-light {
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+    line-height:1.75rem;
     font-family: 'Karla', sans-serif;
     font-size: 1.4rem;
     font-weight: 800;
     letter-spacing: .076rem;
     text-transform: uppercase;
+
     color:#919191;
-    margin:auto;
+
 }
 
 .sub {
@@ -296,6 +331,10 @@ p {
 
 .exploration {
     margin-bottom:10rem;
+}
+
+.designs {
+    margin-bottom:8rem;
 }
 
 .detail {
@@ -371,7 +410,6 @@ a:hover, a:focus, a:active {
 u {
     text-decoration: none;
     border-bottom: dashed 1px lightgrey;
-    display: inline-block;
     line-height: 1;
     transition: border-bottom .35s;
 }
