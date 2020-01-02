@@ -2,113 +2,16 @@
 Based on Skeleton V2.0.4 by Dave Gamache
 */
 
-/* NAV BAR 
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* nav bar background */
-nav {
-    z-index:100;
-    width:100%;
-    height: 40px;
-    position: fixed;
-    background-color:white;
-    box-shadow: 0px -6px 10px rgb(0,0,0,0.75);
-
-    /*vertically centering box*/
-    padding: 15px 0px 20px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items:center;
-}
-
-
-/* memoji animation! */
-#rotate {
-    width:40px;
-    height:auto;
-    transition: transform 1s ease-out;
-}
-#rotate:hover {
-    transform: rotate(25deg) scale(1.15);
-}
-
-/* nav items - left*/
-#right {
-    margin-top:1px;
-    margin-left:2.25rem;
-}
-
-/* nav item spacing */
-ul#navcontent li {
-    display: inline;
-    margin-right:4rem;
-}
-
-/* nav item text styling */
-ul#navcontent a {
-    font-family: 'Karla', sans-serif;
-    font-style:normal;
-    font-size: 1.5rem;
-    letter-spacing: .025rem;
-}
-
-
-/* Media Queries ––––––––––––––––––––––––––– */
-
-/* Mobile: Hide nav */
-@media (min-width: 320px) {
-    nav{
-        display:none;
-    }
-    /* styling container of progress bar */
-    #scroll_container {
-        position:fixed;
-        margin-top:0px;
-        z-index:100;
-        width:100%;
-    }
-    /* styling progress bar */
-    #horizontal_scroll {
-        height: 5px;
-        background-color: #4285F4;
-        transition: transform 1s ease-out;
-    }
-    #breaker1 {
-        padding-top:0px;
-    }
-}
-
-/* Tablet + larger: Show nav */
-@media (min-width: 768px) {
-    nav{
-        display:flex;
-    }
-    #scroll_container {
-        position:fixed;
-        margin-top:75px;
-        z-index:99;
-        width:100%;
-    }
-    /* styling progress bar */
-    #horizontal_scroll {
-        height: 5px;
-        background-color: #4285F4;
-    }
-    #breaker1 {
-        padding-top:75px;
-    }
-}
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 html {
+    margin: clear;
+    padding:clear;
     font-size: 62.5%; }
 
 body {
+
     background-color: white;
     font-family: 'IBM Plex Serif', serif;
     font-size: 2rem;
@@ -122,67 +25,21 @@ body {
     margin: auto;
 }
 
-.shadowbox {
-    padding-bottom:18rem;
-    margin-bottom:15rem;
-    box-shadow: 0px 10px 10px rgb(0,0,0,.15);
-}
-
-#end {
-    margin-top:8rem;
-    margin-bottom:10rem;
-}
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-footer {
-    /*border-top: 1px dashed #919191;*/
-    /*padding-top:5rem;
-    margin-top:5rem;*/
-    margin-bottom:5rem;
-}
-
 .column,
 .columns {
     width: 100%;
     float: left;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
 
 
 /* For devices larger than 320 */
 @media (min-width: 320px) {
-    .text {
-        padding:0% 5%;
-    }
+
 }
 
 /* For devices larger than 768px */
 @media (min-width: 768px) {
-    .text {
-        max-width: 1024px;
-        margin: 0rem auto;
-    }
-    .main-intro {
-        margin-bottom:5rem;
-    }
-    .sub-intro {
-        margin-bottom:1.25rem;
-    }
-    .principle {
-        margin-bottom:3.75rem;
-    }
-    .wires {
-        margin-top: 3.5rem;
-    }
-    .exploration {
-        margin-top: 6rem;}
-
-    .slides {
-        margin-bottom:3.25rem;
-    }
     .column,
     .columns {
         margin-left: 4%; 
@@ -247,147 +104,488 @@ footer {
 
 
 
-/* Typography
+
+/* NAV BAR 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#title {
-    font-size: 5.85rem;
-    font-style: italic;
-    letter-spacing:-0.15rem;
-    margin-bottom: 3.5rem;
+/* nav bar background */
+nav {
+    z-index:100;
+    width:100%;
+    height: 40px;
+    position: fixed;
+    background-color:white;
+    box-shadow: 0px -6px 10px rgb(0,0,0,0.75);
+
+    /*vertically centering box*/
+    padding: 15px 0px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items:center;
 }
 
-h1 {
-    font-family: 'IBM Plex Serif', serif;
-    font-weight:400;
-    font-size: 4.5rem;
-    margin: 0;
-    line-height:120%;
-    letter-spacing:-0.065rem;
+/* memoji animation! */
+#rotate {
+    width:40px;
+    height:auto;
+    transition: transform 1s ease-out;
+}
+#rotate:hover {
+    transform: rotate(25deg) scale(1.15);
 }
 
-
-h2 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    font-style:italic;
+/* nav items - left*/
+#right {
+    margin-top:1px;
+    margin-left:2.25rem;
 }
 
-h3 {
-    font-weight:700;
-    font-size: 2.5rem;
-    line-height:140%rem;
-    margin-top:5rem;
+/* nav item spacing */
+ul#navcontent li {
+    display: inline;
+    margin-right:4rem;
 }
 
-.h3clear {
-    margin-top:auto;
-}
-
-
-h4 {
-    font-size: 2rem;
-    line-height: 3.5rem;
-    margin:0;
-}
-
-p {
-    /*--NEEDS STYLING--*/
-}
-
-.eyebrow {
+/* nav item text styling */
+ul#navcontent a {
     font-family: 'Karla', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 800;
-    letter-spacing: .05rem;
-    text-transform: uppercase;
-    margin:auto;
-    margin-top:2rem;
-    margin-bottom:0rem;
-}
-
-.eyebrow-light {
-    margin-top:1.5rem;
-    margin-bottom:1.5rem;
-    line-height:1.75rem;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: .076rem;
-    text-transform: uppercase;
-
-    color:#919191;
-
-}
-
-.sub {
-    font-size:1.7rem;
-    line-height:2.7rem;
-}
-
-#user {
-    margin-bottom:5rem;
-}
-
-.exploration {
-    margin-bottom:10rem;
-}
-
-.designs {
-    margin-bottom:8rem;
-}
-
-.detail {
-    margin-bottom:3.8rem;
-}
-
-.projectdetails, .footernotes {
-    font-size:1.5rem;
-    line-height:2rem;
-}
-
-.scenario {
-    margin-bottom:2.75rem;
-}
-
-.scenario, .description {
-    font-style:italic;
-    font-size: 2.075rem;
-}
-
-.caption {
-    margin-top:8rem;
-    margin-bottom:1rem;
-    text-align:center;
-    color: #919191;
-    font-family: 'Karla', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    letter-spacing: .05rem;
-}
-
-.walkthrough {
-    margin-top:0;
-    font-family: 'Karla', sans-serif;
+    font-style:normal;
     font-size: 1.5rem;
-    letter-spacing: 0rem;
-    line-height:2rem;
-    margin-bottom:2.5rem;
+    letter-spacing: .025rem;
 }
 
 
-/*--Pull Quote Styling--*/
-.testimonial {
-    text-align: center;
+/* positioning + styling progress bar */
+#progress {
+    position:fixed;
+    z-index:99;
+    width:100%;
 }
 
-.attribution {
-    color: #919191;
-    font-family: 'Karla', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: .05rem;
+#progressindicator {
+    width: 0%;
+    height: 5px;
+    background-color: #4285F4;
 }
+
+
+
+/* Nav Bar - Media Queries ––––––––––––––––––––––––––– */
+
+/* Mobile: Hide nav */
+@media (min-width: 320px) {
+    nav{
+        display:none;
+    }
+    #progress {
+        margin-top:0px;
+        z-index:100;
+    }
+    #breaker1 {
+        padding-top:0px;
+    }
+}
+
+/* Tablet + larger: Show nav */
+@media (min-width: 768px) {
+    nav{
+        display:flex;
+    }
+    #progress {
+        margin-top:75px;
+        z-index:99;
+    }
+    #breaker1 {
+        padding-top:75px;
+    }
+}
+
+
+/* TEXT SIZING
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 320px) {
+    #title {
+        font-size: 3.5rem;
+        font-style: italic;
+        margin-top: 2rem;
+        margin-bottom: 3.25rem;
+    }
+    h1 {
+        font-family: 'IBM Plex Serif', serif;
+        font-weight:400;
+        font-size:2.5rem;
+        margin: 0;
+        line-height:140%;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-style:italic;
+        line-height:120%;
+    }
+    h3 {
+        font-weight:700;
+        font-size: 2.5rem;
+        line-height:140%rem;
+        margin-top:5rem;
+        margin-bottom:0rem;
+    }
+    .h3clear {
+        margin-top:auto;
+    }
+    h4 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+        margin:0;
+    }
+    .eyebrow {
+        font-family: 'Karla', sans-serif;
+        font-size: 1.45rem;
+        font-weight: 800;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+        margin:auto;
+        margin-top:2rem;
+        margin-bottom:0rem;
+    }
+    .eyebrow-light {
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+        line-height:1.75rem;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 800;
+        letter-spacing: .076rem;
+        text-transform: uppercase;
+        color:#919191;
+    }
+    .sub {
+        font-size:1.7rem;
+        line-height:2.7rem;
+    }
+
+    .detail {
+        margin-bottom:3.8rem;
+    }
+    .projectdetails, .footernotes {
+        font-size:1.7rem;
+        line-height:2.5rem;
+    }
+    .scenario {
+        margin-bottom:2.75rem;
+    }
+    .scenario, .description {
+        font-style:italic;
+        font-size: 2.075rem;
+    }
+    .caption {
+        margin-top:2rem;
+        margin-bottom:1rem;
+        text-align:center;
+        color: #919191;
+        font-family: 'Karla', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: .05rem;
+    }
+    .walkthrough {
+        margin-top:0;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0rem;
+        line-height:2rem;
+        margin-bottom:2.5rem;
+    }
+    /*--Pull Quote Styling--*/
+    .testimonial {
+        text-align: center;
+    }
+
+    .attribution {
+        color: #919191;
+        font-family: 'Karla', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        line-height:140%;
+        letter-spacing: .05rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #title {
+        font-size: 5.85rem;
+        font-style: italic;
+        letter-spacing:-0.15rem;
+        margin-bottom: 3.5rem;
+    }
+    h1 {
+        font-family: 'IBM Plex Serif', serif;
+        font-weight:400;
+        font-size: 4.5rem;
+        margin: 0;
+        line-height:120%;
+        letter-spacing:-0.065rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-style:italic;
+    }
+    h3 {
+        margin-bottom:inherit;
+    }
+    .projectdetails, .footernotes {
+        font-size:1.5rem;
+        line-height:2rem;
+    }
+    .caption {
+        margin-top:8rem;
+        margin-bottom:1rem;
+        text-align:center;
+        color: #919191;
+        font-family: 'Karla', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: .05rem;
+    }
+    .attribution {
+        color: #919191;
+        font-family: 'Karla', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-top:3.75rem;
+        letter-spacing: .05rem;
+    }
+}
+
+
+/* SPACERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*------Smartphone-----*/
+@media (min-width: 320px) {
+    /*overarching elements*/
+    .text {
+        padding:0% 5%;
+    }
+    .main-intro {
+        margin-bottom:5rem;
+    }
+    .med-intro {
+        margin-bottom:1rem;
+    }
+    .sub-intro {
+        margin-bottom:1.25rem;
+    }
+    .sectionshadow {
+        padding-bottom:6rem;
+        margin-bottom:5rem;
+        box-shadow: 0px 6px 10px rgb(0,0,0,.13);
+    }
+
+    /*section specifics*/
+    #breaker2{
+        margin-bottom:2rem;
+    }
+    .audience, .barrier {
+        margin-bottom:3rem;
+    }
+    .audience:nth-child(1), .barrier:nth-child(1) {
+        margin-top:3rem;
+    }
+    #breaker3{
+        margin-top:3rem;
+        margin-bottom:2.2rem;
+    }
+    .principle {
+        margin-bottom:3rem;
+    }
+    .principlegroup {
+        margin-bottom:5rem;
+    }
+    #ia {
+        margin-top:2rem;
+        margin-bottom:3rem;
+    }
+    #breaker4{
+        margin-top:5rem;
+        margin-bottom:2rem;
+    }
+    .wiresgroup {
+        margin-bottom: 2.7rem;
+    }
+    .wires {
+        margin-bottom: 1.5rem;
+    }
+    .userflow {
+        margin-bottom:3rem;
+    }
+    .flowstep {
+        margin-bottom:2rem;
+    }
+    #breaker5{
+        margin-top:5rem;
+        margin-bottom:4rem;
+    }
+    .explorationgroup {
+        margin-bottom:10rem;
+    }
+    .explorationgroup:nth-of-type(n) {
+        margin-bottom:7rem;
+    }
+    .exploration {
+        margin-bottom:3rem;
+    }
+    #breaker6{
+        margin-top:0;
+        margin-bottom:2.5rem;
+    }
+    .component {
+        margin-bottom:3rem;
+    }
+    #styleguide {
+        margin-top:10rem;
+    }
+    .issue {
+        margin-bottom:3rem;
+    }
+    .slide {
+        margin-bottom:3rem;
+    }
+    #fulldesigns {
+        margin-top:10rem;
+    }
+    .designs {
+        margin-bottom:8rem;
+    }
+    .desktop {
+        margin-bottom:3rem;
+    }
+}
+
+
+/*------Tablet+-----*/
+@media (min-width: 768px) {
+    /*overarching elements*/
+    .text {
+        max-width: 1024px;
+        margin: 0rem auto;
+    }
+    .main-intro {
+        margin-bottom:5rem;
+    }
+    .med-intro {
+        margin-bottom:3rem;
+    }
+    .sub-intro {
+        margin-bottom:1.25rem;
+    }
+    .sectionshadow {
+        padding-bottom:15rem;
+        margin-bottom:12.25rem;
+        box-shadow: 0px 6px 10px rgb(0,0,0,.13);
+    }
+
+    /*section specifics*/
+    #breaker2{
+        margin-bottom:0rem;
+    }
+    .audience:nth-child(1), .barrier:nth-child(1) {
+        margin-top:0rem;
+    }
+    #breaker3{
+        margin-top:0;
+        margin-bottom:0;
+    }
+    .principlegroup {
+        margin-bottom:2rem;
+    }
+    .principle {
+        margin-bottom:3.75rem;
+    }
+    #ia {
+        margin-top:11.5rem;
+    }
+    .wiresgroup {
+        margin-top: 3.5rem;
+    }
+    .wires {
+        margin-bottom: 0rem;
+    }
+    #breaker4{
+        margin-top:0;
+        margin-bottom:.5rem;
+    }
+    .userflow {
+        margin-bottom:3rem;
+    }
+    .flowstep {
+        margin-bottom:0rem;
+    }
+    #breaker5{
+        margin-top:10rem;
+        margin-bottom:5rem;
+    }
+    .explorationgroup {
+        margin-top: 6rem;
+    }
+    .exploration {
+        margin-bottom:0rem;
+    }
+    #breaker6{
+        margin-bottom:3.5rem;
+    }
+    .component {
+        margin-bottom:3rem;
+    }
+    #styleguide {
+        margin-top:15rem;
+    }
+    .issue {
+        margin-bottom:2.25rem;
+    }
+    #fulldesigns {
+        margin-top:18rem;
+    }
+    .slidegroup {
+        margin-bottom:3.25rem;
+    }
+    .slide {
+        margin-bottom:0rem;
+    }
+    .designs {
+        margin-bottom:8rem;
+    }
+    .desktop {
+        margin-bottom: 2.25rem;
+    }
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media (min-width: 320px) {
+    #end {
+        margin-bottom:2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #end {
+        margin-bottom:13rem;
+    }
+
+}
+
+
 
 
 
@@ -450,7 +648,8 @@ li {
 
 img {
     width:100%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     display: block;
     opacity: 0;
 }
@@ -466,7 +665,7 @@ img {
         box-shadow: 0px 2px 10px rgb(0,0,0,0.25);
     }
     .imghover {
-        visibility:hidden;
+        display:none;
     }
     .zoom {
         display:inline-block;
@@ -487,9 +686,9 @@ img {
     .threefourths {
         width: 85%;
     }
-    .imghover { visibility:visible;
+    .imghover { 
+        display:block;
     }
-
     .zoom {
         display:inline-block;
         position: relative;
