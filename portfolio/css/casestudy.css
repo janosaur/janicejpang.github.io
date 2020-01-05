@@ -340,6 +340,7 @@ ul#navcontent a {
         margin-bottom:inherit;
     }
     .projectdetails, .footernotes {
+        margin-top:1rem;
         font-size:1.5rem;
         line-height:2rem;
     }
@@ -467,6 +468,10 @@ ul#navcontent a {
     .desktop {
         margin-bottom:3rem;
     }
+     #breaker7 {
+        margin-top:0;
+        margin-bottom:5rem;
+    }
 }
 
 
@@ -564,6 +569,10 @@ ul#navcontent a {
     }
     .desktop {
         margin-bottom: 2.25rem;
+    }
+    #breaker7 {
+        margin-top:0;
+        margin-bottom:0;
     }
 }
 
