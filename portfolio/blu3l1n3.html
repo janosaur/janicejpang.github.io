@@ -21,7 +21,8 @@
         <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/casestudy.css">
+        <link rel="stylesheet" href="css/pixel.css">
+        <link rel="stylesheet" href="css/lity.css">
 
         <!-- JS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -53,7 +54,10 @@
             });
         </script>
 
+        <!--LIGHTBOX-->
+        <script>
 
+        </script>
 
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -84,24 +88,23 @@
         </div>
 
         <!-- Content ----------------------------------->
-        <!----------------------Wave: Header-------------------->
-        <div class="noload fade-in" id="breaker1">
-            <video width="100%" preload="auto" loop="loop" autoplay>
-                <source src="assets/pixel-hero.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <!--<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/382938796?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>-->
+        <!----------------------Hero-------------------->
+        <div class="noload fade-in" id="hero">
+            <img src="assets/pixel-localization.jpg" data-src="assets/pixel-localization.jpg" alt="Localized Pixel 3 screens">
         </div>
+
 
         <div class="container">
             <!----------------------0: Intro---------------------->
             <div class="text row" style="margin-top:0%;">
                 <!----------0.1: Project Overview---------->
                 <div class="eight columns">
-                    <h1 id="title">Transforming consideration into purchase</h1>
-                    <p>In 2018, my team at <u><a href="https://thisisgrow.com" target="_blank" alt="Link to the digital agency Grow">Grow</a></u> partnered with Google to create the global in-store demo for their flagship smartphones, the Pixel 3 and 3XL.</p>
-                    <p>Our demo experience showcased the phone’s incredible features through a self-guided tour. The demo allows customers to discover easily jump from learning about a feature to trying it, showing first-time Pixel users how easy it is to make the switch. We localized the demo experience for 11 markets, all in time for the phone's global launch.</p>
+                    <h1 id="title">Transforming consideration into purchase at retail</h1>
+                    <p>In 2018, my team at <u><a href="https://thisisgrow.com" target="_blank" alt="Link to the digital agency Grow">Grow</a></u> partnered with Google to create the global in-store demo for their flagship smartphone, the Pixel 3 and 3XL.</p>
+                    <p>Our demo experience showcased the phone’s incredible features through a self-guided tour. The demo allowed customers to easily jump from <em>learning</em> about a feature to <em>trying</em> it, showing first-time Pixel users how easy it is to make the switch. We localized the demo experience for 11 markets – all in time for the phone's global launch.</p>
+                    <div style="width:100%; height:3rem; border-bottom: dotted 1px lightgrey;"></div>
+                    <p><a href="assets/pixel-casestudy.mp4" data-lity><i>Learn about our demo in 50 seconds</i> &nbsp;↬</a></p>
+
                 </div>
                 <!----------0.2: Project Details---------->
                 <div class="offset-by-two two columns projectdetails">
@@ -122,8 +125,6 @@
                             <li>InVision</li>
                             <li>AfterEffects</li>
                             <li>Premiere</li>
-                            <li>Google Slides</li>
-                            <li>Google Sheets</li>
                         </ul>
                     </div>
                     <div class="detail">
@@ -133,938 +134,953 @@
                             <li>Meg Linen</li>
                             <li>Eric Lohman</li>
                             <li>Todd Lower</li>
+                            <li>Neill McIvor</li>
                             <li>Darius Pilapil</li>
                             <li>Luiz Sordi</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <!----------------------Wave: Breaker-------------------->
-            <img src="assets/ts-breaker3.svg" data-src="assets/ts-breaker3.svg" class="noload fade-in" id="breaker2" alt="Yellow layered waves">
+            <!----------------------Video Breaker-------------------->
+            <!-- <div class="text row">
+<video width="100%" autoplay controls muted loop="loop">
+<source src="assets/pixel-retail.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>-->
 
             <!----------------------1: Gathering Context---------------------->
-            <div class="text row">
-                <div class="eight columns">
-                    <h2>Understanding the retail environment</h2>
-                    <p>Before deciding what we were going to create, we needed to know who we would be designing for. We interviewed 9 stakeholders to familiarize ourselves with the T & S team, their research, and the audience they were trying to reach. Here's what we learned:</p>
-                </div>
-            </div>
-            <!----------1.1: Our Audience---------->
             <div class="text row sub-intro">
                 <div class="eight columns">
-                    <h3>Our Audience</h3>
-                    <p>The T & S research team has 3 key audiences. We define these audiences by how they interface with the research.</p>
+                    <h2>Understanding the retail environment</h2>
+                    <p>To create an effective demo, we needed to know what kind of environment and mindset customers would be in when using it. We conducted 3 studies to identify insights about the retail environment, its smartphone offerings, and its customers. Here's what we learned from each analysis:</p>
                 </div>
             </div>
+            <!----------1.1: Our Analyses---------->
             <div class="text row">   
                 <div class="four columns">
                     <div class="audience">
-                        <p class="eyebrow-light">AUDIENCE 1</p>
-                        <h4>Super Users</h4>
-                        <p class="sub"><em>“I want to know what research has been done on <span style="font-weight: 800; font-style: normal;">X</span> and how that research was conducted to inform my own work.”</em></p>
-                        <p class="eyebrow">Super Users are...</p>
-                        <ul class="sub">
-                            <li>T & S researchers within Google</li>
-                            <li>Other Google researchers</li>
-                            <li>Researchers in academia, non-profits, and think tanks</li>
-                        </ul>
+                        <p class="eyebrow">Analysis 1</p>
+                        <h4>Retail Reconnaissance</h4>
+                        <p class="sub">We conducted 10 mystery shopping studies at Best Buy and Verizon stores across the country to see first-hand what the smartphone retail experience looked, sounded, and felt like.</p>
                     </div>
                 </div>
+                <div class="eight columns">
+                    <p class="eyebrow">Analysis 1: Findings</p>
+                    <ul class="sub">
+                           <li><strong>Big players dominate.</strong> Large signage and backlit displays sectioned off Apple and Samsung's territories, each of which housed multiple smartphone options. In comparison, each store had just a 1 or 2 Pixels on display.
+                        </li>
+                        <li><strong>The humans aren’t very helpful.</strong> Pixel information communicated by the Retail Sales Associates varied widely; at best, it was incomplete - often it was incorrect.  When a shopper was interested in a Pixel, the RSA would steer the conversation away from Pixel to a different phone.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text row"> 
                 <div class="four columns">
                     <div class="audience">
-                        <p class="eyebrow-light">AUDIENCE 2</p>
-                        <h4>Engaged Users</h4>
-                        <p class="sub"><em>“I’m working on a project that needs to take <span style="font-weight: 800; font-style: normal;">X</span> into consideration, and I want to see what guidelines are available.”</em></p>
-                        <p class="eyebrow">Engaged Users are...</p>
-                        <ul class="sub">
-                            <li>Google product & policy teams</li>
-                            <li>Tech industry T & S teams</li>
-                        </ul>
+                        <p class="eyebrow">Analysis 2</p>
+                        <h4>Product Comparisons</h4>
+                        <p class="sub">We audited online product reviews of competitor phones from both industry experts and consumers. We wanted to understand what features excited customers, and what they found lacking.
+                        </p>
                     </div>
                 </div>
+                <div class="eight columns">
+                    <p class="eyebrow">Analysis 2: Findings</p>
+                    <ul class="sub">
+                        <li><strong>Note.</strong> Details.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text row"> 
                 <div class="four columns">
                     <div class="audience">
-                        <p class="eyebrow-light">AUDIENCE 3</p>
-                        <h4>Occasional Users</h4>
+                        <p class="eyebrow">Analysis 3</p>
+                        <h4>Audience Analysis</h4>
                         <p class="sub"><em>“I need to engage in
                             the public dialogue about <span style="font-weight: 800; font-style: normal;">X</span>, and I need research insights to help shape that conversation.”</em></p>
-                        <p class="eyebrow">Occasional Users are...</p>
-                        <ul class="sub">
-                            <li>Google marketers</li>
-                            <li>Government officials</li>
-                            <li>Media organizations</li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-            <!----------1.2: Their Barriers---------->
-            <div class="text row sub-intro">
                 <div class="eight columns">
-                    <h3>Their Barriers</h3>
-                    <p>We were surprised to find that though the key audiences vary in role, they experience similar barriers to engagement with the T & S team and their research.</p>
+                    <p class="eyebrow">Analysis 3: Findings</p>
+                    <ul class="sub">
+                        <li><strong>Note.</strong> Details.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="text row">
-                <div class="four columns">
-                    <div class="barrier">
-                        <h4>Barrier 1</h4>
-                        <p>External and internal audiences struggle to describe the mission and the scope of Trust & Safety research. This lack of clarity creates <em>confusion</em>.</p>
-                    </div>
-                </div>
-                <div class="four columns">
-                    <div class="barrier">
-                        <h4>Barrier 2</h4>
-                        <p>Each audience has varying levels of access to the research. This lack of transparency creates <em>frustration</em>.</p>
-                    </div>
-                </div>
-                <div class="four columns">
-                    <div class="barrier">
-                        <h4>Barrier 3</h4>
-                        <p>When audiences can access the research, they don't necessarily know how to apply it to their own work. This lack of guidance creates <em>apathy</em>.</p>
-                    </div>
+        </div>
+        <!----------1.2: Their Barriers---------->
+        <div class="text row sub-intro">
+            <div class="eight columns">
+                <h3>Their Barriers</h3>
+                <p>Our analyses made it clear: The retail environment is not a friendly place for Pixel.</p>
+            </div>
+        </div>
+        <div class="text row">
+            <div class="four columns">
+                <div class="barrier">
+                    <h4>Barrier 1</h4>
+                    <p>External and internal audiences struggle to describe the mission and the scope of Trust & Safety research. This lack of clarity creates <em>confusion</em>.</p>
                 </div>
             </div>
-            <!----------------------Wave: Breaker-------------------->
-            <img src="assets/ts-breaker2.svg" data-src="assets/ts-breaker2.svg" id="breaker3" alt="Yellow layered waves">
+            <div class="four columns">
+                <div class="barrier">
+                    <h4>Barrier 2</h4>
+                    <p>Each audience has varying levels of access to the research. This lack of transparency creates <em>frustration</em>.</p>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="barrier">
+                    <h4>Barrier 3</h4>
+                    <p>When audiences can access the research, they don't necessarily know how to apply it to their own work. This lack of guidance creates <em>apathy</em>.</p>
+                </div>
+            </div>
+        </div>
+        <!----------------------Wave: Breaker-------------------->
+        <img src="assets/ts-breaker2.svg" data-src="assets/ts-breaker2.svg" id="breaker3" alt="Yellow layered waves">
 
-            <!----------------------2: Content Strategy---------------------->
-            <div class="sectionshadow">
-                <div class="text row main-intro">
-                    <div class="eight columns">
-                        <h2>Formulating the content strategy</h2>
-                        <p>The barriers our audiences experienced guided our content strategy, leading with a series of principles & recommendations to inform the platform's architecture.</p>
-                    </div>
-                </div>
-                <!----------2.1: Guiding Principles---------->
-                <div class="text row" style="margin-bottom:1.5rem;">
-                    <h3>Guiding principles</h3>
-                </div>
-                <div class="text row">
-                    <div class="four columns">
-                        <div class="principlegroup">
-                            <div class="principle">
-                                <h4>Principle 1</h4>
-                                <p>Our audience should feel <em>confident</em> in their choice to engage with the T & S team and their research.</p>
-                            </div>
-                            <div class="reco">
-                                <h4>Recommendation 1</h4>
-                                <p>The platform should clearly position who the T & S team is, what their work encompasses, and how their audiences can reach them.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="principlegroup">
-                            <div class="principle">
-                                <h4>Principle 2</h4>
-                                <p>Our audience should feel <em>empowered</em> to find the research they need.</p>
-                            </div>
-                            <div class="reco">
-                                <h4>Recommendation 2</h4>
-                                <p>The platform should guide audiences down pathways based on their needs and give them appropriate ways to engage with the research.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="principlegroup">
-                            <div class="principle">
-                                <h4>Principle 3</h4>
-                                <p>Our audience should feel <em>compelled</em> to discover new research.</p>
-                            </div>
-                            <div class="reco">
-                                <h4>Recommendation 3</h4>
-                                <p>The platform's content should evolve with the T & S landscape and should surface the most helpful research for our audiences.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!----------2.2: Information Architecture---------->
-                <div class="text row">
-                    <div class="four columns">
-                        <h3>Information Architecture</h3>
-                        <p>We put our principles into action, mapping our recommendations onto 3 page types:</p>
-                    </div>
-                    <div class="eight columns">
-                        <img data-src="assets/ts-ia.png" alt="Diagram of the Information Architecture for the Trust & Safety research plaform" id="ia">
-                    </div>
-                </div>
-            </div>
-            <!----------------------3: Wireframes---------------------->
-            <div class="text row">
-                <div class="eight columns">
-                    <h2>Wireframing solutions</h2>
-                    <p>With an architectural plan to build on, we wireframed content layouts for each of the 3 page types – evaluating the hierarchy in each iteration for usability and clarity.</p>
-                    <p>During this wireframe sprint, we designed our wireframes in <u><a href="https://figma.com" target="_blank" alt="Link to the collaborative design tool Figma.com">Figma</a></u>. This enabled the design team to rapidly build on one another's ideas, and promoted co-creation between the design and development teams.</p>
-                </div>
-            </div>
-            <!----------3.1: Landing Page---------->
-            <div class="wiresgroup" style="margin-top:1rem;">
-                <div class="text row">
-                    <div class="four columns">
-                        <h3>Landing Page</h3>
-                        <p>As the first T & S touchpoint, this page is the first opportunity to inform, impress, and serve our audiences. We explored ways to:</p>
-                        <ol class="sub">
-                            <li>Establish the T & S mission.</li>
-                            <li>Highlight the impact of the research.</li>
-                            <li>Surface the most notable research.</li>
-                            <li>Provide helpful pathways to engage with the research based on needs.</li>
-                        </ol>
-                        <div class="imghover">
-                            <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
-                            <span class="sub" style="font-style: italic;">
-                                Hover over the thumbnails to zoom in.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="wires">
-                            <p class="caption">Selected Landing Page</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-landing-select.png" data-src="assets/ts-wires-landing-select_2x.png" width="auto" alt="Selected Landing Page wireframe. This option heroes the mission and impact stats, then dives deeper into the research content."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="caption">Additional exploration</p>
-                        <span class="zoom ex1"><img src="assets/ts-wires-landing-alt.png" data-src="assets/ts-wires-landing-alt_2x.png" width="auto" alt="Landing Page wireframe exploration. This option prioritizes the latest Trust & Safety work over the team's impact, and provides more context for the content types."/>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!----------3.1: Search Page---------->
-            <div class="wiresgroup">
-                <div class="text row">
-                    <div class="four columns">
-                        <h3>Search Page</h3>
-                        <p>With a massive respository of research, this page helps our audiences find what they need. We explored ways to:</p>
-                        <ol class="sub">
-                            <li>Refine the search with familiar filters powered by our backend tag system.</li>
-                            <li>Improve scanability of important information, like  trigger warnings and access levels.</li>
-                            <li>Preview content for each result.</li>
-                        </ol>
-                        <div class="imghover">
-                            <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
-                            <span class="sub" style="font-style: italic;">
-                                Hover over the thumbnails to zoom in.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="wires">
-                            <p class="caption">Selected Search Page</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-search-select.png" data-src="assets/ts-wires-search-select_2x.png" width="auto" alt="Selected Search Page wireframe. This option displays the search results in a list, with the option to expand a result to see a preview of the research abstract."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="caption">Additional exploration</p>
-                        <span class="zoom ex1">
-                            <img src="assets/ts-wires-search-alt.png" data-src="assets/ts-wires-search-alt_2x.png" width="auto" alt="Search Page wireframe exploration. This option sorts the search results by content type."/>
-                        </span>
-                    </div>
-                </div>   
-            </div>
-            <!----------3.3: Detail Page---------->
-            <div class="wiresgroup" style="margin-bottom:3rem;">
-                <div class="text row">
-                    <div class="four columns">
-                        <h3>Detail Page</h3>
-                        <p>As the container for all T & S research, this page houses multiple research formats. We explored ways to:</p>
-                        <ol class="sub">
-                            <li>Create a flexible grid to accomodate various content lengths and types.</li>
-                            <li>Provide clear actions for viewing and citing the full research.</li>
-                            <li>Surface the tags and related research to encourage discovery.</li>
-                        </ol>
-                        <div class="imghover">
-                            <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
-                            <span class="sub" style="font-style: italic;">
-                                Hover over the thumbnails to zoom in.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="wires">
-                            <p class="caption">Selected Detail Page</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-detail-select.png" data-src="assets/ts-wires-detail-select_2x.png" width="auto" alt="Selected Detail Page wireframe. This option prioritizes the action to 'View the full research' and splits the study information and research information into distinct columns."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="caption">Additional exploration</p>
-                        <span class="zoom ex1">
-                            <img src="assets/ts-wires-detail-alt.png" data-src="assets/ts-wires-detail-alt_2x.png" width="auto" alt="Detail Page wireframe exploration. This option prioritizes the research information and separates the columns by indexable information and research-specific information."/>
-                        </span>
-                    </div>
-                </div>  
-            </div>
-            <!----------------------4: User Flows---------------------->
-            <img src="assets/ts-breaker6.svg" data-src="assets/ts-breaker6.svg" id="breaker4" width="auto" alt="Gray dots">
-            <div class="text row">
-                <div class="eight columns">
-                    <h2>Solutions in context</h2>
-                    <p>To validate our solutions, we returned to our stakeholder interviews. We evaluated the wireframes through user flows based on each audience.</p>
-                    <p>This exercise, conducted in <u><a href="https://www.invisionapp.com/" target="_blank" alt="Link to the InVision presentation tool">InVision</a></u>, provided our team & our stakeholders a richer understanding of how the platform would take shape to meet audience needs, and more importantly, what we still needed to address.</p>
-
-                </div>
-            </div>
-            <!----------4.1: Super User Flow---------->
-            <div class="userflow">
-                <div class="text row">
-                    <div class="eight columns">
-                        <h3>Super User</h3>
-                        <p class="scenario">Our Super User is an academic researcher in a Media & Technology department. They are conducting a qualitative study on "digital brand reputation" and want to see how other researchers in this space have conducted their studies.</p>
-                    </div>
-                </div>
-                <div class="text row">
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">1</p>
-                            <p class="walkthrough">On the T & S platform, our Super User searches for "digital branding."</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow1-landing.png" data-src="assets/ts-wires-flow1-landing_2x.png" width="auto" alt="Landing Page with 'digital branding' typed in the search bar."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">2</p>
-                            <p class="walkthrough">On the Search Page, they filter for Research Articles and Qualitative Research.</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow1-search.png" data-src="assets/ts-wires-flow1-search_2x.png" width="auto" alt="Search Page with the Research Articles and Qualitative Research filters toggled."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="eyebrow-light">3</p>
-                        <p class="walkthrough">They find an article of interest and click on the Detail Page to view the full research.</p>
-                        <span class="zoom ex1">
-                            <img src="assets/ts-wires-flow1-article.png" data-src="assets/ts-wires-flow1-article_2x.png" width="auto" alt="Research Article Detail page with the 'View the full research' highlighted, indicating the next action."/>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!----------4.2: Engaged User Flow---------->
-            <div class="userflow">
-                <div class="text row">
-                    <div class="eight columns">
-                        <h3>Engaged User</h3>
-                        <p class="scenario">Our Engaged User is a Trust & Safety Officer at a growing social tech company. They are drafting their company's Community Guidelines and want to see what research-based best practices exist.</p>
-                    </div>
-                </div>
-                <div class="text row">
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">1</p>
-                            <p class="walkthrough">On the Landing Page, our Engaged User jumps to the "Apply" section and selects "View all Frameworks & Principles."</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow2-landing.png" data-src="assets/ts-wires-flow2-landing_2x.png" width="auto" alt="Landing Page with 'Apply' and 'View All Frameworks & Principles' buttons highlighted."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">2</p>
-                            <p class="walkthrough">Taken to the Search Page, our Engaged User scans the results and expands the preview on an interesting piece.</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow2-search.png" data-src="assets/ts-wires-flow2-search_2x.png" width="auto" alt="Search Page with a Principle result expanded."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="eyebrow-light">3</p>
-                        <p class="walkthrough">On the Principle Detail Page, our Engaged User chooses to dive in and view the full research.</p>
-                        <span class="zoom ex1">
-                            <img src="assets/ts-wires-flow2-principles.png" data-src="assets/ts-wires-flow2-principles_2x.png" width="auto" alt="Principle Detail Page with the 'View full research' CTA highlighted."/>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!----------4.3: Occasional User Flow---------->
-            <div class="userflow">
-                <div class="text row">
-                    <div class="eight columns">
-                        <h3>Occasional User</h3>
-                        <p class="scenario">Our Occasional User is the Technology Editor at a digital news organization. They see the term "fake news" trending again on social media; rather than adding to the garbagefire of opinions, they want to see what academic research is available on the subject to write an informed thinkpiece.</p>
-                    </div>
-                </div>
-                <div class="text row">
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">1</p>
-                            <p class="walkthrough">Above the fold of the Landing Page, our Occasional User sees a Topic Briefing on the day's hot topic: Disinformation.</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow3-landing.png" data-src="assets/ts-wires-flow3-landing_2x.png" width="auto" alt="Landing Page with a piece of latest work highlighted."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <div class="flowstep">
-                            <p class="eyebrow-light">2</p>
-                            <p class="walkthrough">On the Topic Briefing page, a stat catches our Occasional User's eye. They click on the stat to view the associated research.</p>
-                            <span class="zoom ex1">
-                                <img src="assets/ts-wires-flow3-topicbriefing.png" data-src="assets/ts-wires-flow3-topicbriefing_2x.png" width="auto" alt="Topic Briefing page an Insight highlighted."/>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="four columns">
-                        <p class="eyebrow-light">3</p>
-                        <p class="walkthrough">On the Research Detail page, our Occasional User reads the abstract. Interested, they copy the citation for future reference.</p>
-                        <span class="zoom ex1">
-                            <img src="assets/ts-wires-flow3-article.png" data-src="assets/ts-wires-flow3-article_2x.png" width="auto" alt="Research Article page with the 'Copy to clipboard' button highlighted"/>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!----------------------Testimonial---------------------->
-            <img src="assets/ts-breaker4.svg" data-src="assets/ts-breaker4.svg" id="breaker5" alt="T & S logo with layered blue waves">
-            <div class="sectionshadow">
-                <div class="text row">
-                    <div class="twelve columns testimonial">
-                        <h1>Thank you for your awesome creativity in the wireframes. I could see all our prior thoughts and discussions manifested!</h1>
-                        <p class="attribution">– Kalpa Raj, Google T & S Project Manager</p>
-                    </div>
-                </div>
-            </div>
-            <!----------------------5: Design Exploration---------------------->
+        <!----------------------2: Content Strategy---------------------->
+        <div class="sectionshadow">
             <div class="text row main-intro">
                 <div class="eight columns">
-                    <h2>Exploring visual design</h2>
-                    <p>As we dialed in the page structures, we began exploring the platform's visual design system. To use this time efficiently, we focused our exploration on the first quarter of the Landing Page, which housed the majority of components that would be used throughout the platform.</p>
+                    <h2>Formulating the content strategy</h2>
+                    <p>The barriers our audiences experienced guided our content strategy, leading with a series of principles & recommendations to inform the platform's architecture.</p>
                 </div>
             </div>
-            <!----------5.1: Exploration 1---------->
-            <div class="explorationgroup">
-                <div class="text row">
-                    <div class="eight columns">
-                        <p class="eyebrow-light">Exploration 1</p>
-                        <h3 class="h3clear">Everchanging Landscape</h3>
-                        <p class="description">The Internet is an everchanging landscape; new technologies present new opportunities for online abuse. The T & S research team evolves with it – surveying the landscape and surfacing insights to address these issues.</p> 
-                        <p>We visualized this metaphor with layered waves that bubble up key insights in a gradual ebb and flow. On content-heavy pages, this visual would serve as an accent that maintained visual consistency while allowing the content to shine.</p>
-                    </div>
-                </div>
-                <div class="threefourths row">
-                    <div class="six columns">
-                        <div class="exploration">
-                            <p class="eyebrow-light">State 1</p>
-                            <img src="assets/ts-des-exploration-1a.png" data-src="assets/ts-des-exploration-1a_2x.png" width="auto" alt="Hero with layered blue waves and impact stat reading, 'Every day 3 million account hijackings prevented.'"/>
-                        </div>
-                    </div>
-                    <div class="six columns">
-                        <p class="eyebrow-light">State 2</p>
-                        <img src="assets/ts-des-exploration-1b.png" data-src="assets/ts-des-exploration-1b_2x.png" width="auto" alt="Hero with layered green waves and impact stat reading, 'Every day 6 million bad ads removed.'"/>
-                    </div>
-                </div>
+            <!----------2.1: Guiding Principles---------->
+            <div class="text row" style="margin-bottom:1.5rem;">
+                <h3>Guiding principles</h3>
             </div>
-            <!----------5.2: Exploration 2---------->
-            <div class="explorationgroup">
-                <div class="text row">
-                    <div class="eight columns">
-                        <p class="eyebrow-light">Exploration 2</p>
-                        <h3 class="h3clear">Centering on the User</h3>
-                        <p class="description">The end user's safety and well-being is at the core of the T & S team's work.</p> 
-                        <p>To humanize the impacts of this research, we brought the user to the forefront. With this photographic approach, we recommended specific areas to include photography and provided opportunities to re-purpose existing Google photography.</p>
-                    </div>
-                </div>
-                <div class="threefourths row">
-                    <div class="six columns">
-                        <div class="exploration">
-                            <p class="eyebrow-light">State 1</p>
-                            <img src="assets/ts-des-exploration-2a.png" data-src="assets/ts-des-exploration-2a_2x.png" width="auto" alt="Hero with a central photo of a father and son watching content on a tablet."/>
-                        </div>
-                    </div>
-                    <div class="six columns">
-                        <p class="eyebrow-light">State 2</p>
-                        <img src="assets/ts-des-exploration-2b.png" data-src="assets/ts-des-exploration-2b_2x.png" width="auto" alt="Hero with a central photo of woman looking at her smartphone."/>
-                    </div>
-                </div>
-            </div>
-            <!----------5.3: Exploration 3---------->
-            <div class="explorationgroup">
-                <div class="text row">
-                    <div class="eight columns">
-                        <p class="eyebrow-light">Exploration 3</p>
-                        <h3 class="h3clear">Extracting the Web</h3>
-                        <!--<p class="eyebrow-light">Insight</p>-->
-                        <p class="description">The amount of information–and disinformation–on the web is overwhelming. T & S research provides insights to inform a clear path forward.</p> 
-                        <!--<p class="eyebrow-light">Approach</p>-->
-                        <p>We fashioned Google's brand colors and Material Design components into a visual system that directs viewers' attention attention to key insights and work.</p>
-                    </div>
-                </div>
-                <div class="threefourths row">
-                    <div class="six columns">
-                        <div class="exploration">
-                            <p class="eyebrow-light">State 1</p>
-                            <img src="assets/ts-des-exploration-3a.png" data-src="assets/ts-des-exploration-3a_2x.png" width="auto" alt="Hero with geometric shapes and lines forming a web pattern. An impact stat is centered, surrounded by a floating icon."/>
-                        </div>
-                    </div>
-                    <div class="six columns">
-                        <p class="eyebrow-light">State 2</p>
-                        <img src="assets/ts-des-exploration-3b.png" data-src="assets/ts-des-exploration-3b_2x.png" width="auto" alt="Hero with an alternate stat and icon."/>
-                    </div>
-                </div>
-            </div>
-            <!----------5.4: Exploration 4---------->
-            <div class="explorationgroup">
-                <div class="text row">
-                    <div class="eight columns">
-                        <p class="eyebrow-light">Exploration 4</p>
-                        <h3 class="h3clear">Modeling Impact</h3>
-                        <!--<p class="eyebrow-light">Insight</p>-->
-                        <p class="description">In the face of technical advancement, the T & S research team works continually to keep each user safe across every facet of the web.</p> 
-                        <!--<p class="eyebrow-light">Approach</p>-->
-                        <p>We took a more literal approach to raising the profile of T & S research in this 3D treatment. We recommended using 3D selectively throughout the platform and provided opportunities to update models, keeping the content fresh.</p>
-                    </div>
-                </div>
-                <div class="threefourths row">
-                    <div class="six columns">
-                        <div class="exploration">
-                            <p class="eyebrow-light">State 1</p>
-                            <img src="assets/ts-des-exploration-4a.png" data-src="assets/ts-des-exploration-4a_2x.png" width="auto" alt="Hero with a 3D model of a laptop and a circle enclosing an impact stat."/>
-                        </div>
-                    </div>
-                    <div class="six columns">
-                        <p class="eyebrow-light">State 2</p>
-                        <img src="assets/ts-des-exploration-4b.png" data-src="assets/ts-des-exploration-4b_2x.png" width="auto" alt="Hero with a 3D model of a smartphone and a circle with another impact stat."/>
-                    </div>
-                </div>
-            </div>
-            <!----------------------6: Design System ---------------------->
-            <img src="assets/ts-breaker6.svg" data-src="assets/ts-breaker6.svg" id="breaker6" width="auto" alt="Gray layered waves">
-            <div class="text row">
-                <div class="eight columns">
-                    <h2>Unifying the design system</h2>
-                    <p>In a collaborative work session with the T & S team, we aligned on a design system that builds off of Google's "Build from white" ethos and marries the key components of Explorations 1 and 3.</p>
-                </div>
-            </div>
-            <!----------Waves---------->
             <div class="text row">
                 <div class="four columns">
-                    <h3>Waves</h3>
-                    <p>We represent the vast online landscape with layered waves.</p>
+                    <div class="principlegroup">
+                        <div class="principle">
+                            <h4>Principle 1</h4>
+                            <p>Our audience should feel <em>confident</em> in their choice to engage with the T & S team and their research.</p>
+                        </div>
+                        <div class="reco">
+                            <h4>Recommendation 1</h4>
+                            <p>The platform should clearly position who the T & S team is, what their work encompasses, and how their audiences can reach them.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="eight columns">
-                    <div class="component">
-                        <p class="caption">Landing Page - Intro</p>
-                        <img src="assets/ts-component-wave.png" data-src="assets/ts-component-wave.png" width="auto" class="shadow" alt="Waves on a Topic Briefing page"/>
+                <div class="four columns">
+                    <div class="principlegroup">
+                        <div class="principle">
+                            <h4>Principle 2</h4>
+                            <p>Our audience should feel <em>empowered</em> to find the research they need.</p>
+                        </div>
+                        <div class="reco">
+                            <h4>Recommendation 2</h4>
+                            <p>The platform should guide audiences down pathways based on their needs and give them appropriate ways to engage with the research.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="principlegroup">
+                        <div class="principle">
+                            <h4>Principle 3</h4>
+                            <p>Our audience should feel <em>compelled</em> to discover new research.</p>
+                        </div>
+                        <div class="reco">
+                            <h4>Recommendation 3</h4>
+                            <p>The platform's content should evolve with the T & S landscape and should surface the most helpful research for our audiences.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!----------Cards---------->
+            <!----------2.2: Information Architecture---------->
             <div class="text row">
                 <div class="four columns">
-                    <h3>Raised Cards</h3>
-                    <p>We elevate T & S work with raised card components.</p>
+                    <h3>Information Architecture</h3>
+                    <p>We put our principles into action, mapping our recommendations onto 3 page types:</p>
                 </div>
                 <div class="eight columns">
-                    <div class="component">
-                        <p class="caption">Landing Page - Apply Section</p>
-                        <img src="assets/ts-component-card.png" data-src="assets/ts-component-card.png" width="auto" class="shadow" alt="Full Landing Page"/>
+                    <img data-src="assets/ts-ia.png" alt="Diagram of the Information Architecture for the Trust & Safety research plaform" id="ia">
+                </div>
+            </div>
+        </div>
+        <!----------------------3: Wireframes---------------------->
+        <div class="text row">
+            <div class="eight columns">
+                <h2>Wireframing solutions</h2>
+                <p>With an architectural plan to build on, we wireframed content layouts for each of the 3 page types – evaluating the hierarchy in each iteration for usability and clarity.</p>
+                <p>During this wireframe sprint, we designed our wireframes in <u><a href="https://figma.com" target="_blank" alt="Link to the collaborative design tool Figma.com">Figma</a></u>. This enabled the design team to rapidly build on one another's ideas, and promoted co-creation between the design and development teams.</p>
+            </div>
+        </div>
+        <!----------3.1: Landing Page---------->
+        <div class="wiresgroup" style="margin-top:1rem;">
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Landing Page</h3>
+                    <p>As the first T & S touchpoint, this page is the first opportunity to inform, impress, and serve our audiences. We explored ways to:</p>
+                    <ol class="sub">
+                        <li>Establish the T & S mission.</li>
+                        <li>Highlight the impact of the research.</li>
+                        <li>Surface the most notable research.</li>
+                        <li>Provide helpful pathways to engage with the research based on needs.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="sub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
                     </div>
                 </div>
+                <div class="four columns">
+                    <div class="wires">
+                        <p class="caption">Selected Landing Page</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-landing-select.png" data-src="assets/ts-wires-landing-select_2x.png" width="auto" alt="Selected Landing Page wireframe. This option heroes the mission and impact stats, then dives deeper into the research content."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1"><img src="assets/ts-wires-landing-alt.png" data-src="assets/ts-wires-landing-alt_2x.png" width="auto" alt="Landing Page wireframe exploration. This option prioritizes the latest Trust & Safety work over the team's impact, and provides more context for the content types."/>
+                    </span>
+                </div>
             </div>
-            <!----------Icons---------->
+        </div>
+        <!----------3.1: Search Page---------->
+        <div class="wiresgroup">
             <div class="text row">
                 <div class="four columns">
-                    <h3>Icons</h3>
-                    <p>We focus attention on T & S offerings with direct iconography.</p>
+                    <h3>Search Page</h3>
+                    <p>With a massive respository of research, this page helps our audiences find what they need. We explored ways to:</p>
+                    <ol class="sub">
+                        <li>Refine the search with familiar filters powered by our backend tag system.</li>
+                        <li>Improve scanability of important information, like  trigger warnings and access levels.</li>
+                        <li>Preview content for each result.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="sub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
+                    </div>
                 </div>
-                <div class="eight columns">
-                    <p class="caption">Landing Page - Explore Section</p>
-                    <img src="assets/ts-component-icons.png" data-src="assets/ts-component-icons.png" width="auto" class="shadow" alt="Full Landing Page"/>
+                <div class="four columns">
+                    <div class="wires">
+                        <p class="caption">Selected Search Page</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-search-select.png" data-src="assets/ts-wires-search-select_2x.png" width="auto" alt="Selected Search Page wireframe. This option displays the search results in a list, with the option to expand a result to see a preview of the research abstract."/>
+                        </span>
+                    </div>
                 </div>
-            </div>
+                <div class="four columns">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-search-alt.png" data-src="assets/ts-wires-search-alt_2x.png" width="auto" alt="Search Page wireframe exploration. This option sorts the search results by content type."/>
+                    </span>
+                </div>
+            </div>   
+        </div>
+        <!----------3.3: Detail Page---------->
+        <div class="wiresgroup" style="margin-bottom:3rem;">
+            <div class="text row">
+                <div class="four columns">
+                    <h3>Detail Page</h3>
+                    <p>As the container for all T & S research, this page houses multiple research formats. We explored ways to:</p>
+                    <ol class="sub">
+                        <li>Create a flexible grid to accomodate various content lengths and types.</li>
+                        <li>Provide clear actions for viewing and citing the full research.</li>
+                        <li>Surface the tags and related research to encourage discovery.</li>
+                    </ol>
+                    <div class="imghover">
+                        <div style="width:26.25rem; height:3rem; border-bottom: dotted 1px lightgrey; "></div>
+                        <span class="sub" style="font-style: italic;">
+                            Hover over the thumbnails to zoom in.
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="wires">
+                        <p class="caption">Selected Detail Page</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-detail-select.png" data-src="assets/ts-wires-detail-select_2x.png" width="auto" alt="Selected Detail Page wireframe. This option prioritizes the action to 'View the full research' and splits the study information and research information into distinct columns."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="caption">Additional exploration</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-detail-alt.png" data-src="assets/ts-wires-detail-alt_2x.png" width="auto" alt="Detail Page wireframe exploration. This option prioritizes the research information and separates the columns by indexable information and research-specific information."/>
+                    </span>
+                </div>
+            </div>  
+        </div>
+        <!----------------------4: User Flows---------------------->
+        <img src="assets/ts-breaker6.svg" data-src="assets/ts-breaker6.svg" id="breaker4" width="auto" alt="Gray dots">
+        <div class="text row">
+            <div class="eight columns">
+                <h2>Solutions in context</h2>
+                <p>To validate our solutions, we returned to our stakeholder interviews. We evaluated the wireframes through user flows based on each audience.</p>
+                <p>This exercise, conducted in <u><a href="https://www.invisionapp.com/" target="_blank" alt="Link to the InVision presentation tool">InVision</a></u>, provided our team & our stakeholders a richer understanding of how the platform would take shape to meet audience needs, and more importantly, what we still needed to address.</p>
 
-            <!----------7: Style Guides---------->
-            <!----------7.1: Text---------->
+            </div>
+        </div>
+        <!----------4.1: Super User Flow---------->
+        <div class="userflow">
+            <div class="text row">
+                <div class="eight columns">
+                    <h3>Super User</h3>
+                    <p class="scenario">Our Super User is an academic researcher in a Media & Technology department. They are conducting a qualitative study on "digital brand reputation" and want to see how other researchers in this space have conducted their studies.</p>
+                </div>
+            </div>
+            <div class="text row">
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">1</p>
+                        <p class="walkthrough">On the T & S platform, our Super User searches for "digital branding."</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow1-landing.png" data-src="assets/ts-wires-flow1-landing_2x.png" width="auto" alt="Landing Page with 'digital branding' typed in the search bar."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">2</p>
+                        <p class="walkthrough">On the Search Page, they filter for Research Articles and Qualitative Research.</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow1-search.png" data-src="assets/ts-wires-flow1-search_2x.png" width="auto" alt="Search Page with the Research Articles and Qualitative Research filters toggled."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">3</p>
+                    <p class="walkthrough">They find an article of interest and click on the Detail Page to view the full research.</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-flow1-article.png" data-src="assets/ts-wires-flow1-article_2x.png" width="auto" alt="Research Article Detail page with the 'View the full research' highlighted, indicating the next action."/>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!----------4.2: Engaged User Flow---------->
+        <div class="userflow">
+            <div class="text row">
+                <div class="eight columns">
+                    <h3>Engaged User</h3>
+                    <p class="scenario">Our Engaged User is a Trust & Safety Officer at a growing social tech company. They are drafting their company's Community Guidelines and want to see what research-based best practices exist.</p>
+                </div>
+            </div>
+            <div class="text row">
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">1</p>
+                        <p class="walkthrough">On the Landing Page, our Engaged User jumps to the "Apply" section and selects "View all Frameworks & Principles."</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow2-landing.png" data-src="assets/ts-wires-flow2-landing_2x.png" width="auto" alt="Landing Page with 'Apply' and 'View All Frameworks & Principles' buttons highlighted."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">2</p>
+                        <p class="walkthrough">Taken to the Search Page, our Engaged User scans the results and expands the preview on an interesting piece.</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow2-search.png" data-src="assets/ts-wires-flow2-search_2x.png" width="auto" alt="Search Page with a Principle result expanded."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">3</p>
+                    <p class="walkthrough">On the Principle Detail Page, our Engaged User chooses to dive in and view the full research.</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-flow2-principles.png" data-src="assets/ts-wires-flow2-principles_2x.png" width="auto" alt="Principle Detail Page with the 'View full research' CTA highlighted."/>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!----------4.3: Occasional User Flow---------->
+        <div class="userflow">
+            <div class="text row">
+                <div class="eight columns">
+                    <h3>Occasional User</h3>
+                    <p class="scenario">Our Occasional User is the Technology Editor at a digital news organization. They see the term "fake news" trending again on social media; rather than adding to the garbagefire of opinions, they want to see what academic research is available on the subject to write an informed thinkpiece.</p>
+                </div>
+            </div>
+            <div class="text row">
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">1</p>
+                        <p class="walkthrough">Above the fold of the Landing Page, our Occasional User sees a Topic Briefing on the day's hot topic: Disinformation.</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow3-landing.png" data-src="assets/ts-wires-flow3-landing_2x.png" width="auto" alt="Landing Page with a piece of latest work highlighted."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <div class="flowstep">
+                        <p class="eyebrow-light">2</p>
+                        <p class="walkthrough">On the Topic Briefing page, a stat catches our Occasional User's eye. They click on the stat to view the associated research.</p>
+                        <span class="zoom ex1">
+                            <img src="assets/ts-wires-flow3-topicbriefing.png" data-src="assets/ts-wires-flow3-topicbriefing_2x.png" width="auto" alt="Topic Briefing page an Insight highlighted."/>
+                        </span>
+                    </div>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">3</p>
+                    <p class="walkthrough">On the Research Detail page, our Occasional User reads the abstract. Interested, they copy the citation for future reference.</p>
+                    <span class="zoom ex1">
+                        <img src="assets/ts-wires-flow3-article.png" data-src="assets/ts-wires-flow3-article_2x.png" width="auto" alt="Research Article page with the 'Copy to clipboard' button highlighted"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!----------------------Testimonial---------------------->
+        <img src="assets/ts-breaker4.svg" data-src="assets/ts-breaker4.svg" id="breaker5" alt="T & S logo with layered blue waves">
+        <div class="sectionshadow">
+            <div class="text row">
+                <div class="twelve columns testimonial">
+                    <h1>Thank you for your awesome creativity in the wireframes. I could see all our prior thoughts and discussions manifested!</h1>
+                    <p class="attribution">– Kalpa Raj, Google T & S Project Manager</p>
+                </div>
+            </div>
+        </div>
+        <!----------------------5: Design Exploration---------------------->
+        <div class="text row main-intro">
+            <div class="eight columns">
+                <h2>Exploring visual design</h2>
+                <p>As we dialed in the page structures, we began exploring the platform's visual design system. To use this time efficiently, we focused our exploration on the first quarter of the Landing Page, which housed the majority of components that would be used throughout the platform.</p>
+            </div>
+        </div>
+        <!----------5.1: Exploration 1---------->
+        <div class="explorationgroup">
+            <div class="text row">
+                <div class="eight columns">
+                    <p class="eyebrow-light">Exploration 1</p>
+                    <h3 class="h3clear">Everchanging Landscape</h3>
+                    <p class="description">The Internet is an everchanging landscape; new technologies present new opportunities for online abuse. The T & S research team evolves with it – surveying the landscape and surfacing insights to address these issues.</p> 
+                    <p>We visualized this metaphor with layered waves that bubble up key insights in a gradual ebb and flow. On content-heavy pages, this visual would serve as an accent that maintained visual consistency while allowing the content to shine.</p>
+                </div>
+            </div>
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="exploration">
+                        <p class="eyebrow-light">State 1</p>
+                        <img src="assets/ts-des-exploration-1a.png" data-src="assets/ts-des-exploration-1a_2x.png" width="auto" alt="Hero with layered blue waves and impact stat reading, 'Every day 3 million account hijackings prevented.'"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="eyebrow-light">State 2</p>
+                    <img src="assets/ts-des-exploration-1b.png" data-src="assets/ts-des-exploration-1b_2x.png" width="auto" alt="Hero with layered green waves and impact stat reading, 'Every day 6 million bad ads removed.'"/>
+                </div>
+            </div>
+        </div>
+        <!----------5.2: Exploration 2---------->
+        <div class="explorationgroup">
+            <div class="text row">
+                <div class="eight columns">
+                    <p class="eyebrow-light">Exploration 2</p>
+                    <h3 class="h3clear">Centering on the User</h3>
+                    <p class="description">The end user's safety and well-being is at the core of the T & S team's work.</p> 
+                    <p>To humanize the impacts of this research, we brought the user to the forefront. With this photographic approach, we recommended specific areas to include photography and provided opportunities to re-purpose existing Google photography.</p>
+                </div>
+            </div>
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="exploration">
+                        <p class="eyebrow-light">State 1</p>
+                        <img src="assets/ts-des-exploration-2a.png" data-src="assets/ts-des-exploration-2a_2x.png" width="auto" alt="Hero with a central photo of a father and son watching content on a tablet."/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="eyebrow-light">State 2</p>
+                    <img src="assets/ts-des-exploration-2b.png" data-src="assets/ts-des-exploration-2b_2x.png" width="auto" alt="Hero with a central photo of woman looking at her smartphone."/>
+                </div>
+            </div>
+        </div>
+        <!----------5.3: Exploration 3---------->
+        <div class="explorationgroup">
+            <div class="text row">
+                <div class="eight columns">
+                    <p class="eyebrow-light">Exploration 3</p>
+                    <h3 class="h3clear">Extracting the Web</h3>
+                    <!--<p class="eyebrow-light">Insight</p>-->
+                    <p class="description">The amount of information–and disinformation–on the web is overwhelming. T & S research provides insights to inform a clear path forward.</p> 
+                    <!--<p class="eyebrow-light">Approach</p>-->
+                    <p>We fashioned Google's brand colors and Material Design components into a visual system that directs viewers' attention attention to key insights and work.</p>
+                </div>
+            </div>
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="exploration">
+                        <p class="eyebrow-light">State 1</p>
+                        <img src="assets/ts-des-exploration-3a.png" data-src="assets/ts-des-exploration-3a_2x.png" width="auto" alt="Hero with geometric shapes and lines forming a web pattern. An impact stat is centered, surrounded by a floating icon."/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="eyebrow-light">State 2</p>
+                    <img src="assets/ts-des-exploration-3b.png" data-src="assets/ts-des-exploration-3b_2x.png" width="auto" alt="Hero with an alternate stat and icon."/>
+                </div>
+            </div>
+        </div>
+        <!----------5.4: Exploration 4---------->
+        <div class="explorationgroup">
+            <div class="text row">
+                <div class="eight columns">
+                    <p class="eyebrow-light">Exploration 4</p>
+                    <h3 class="h3clear">Modeling Impact</h3>
+                    <!--<p class="eyebrow-light">Insight</p>-->
+                    <p class="description">In the face of technical advancement, the T & S research team works continually to keep each user safe across every facet of the web.</p> 
+                    <!--<p class="eyebrow-light">Approach</p>-->
+                    <p>We took a more literal approach to raising the profile of T & S research in this 3D treatment. We recommended using 3D selectively throughout the platform and provided opportunities to update models, keeping the content fresh.</p>
+                </div>
+            </div>
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="exploration">
+                        <p class="eyebrow-light">State 1</p>
+                        <img src="assets/ts-des-exploration-4a.png" data-src="assets/ts-des-exploration-4a_2x.png" width="auto" alt="Hero with a 3D model of a laptop and a circle enclosing an impact stat."/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="eyebrow-light">State 2</p>
+                    <img src="assets/ts-des-exploration-4b.png" data-src="assets/ts-des-exploration-4b_2x.png" width="auto" alt="Hero with a 3D model of a smartphone and a circle with another impact stat."/>
+                </div>
+            </div>
+        </div>
+        <!----------------------6: Design System ---------------------->
+        <img src="assets/ts-breaker6.svg" data-src="assets/ts-breaker6.svg" id="breaker6" width="auto" alt="Gray layered waves">
+        <div class="text row">
+            <div class="eight columns">
+                <h2>Unifying the design system</h2>
+                <p>In a collaborative work session with the T & S team, we aligned on a design system that builds off of Google's "Build from white" ethos and marries the key components of Explorations 1 and 3.</p>
+            </div>
+        </div>
+        <!----------Waves---------->
+        <div class="text row">
+            <div class="four columns">
+                <h3>Waves</h3>
+                <p>We represent the vast online landscape with layered waves.</p>
+            </div>
+            <div class="eight columns">
+                <div class="component">
+                    <p class="caption">Landing Page - Intro</p>
+                    <img src="assets/ts-component-wave.png" data-src="assets/ts-component-wave.png" width="auto" class="shadow" alt="Waves on a Topic Briefing page"/>
+                </div>
+            </div>
+        </div>
+        <!----------Cards---------->
+        <div class="text row">
+            <div class="four columns">
+                <h3>Raised Cards</h3>
+                <p>We elevate T & S work with raised card components.</p>
+            </div>
+            <div class="eight columns">
+                <div class="component">
+                    <p class="caption">Landing Page - Apply Section</p>
+                    <img src="assets/ts-component-card.png" data-src="assets/ts-component-card.png" width="auto" class="shadow" alt="Full Landing Page"/>
+                </div>
+            </div>
+        </div>
+        <!----------Icons---------->
+        <div class="text row">
+            <div class="four columns">
+                <h3>Icons</h3>
+                <p>We focus attention on T & S offerings with direct iconography.</p>
+            </div>
+            <div class="eight columns">
+                <p class="caption">Landing Page - Explore Section</p>
+                <img src="assets/ts-component-icons.png" data-src="assets/ts-component-icons.png" width="auto" class="shadow" alt="Full Landing Page"/>
+            </div>
+        </div>
 
-            <div class="text row" id="styleguide">
-                <div class="eight columns">
-                    <h2>Extending the system</h2>
-                    <p>In the process of building out the platform's design system, we discovered an opportunity to extend the system into the presentation of the research itself. We learned that each researcher or research team is responsible for designing the presentation of their research, creating issues at every level of engagement.</p>
+        <!----------7: Style Guides---------->
+        <!----------7.1: Text---------->
+
+        <div class="text row" id="styleguide">
+            <div class="eight columns">
+                <h2>Extending the system</h2>
+                <p>In the process of building out the platform's design system, we discovered an opportunity to extend the system into the presentation of the research itself. We learned that each researcher or research team is responsible for designing the presentation of their research, creating issues at every level of engagement.</p>
+            </div>
+        </div>
+        <!----------7.2: Their Barriers---------->
+        <div class="text row">
+            <div class="eight columns">
+                <h3>The Issues</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="text row">
+            <div class="four columns">
+                <div class="issue">
+                    <p class="eyebrow-light">Issue 1</p>
+                    <h4>A burden for researchers</h4>
+                    <p>There are no presentation design guidelines. As a result, coming up with a unique design for the research presentation is a burden on the responsible individuals.</p>
                 </div>
             </div>
-            <!----------7.2: Their Barriers---------->
-            <div class="text row">
-                <div class="eight columns">
-                    <h3>The Issues</h3>
-                    <p></p>
+            <div class="four columns">
+                <div class="issue">
+                    <p class="eyebrow-light">Issue 2</p>
+                    <h4>A disparity for T & S as a whole</h4>
+                    <p>Because each presentation is designed by a different individual, there is a lack of consistency. This makes it difficult to tie the work back to the T & S team.</p>
                 </div>
             </div>
-            <div class="text row">
-                <div class="four columns">
-                    <div class="issue">
-                        <p class="eyebrow-light">Issue 1</p>
-                        <h4>A burden for researchers</h4>
-                        <p>There are no presentation design guidelines. As a result, coming up with a unique design for the research presentation is a burden on the responsible individuals.</p>
-                    </div>
-                </div>
-                <div class="four columns">
-                    <div class="issue">
-                        <p class="eyebrow-light">Issue 2</p>
-                        <h4>A disparity for T & S as a whole</h4>
-                        <p>Because each presentation is designed by a different individual, there is a lack of consistency. This makes it difficult to tie the work back to the T & S team.</p>
-                    </div>
-                </div>
-                <div class="four columns">
-                    <p class="eyebrow-light">Issue 3</p>
-                    <h4>A sore sight for visitors</h4>
-                    <p>When the presentation is uploaded to the platform, the extrapolated elements visually stand out – and not in a good way.</p>
-                </div>
+            <div class="four columns">
+                <p class="eyebrow-light">Issue 3</p>
+                <h4>A sore sight for visitors</h4>
+                <p>When the presentation is uploaded to the platform, the extrapolated elements visually stand out – and not in a good way.</p>
             </div>
-            <div class="text row med-intro">
-                <div class="eight columns">
-                    <h3>The Solution</h3>
-                    <p>To address these issues, we worked with the T & S team to identify the key presentation formats their researchers use, and created a series of branded Google Slides templates for researchers to use moving forward. Here's a sample selection:</p>
-                </div>
+        </div>
+        <div class="text row med-intro">
+            <div class="eight columns">
+                <h3>The Solution</h3>
+                <p>To address these issues, we worked with the T & S team to identify the key presentation formats their researchers use, and created a series of branded Google Slides templates for researchers to use moving forward. Here's a sample selection:</p>
             </div>
-            <!----------7.3: Visuals---------->
-            <div style="margin-bottom:6rem;">
-                <!----------Row 1---------->
-                <div class="slidegroup">
-                    <div class="threefourths row">
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Title</p>
-                                <img src="assets/ts-slides-1.svg" data-src="assets/ts-slides-1.svg" width="auto" alt="Title slide"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Text with Editable Graph</p>
-                                <img src="assets/ts-slides-2.svg" data-src="assets/ts-slides-2.svg" width="auto" alt="Text slide with editable graph"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Alternate Graphs</p>
-                                <img src="assets/ts-slides-3.svg" data-src="assets/ts-slides-3.svg" width="auto" alt="Slide with alternate editable graphs"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Text with Insight Stat</p>
-                                <img src="assets/ts-slides-4.svg" data-src="assets/ts-slides-4.svg" width="auto" alt="Text slide with insight stat"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!----------Row 2---------->
-                <div class="slidegroup">
-                    <div class="threefourths row">
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Table</p>
-                                <img src="assets/ts-slides-5.svg" data-src="assets/ts-slides-5.svg" width="auto" alt="Table slide"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">User Journey</p>
-                                <img src="assets/ts-slides-6.svg" data-src="assets/ts-slides-6.svg" width="auto" alt="User journey slide"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Topic Briefing Overview</p>
-                                <img src="assets/ts-slides-7.svg" data-src="assets/ts-slides-7.svg" width="auto" alt="Topic briefing overview slide"/>
-                            </div>
-                        </div>
-                        <div class="three columns">
-                            <div class="slide">
-                                <p class="eyebrow-light">Scale</p>
-                                <img src="assets/ts-slides-9.svg" data-src="assets/ts-slides-9.svg" width="auto" alt="Scale slide"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!----------Row 3---------->
-                <div class="threefourths row slidegroup"> 
-                    <div class="three columns">
-                        <div class="slide">
-                            <p class="eyebrow-light">Country Comparison - Multi</p>
-                            <img src="assets/ts-slides-10.svg" data-src="assets/ts-slides-10.svg" width="auto" alt="Country comparison slide evaluating multiple attributes"/>
-                        </div>
-                    </div>
-                    <div class="three columns">
-                        <div class="slide">
-                            <p class="eyebrow-light">Country Comparison - Single</p>
-                            <img src="assets/ts-slides-11.svg" data-src="assets/ts-slides-11.svg" width="auto" alt="Country comparison slide evaluating a single attribute"/>
-                        </div>
-                    </div>
-                    <div class="three columns">
-                        <div class="slide">
-                            <p class="eyebrow-light">Product Comparison - Multi</p>
-                            <img src="assets/ts-slides-13.svg" data-src="assets/ts-slides-13.svg" width="auto" alt="Product comparison slide evaluating multiple attributes"/>
-                        </div>
-                    </div>
-                    <div class="three columns">
-                        <p class="eyebrow-light">Product Comparison - Single</p>
-                        <img src="assets/ts-slides-12.svg" data-src="assets/ts-slides-12.svg" width="auto" alt="Product comparison slide evaluating a single attribute"/>
-                    </div>
-                </div>
-            </div>
-            <!----------Row 4---------->
-            <div class="text row sub-intro">
-                <div class="eight columns">
-                    <h3>Flexible Guidelines</h3>
-                    <p>We provided guidelines for researchers to create their own templates, knowing that their presentation needs may evolve with their research.</p>
-                </div>
-            </div>
+        </div>
+        <!----------7.3: Visuals---------->
+        <div style="margin-bottom:6rem;">
+            <!----------Row 1---------->
             <div class="slidegroup">
                 <div class="threefourths row">
-                    <div class="six columns">
+                    <div class="three columns">
                         <div class="slide">
-                            <p class="eyebrow-light">2-column Guideline</p>
-                            <img src="assets/ts-slides-15.svg" data-src="assets/ts-slides-15.svg" width="auto" alt="2-column guideline slide"/>
+                            <p class="eyebrow-light">Title</p>
+                            <img src="assets/ts-slides-1.svg" data-src="assets/ts-slides-1.svg" width="auto" alt="Title slide"/>
                         </div>
                     </div>
-                    <div class="six columns">
+                    <div class="three columns">
                         <div class="slide">
-                            <p class="eyebrow-light">1-column Guideline</p>
-                            <img src="assets/ts-slides-16.svg" data-src="assets/ts-slides-16.svg" width="auto" alt="1-column guideline slide"/>
+                            <p class="eyebrow-light">Text with Editable Graph</p>
+                            <img src="assets/ts-slides-2.svg" data-src="assets/ts-slides-2.svg" width="auto" alt="Text slide with editable graph"/>
+                        </div>
+                    </div>
+                    <div class="three columns">
+                        <div class="slide">
+                            <p class="eyebrow-light">Alternate Graphs</p>
+                            <img src="assets/ts-slides-3.svg" data-src="assets/ts-slides-3.svg" width="auto" alt="Slide with alternate editable graphs"/>
+                        </div>
+                    </div>
+                    <div class="three columns">
+                        <div class="slide">
+                            <p class="eyebrow-light">Text with Insight Stat</p>
+                            <img src="assets/ts-slides-4.svg" data-src="assets/ts-slides-4.svg" width="auto" alt="Text slide with insight stat"/>
                         </div>
                     </div>
                 </div>
             </div>
+            <!----------Row 2---------->
             <div class="slidegroup">
                 <div class="threefourths row">
-                    <div class="six columns">
+                    <div class="three columns">
                         <div class="slide">
-                            <p class="eyebrow-light">Color Guidelines</p>
-                            <img src="assets/ts-slides-17.svg" data-src="assets/ts-slides-17.svg" width="auto" alt="Color guideline slide"/>
+                            <p class="eyebrow-light">Table</p>
+                            <img src="assets/ts-slides-5.svg" data-src="assets/ts-slides-5.svg" width="auto" alt="Table slide"/>
                         </div>
                     </div>
-                    <div class="six columns">
-                        <p class="eyebrow-light">Typography Guidelines</p>
-                        <img src="assets/ts-slides-18.svg" data-src="assets/ts-slides-18.svg" width="auto" alt="Typography guideline slide"/>
-                    </div>
-                </div>
-            </div>
-
-            <!----------------------8: Design in action ---------------------->
-            <div class="text row med-intro" id="fulldesigns">
-                <div class="eight columns">
-                    <h2>Putting the system into action</h2>
-                    <p>The full design system comes together as a responsive platform. Based on our audiences' usage habits, we knew people would most frequently interact with the platform on desktop devices. Still, we applied touch-friendly ways to engage with the content to ensure those on tablet and mobile devices would have just as fulfilling an experience.</p>
-                </div>
-            </div>
-            <!------Landing Page------>
-            <div class="designs">
-                <div class="threefourths row">
-                    <div class="nine columns">
-                        <div class="desktop">
-                            <p class="eyebrow-light">Landing - Desktop</p>
-                            <img src="assets/ts-desktop-landing.png" data-src="assets/ts-desktop-landing_2x.png" width="auto" alt="Desktop version of the Landing Page."/>
+                    <div class="three columns">
+                        <div class="slide">
+                            <p class="eyebrow-light">User Journey</p>
+                            <img src="assets/ts-slides-6.svg" data-src="assets/ts-slides-6.svg" width="auto" alt="User journey slide"/>
                         </div>
                     </div>
-                    <div class="offset-by-one two columns">
-                        <p class="eyebrow-light">Landing - Mobile</p>
-                        <img src="assets/ts-mobile-landing.png" data-src="assets/ts-mobile-landing_2x.png" width="auto" alt="Mobile version of the Landing Page, with one of the research team accordion drawers expanded."/>
-                    </div>
-                </div>
-            </div>
-            <!------Search Page------>
-            <div class="designs">
-                <div class="threefourths row">
-                    <div class="nine columns">
-                        <div class="desktop">
-                            <p class="eyebrow-light">Search - Desktop</p>
-                            <img src="assets/ts-desktop-search.png" data-src="assets/ts-desktop-search_2x.png" width="auto" alt="Desktop version of the Search Page."/>
+                    <div class="three columns">
+                        <div class="slide">
+                            <p class="eyebrow-light">Topic Briefing Overview</p>
+                            <img src="assets/ts-slides-7.svg" data-src="assets/ts-slides-7.svg" width="auto" alt="Topic briefing overview slide"/>
                         </div>
                     </div>
-                    <div class="offset-by-one two columns">
-                        <p class="eyebrow-light">Search - Mobile</p>
-                        <img src="assets/ts-mobile-search.png" data-src="assets/ts-mobile-search_2x.png" width="auto" alt="Mobile version of the Search Page."/>
-                    </div>
-                </div>
-            </div>
-            <!------Detail Page------>
-            <div class="designs">
-                <div class="threefourths row"  style="margin-bottom:7rem;">
-                    <div class="nine columns">
-                        <div class="desktop">
-                            <p class="eyebrow-light">Topic Briefing - Desktop</p>
-                            <img src="assets/ts-desktop-detail.png" data-src="assets/ts-desktop-detail_2x.png" width="auto" alt="Desktop version of a Topic Briefing Detail page, with a redesigned presentation slide."/>
+                    <div class="three columns">
+                        <div class="slide">
+                            <p class="eyebrow-light">Scale</p>
+                            <img src="assets/ts-slides-9.svg" data-src="assets/ts-slides-9.svg" width="auto" alt="Scale slide"/>
                         </div>
                     </div>
-                    <div class="offset-by-one two columns">
-                        <p class="eyebrow-light">Article - Mobile</p>
-                        <img src="assets/ts-mobile-detail2.png" data-src="assets/ts-mobile-detail2_2x.png" width="auto" alt="Mobile version of a Research Article Detail page, with the citation form launched."/>
+                </div>
+            </div>
+            <!----------Row 3---------->
+            <div class="threefourths row slidegroup"> 
+                <div class="three columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">Country Comparison - Multi</p>
+                        <img src="assets/ts-slides-10.svg" data-src="assets/ts-slides-10.svg" width="auto" alt="Country comparison slide evaluating multiple attributes"/>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">Country Comparison - Single</p>
+                        <img src="assets/ts-slides-11.svg" data-src="assets/ts-slides-11.svg" width="auto" alt="Country comparison slide evaluating a single attribute"/>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">Product Comparison - Multi</p>
+                        <img src="assets/ts-slides-13.svg" data-src="assets/ts-slides-13.svg" width="auto" alt="Product comparison slide evaluating multiple attributes"/>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <p class="eyebrow-light">Product Comparison - Single</p>
+                    <img src="assets/ts-slides-12.svg" data-src="assets/ts-slides-12.svg" width="auto" alt="Product comparison slide evaluating a single attribute"/>
+                </div>
+            </div>
+        </div>
+        <!----------Row 4---------->
+        <div class="text row sub-intro">
+            <div class="eight columns">
+                <h3>Flexible Guidelines</h3>
+                <p>We provided guidelines for researchers to create their own templates, knowing that their presentation needs may evolve with their research.</p>
+            </div>
+        </div>
+        <div class="slidegroup">
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">2-column Guideline</p>
+                        <img src="assets/ts-slides-15.svg" data-src="assets/ts-slides-15.svg" width="auto" alt="2-column guideline slide"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">1-column Guideline</p>
+                        <img src="assets/ts-slides-16.svg" data-src="assets/ts-slides-16.svg" width="auto" alt="1-column guideline slide"/>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="slidegroup">
+            <div class="threefourths row">
+                <div class="six columns">
+                    <div class="slide">
+                        <p class="eyebrow-light">Color Guidelines</p>
+                        <img src="assets/ts-slides-17.svg" data-src="assets/ts-slides-17.svg" width="auto" alt="Color guideline slide"/>
+                    </div>
+                </div>
+                <div class="six columns">
+                    <p class="eyebrow-light">Typography Guidelines</p>
+                    <img src="assets/ts-slides-18.svg" data-src="assets/ts-slides-18.svg" width="auto" alt="Typography guideline slide"/>
+                </div>
+            </div>
+        </div>
 
-
-
-            <!----------------------9: Testimonial---------------------->
-            <img src="assets/ts-breaker4.svg" data-src="assets/ts-breaker4.svg" id="breaker7">
-            <div class="sectionshadow">
-                <div class="text row">
-                    <div class="twelve columns testimonial">          
-                        <h1>This is amazing work. Let's continue this partnership for the external launch.</h1>
-                        <p class="attribution">– Kalpa Raj, Google T & S Project Manager</p>
+        <!----------------------8: Design in action ---------------------->
+        <div class="text row med-intro" id="fulldesigns">
+            <div class="eight columns">
+                <h2>Putting the system into action</h2>
+                <p>The full design system comes together as a responsive platform. Based on our audiences' usage habits, we knew people would most frequently interact with the platform on desktop devices. Still, we applied touch-friendly ways to engage with the content to ensure those on tablet and mobile devices would have just as fulfilling an experience.</p>
+            </div>
+        </div>
+        <!------Landing Page------>
+        <div class="designs">
+            <div class="threefourths row">
+                <div class="nine columns">
+                    <div class="desktop">
+                        <p class="eyebrow-light">Landing - Desktop</p>
+                        <img src="assets/ts-desktop-landing.png" data-src="assets/ts-desktop-landing_2x.png" width="auto" alt="Desktop version of the Landing Page."/>
                     </div>
                 </div>
-            </div>
-            <!----------------------10: Takeaways---------------------->
-            <div class="text row main-intro">
-                <div class="eight columns">
-                    <h2>Looking forward & reflecting back</h2>
-                    <p>In January 2020, the Trust & Safety Research platform launched internally to Google employees. The external launch of the platform is currently in progress.</p>
-                    <p>Over the 4 months my team & I took the internal site from strategy to launch, we learned several valuable lessons that strengthened the way we work with one another & with our clients.</p>
+                <div class="offset-by-one two columns">
+                    <p class="eyebrow-light">Landing - Mobile</p>
+                    <img src="assets/ts-mobile-landing.png" data-src="assets/ts-mobile-landing_2x.png" width="auto" alt="Mobile version of the Landing Page, with one of the research team accordion drawers expanded."/>
                 </div>
             </div>
-            <div class="sectionshadow">
-                <div class="text row">
-                    <div class="four columns">
-                        <p class="eyebrow-light">Takeaway 1</p>
-                        <h4>Design a system, not elements.</h4>
-                        <p class="sub">Creating a design system allows us to evaluate individual element as part of a whole; we can determine whether a button style works, or is even necessary. A system also creates a shared language between the design and development teams, and with our clients. </p>
-                        <p class="eyebrow">Links for learning</p>
-                        <ul class="sub" style="list-style-type: '↪  '">
-                            <li><u><a href="http://atomicdesign.bradfrost.com/" target="_blank" alt="Atomic Design by Brad Frost">Atomic Design by Brad Frost</a></u></li>
-                            <li>"<u><a href="https://www.figma.com/blog/creating-atomic-components-in-figma/" target="_blank" alt="Creating atomic components in Figma">Creating atomic components in Figma</a></u>"</li>
-                            <li><u>"<a href="https://www.designsystems.com/why-we-build-design-systems-an-agencys-perspective/" target="blank" alt="Article: Why Instrument builds design systems">Why we build design systems: an agency's perspective</a></u>"</li>
-                        </ul>
-                    </div>
-                    <div class="four columns">
-                        <p class="eyebrow-light">Takeaway 2</p>
-                        <h4>Make magic in the micro.</h4>
-                        <p class="sub">While the platform is designed with functionality in mind, that doesn't mean it has to be boring. We implemented delightful microinteractions, such as a card raise on mouseover and a logo animation on page load, to bring some personality into the system.</p>
-                        <p class="eyebrow">Links for learning</p>
-                        <ul class="sub" style="list-style-type: '↪  '">
-                            <li>"<u><a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc" target="_blank" alt="UX in Motion Manifesto article">Creating Usability with Motion: The UX in Motion Manifesto</a></u>"</li>
-                            <li><u><a href="https://medium.com/@mo.jahanii/figma-recreate-most-useful-interactions-using-figmotion-50ea813f8ebc" target="_blank" alt="Article on recreating the most useful interactions using Figmotion">"Recreate the most useful interactions using Figmotion"</a></u></li>
-                        </ul>
-                    </div>
-                    <div class="four columns">
-                        <p class="eyebrow-light">Takeaway 3</p>
-                        <h4>Be helpful.</h4>
-                        <p class="sub">Just like Google, helpfulness is at the core of our work as a partner. By working closely with our client to understand stakeholder needs and goals, we helped sell in work across multiple levels of approval.</p>
-                        <p class="eyebrow">Links for learning</p>
-                        <ul class="sub" style="list-style-type: '↪  '">
-                            <li><u><a href="https://abookapart.com/products/design-is-a-job" target="_blank" alt="Design is a Job by Mike Monteiro"><i>Design Is A Job</i> by Mike Monteiro</a></u></li>
-                        </ul>
+        </div>
+        <!------Search Page------>
+        <div class="designs">
+            <div class="threefourths row">
+                <div class="nine columns">
+                    <div class="desktop">
+                        <p class="eyebrow-light">Search - Desktop</p>
+                        <img src="assets/ts-desktop-search.png" data-src="assets/ts-desktop-search_2x.png" width="auto" alt="Desktop version of the Search Page."/>
                     </div>
                 </div>
+                <div class="offset-by-one two columns">
+                    <p class="eyebrow-light">Search - Mobile</p>
+                    <img src="assets/ts-mobile-search.png" data-src="assets/ts-mobile-search_2x.png" width="auto" alt="Mobile version of the Search Page."/>
+                </div>
             </div>
-            <!----------------------11: Reach Out---------------------->
-            <div id="end">
-                <div class="text row">
-                    <div class="twelve columns">
-                        <h1>Reach Out</h1>
-                        <p>If you'd like to learn more about this project or chat about a future collaboration, I'd love to hear from you.</p>
-                        <p>You can reach me by email at <em><a href="mailto:janice@goodatbeing.studio?Subject=Hello!" style="margin-left:3px;">janice@goodatbeing.studio</a></em>&nbsp; 💌</p>
+        </div>
+        <!------Detail Page------>
+        <div class="designs">
+            <div class="threefourths row"  style="margin-bottom:7rem;">
+                <div class="nine columns">
+                    <div class="desktop">
+                        <p class="eyebrow-light">Topic Briefing - Desktop</p>
+                        <img src="assets/ts-desktop-detail.png" data-src="assets/ts-desktop-detail_2x.png" width="auto" alt="Desktop version of a Topic Briefing Detail page, with a redesigned presentation slide."/>
                     </div>
+                </div>
+                <div class="offset-by-one two columns">
+                    <p class="eyebrow-light">Article - Mobile</p>
+                    <img src="assets/ts-mobile-detail2.png" data-src="assets/ts-mobile-detail2_2x.png" width="auto" alt="Mobile version of a Research Article Detail page, with the citation form launched."/>
                 </div>
             </div>
         </div>
 
 
-        <!-- JAVASCRIPT
+
+        <!----------------------9: Testimonial---------------------->
+        <img src="assets/ts-breaker4.svg" data-src="assets/ts-breaker4.svg" id="breaker7">
+        <div class="sectionshadow">
+            <div class="text row">
+                <div class="twelve columns testimonial">          
+                    <h1>This is amazing work. Let's continue this partnership for the external launch.</h1>
+                    <p class="attribution">– Kalpa Raj, Google T & S Project Manager</p>
+                </div>
+            </div>
+        </div>
+        <!----------------------10: Takeaways---------------------->
+        <div class="text row main-intro">
+            <div class="eight columns">
+                <h2>Looking forward & reflecting back</h2>
+                <p>In January 2020, the Trust & Safety Research platform launched internally to Google employees. The external launch of the platform is currently in progress.</p>
+                <p>Over the 4 months my team & I took the internal site from strategy to launch, we learned several valuable lessons that strengthened the way we work with one another & with our clients.</p>
+            </div>
+        </div>
+        <div class="sectionshadow">
+            <div class="text row">
+                <div class="four columns">
+                    <p class="eyebrow-light">Takeaway 1</p>
+                    <h4>Design a system, not elements.</h4>
+                    <p class="sub">Creating a design system allows us to evaluate individual element as part of a whole; we can determine whether a button style works, or is even necessary. A system also creates a shared language between the design and development teams, and with our clients. </p>
+                    <p class="eyebrow">Links for learning</p>
+                    <ul class="sub" style="list-style-type: '↪  '">
+                        <li><u><a href="http://atomicdesign.bradfrost.com/" target="_blank" alt="Atomic Design by Brad Frost">Atomic Design by Brad Frost</a></u></li>
+                        <li>"<u><a href="https://www.figma.com/blog/creating-atomic-components-in-figma/" target="_blank" alt="Creating atomic components in Figma">Creating atomic components in Figma</a></u>"</li>
+                        <li><u>"<a href="https://www.designsystems.com/why-we-build-design-systems-an-agencys-perspective/" target="blank" alt="Article: Why Instrument builds design systems">Why we build design systems: an agency's perspective</a></u>"</li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">Takeaway 2</p>
+                    <h4>Make magic in the micro.</h4>
+                    <p class="sub">While the platform is designed with functionality in mind, that doesn't mean it has to be boring. We implemented delightful microinteractions, such as a card raise on mouseover and a logo animation on page load, to bring some personality into the system.</p>
+                    <p class="eyebrow">Links for learning</p>
+                    <ul class="sub" style="list-style-type: '↪  '">
+                        <li>"<u><a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc" target="_blank" alt="UX in Motion Manifesto article">Creating Usability with Motion: The UX in Motion Manifesto</a></u>"</li>
+                        <li><u><a href="https://medium.com/@mo.jahanii/figma-recreate-most-useful-interactions-using-figmotion-50ea813f8ebc" target="_blank" alt="Article on recreating the most useful interactions using Figmotion">"Recreate the most useful interactions using Figmotion"</a></u></li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">Takeaway 3</p>
+                    <h4>Be helpful.</h4>
+                    <p class="sub">Just like Google, helpfulness is at the core of our work as a partner. By working closely with our client to understand stakeholder needs and goals, we helped sell in work across multiple levels of approval.</p>
+                    <p class="eyebrow">Links for learning</p>
+                    <ul class="sub" style="list-style-type: '↪  '">
+                        <li><u><a href="https://abookapart.com/products/design-is-a-job" target="_blank" alt="Design is a Job by Mike Monteiro"><i>Design Is A Job</i> by Mike Monteiro</a></u></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----------------------11: Reach Out---------------------->
+        <div id="end">
+            <div class="text row">
+                <div class="twelve columns">
+                    <h1>Reach Out</h1>
+                    <p>If you'd like to learn more about this project or chat about a future collaboration, I'd love to hear from you.</p>
+                    <p>You can reach me by email at <em><a href="mailto:janice@goodatbeing.studio?Subject=Hello!" style="margin-left:3px;">janice@goodatbeing.studio</a></em>&nbsp; 💌</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <!-- JAVASCRIPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <!--LAZY LOAD-->
-        <script src="js/lazyload.js"></script>
-        <script>
-            (function() {
-                function logElementEvent(eventName, element) {
-                    console.log(
-                        Date.now(),
-                        eventName,
-                        element.getAttribute("data-src")
-                    );
-                }
-                var callback_enter = function(element) {
-                    logElementEvent("🔑 ENTERED", element);
-                };
-                var callback_exit = function(element) {
-                    logElementEvent("🚪 EXITED", element);
-                };
-                var callback_reveal = function(element) {
-                    logElementEvent("👁️ REVEALED", element);
-                };
-                var callback_loaded = function(element) {
-                    logElementEvent("👍 LOADED", element);
-                };
-                var callback_error = function(element) {
-                    logElementEvent("💀 ERROR", element);
-                    element.src =
-                        "https://via.placeholder.com/440x560/?text=Error+Placeholder";
-                };
-                var callback_finish = function() {
-                    logElementEvent("✔️ FINISHED", document.documentElement);
-                };
-                var ll = new LazyLoad({
-                    threshold: 0,
-                    // Assign the callbacks defined above
-                    callback_enter: callback_enter,
-                    callback_exit: callback_exit,
-                    callback_reveal: callback_reveal,
-                    callback_loaded: callback_loaded,
-                    callback_error: callback_error,
-                    callback_finish: callback_finish
-                });
-            })();
-        </script>
+    <!--LIGHTBOX-->
+    <script src="js/lity.js"></script>
 
-
-        <!--PW PROTECTION-->
-        <script>
-
-            var pass=new Array()
-            var t3=""
-            var lim=5
-            pass[0]="iBzX0xYJ5dSekiy"
-            pass[1]="Bv4PuUqqeRQ4cA6"
-            pass[2]="Fhiu6F9aNZRtqu"
-            pass[3]="VwALlboBRFsHNJ9"
-            pass[4]="51dvXo6SqsaTV2d"
-            pass[5]="551dvXo6SqsaTV2"
-
-            //configure extension to reflect the extension type of the target web page (ie: .htm or .html)
-            var extension=".html"
-            var enablelocking=0
-            var numletter="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            var temp3=''
-            var cur=0
-
-
-            function max(which){
-                return (pass[Math.ceil(which)+(3&15)].substring(0,1))
+    <!--LAZY LOAD-->
+    <script src="js/lazyload.js"></script>
+    <script>
+        (function() {
+            function logElementEvent(eventName, element) {
+                console.log(
+                    Date.now(),
+                    eventName,
+                    element.getAttribute("data-src")
+                );
             }
+            var callback_enter = function(element) {
+                logElementEvent("🔑 ENTERED", element);
+            };
+            var callback_exit = function(element) {
+                logElementEvent("🚪 EXITED", element);
+            };
+            var callback_reveal = function(element) {
+                logElementEvent("👁️ REVEALED", element);
+            };
+            var callback_loaded = function(element) {
+                logElementEvent("👍 LOADED", element);
+            };
+            var callback_error = function(element) {
+                logElementEvent("💀 ERROR", element);
+                element.src =
+                    "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+            };
+            var callback_finish = function() {
+                logElementEvent("✔️ FINISHED", document.documentElement);
+            };
+            var ll = new LazyLoad({
+                threshold: 0,
+                // Assign the callbacks defined above
+                callback_enter: callback_enter,
+                callback_exit: callback_exit,
+                callback_reveal: callback_reveal,
+                callback_loaded: callback_loaded,
+                callback_error: callback_error,
+                callback_finish: callback_finish
+            });
+        })();
+    </script>
 
-            function testit(input){
-                temp=numletter.indexOf(input)
-                var temp2=temp^parseInt(pass[phase1-1+(1|3)].substring(0,2))
-                temp2=numletter.substring(temp2,temp2+1)
-                return (temp2)
-            }
+
+    <!--PW PROTECTION-->
+    <script>
+
+        var pass=new Array()
+        var t3=""
+        var lim=5
+        pass[0]="iBzX0xYJ5dSekiy"
+        pass[1]="Bv4PuUqqeRQ4cA6"
+        pass[2]="Fhiu6F9aNZRtqu"
+        pass[3]="VwALlboBRFsHNJ9"
+        pass[4]="51dvXo6SqsaTV2d"
+        pass[5]="551dvXo6SqsaTV2"
+
+        //configure extension to reflect the extension type of the target web page (ie: .htm or .html)
+        var extension=".html"
+        var enablelocking=0
+        var numletter="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        var temp3=''
+        var cur=0
 
 
-            function submitentry(){
-                t3=''
-                verification=document.password1.password2.value
-                phase1=Math.ceil(Math.random())-6+(2<<2)
-                var indicate=true
-                for (i=(1&2);i<window.max(Math.LOG10E);i++)
-                    t3+=testit(verification.charAt(i))
-                for (i=(1&2);i<lim;i++){
-                    if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-                        indicate=false
-                }
-                if (verification.length!=window.max(Math.LOG10E))
+        function max(which){
+            return (pass[Math.ceil(which)+(3&15)].substring(0,1))
+        }
+
+        function testit(input){
+            temp=numletter.indexOf(input)
+            var temp2=temp^parseInt(pass[phase1-1+(1|3)].substring(0,2))
+            temp2=numletter.substring(temp2,temp2+1)
+            return (temp2)
+        }
+
+
+        function submitentry(){
+            t3=''
+            verification=document.password1.password2.value
+            phase1=Math.ceil(Math.random())-6+(2<<2)
+            var indicate=true
+            for (i=(1&2);i<window.max(Math.LOG10E);i++)
+                t3+=testit(verification.charAt(i))
+            for (i=(1&2);i<lim;i++){
+                if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
                     indicate=false
-                if (indicate)
-                    window.location=verification+extension
-                else
-                    alert("Invalid password. Please try again")
             }
-        </script>
+            if (verification.length!=window.max(Math.LOG10E))
+                indicate=false
+            if (indicate)
+                window.location=verification+extension
+            else
+                alert("Invalid password. Please try again")
+        }
+    </script>
 
 
-        <!-- End Document
+    <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     </body>
