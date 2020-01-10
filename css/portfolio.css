@@ -1,51 +1,316 @@
 /*
-* Based on Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
+Based on Skeleton V2.0.4 by Dave Gamache
 */
+
+/* NAV BAR 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* nav bar background */
+nav {
+    z-index:100;
+    width:100%;
+    height: 40px;
+    position: fixed;
+    background-color:white;
+    box-shadow: 0px -6px 10px rgb(0,0,0,0.75);
+
+    /*vertically centering box*/
+    padding: 15px 0px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items:center;
+}
+
+/* memoji animation! */
+#rotate {
+    width:40px;
+    height:auto;
+    transition: transform 1s ease-out;
+}
+#rotate:hover {
+    transform: rotate(25deg) scale(1.15);
+}
+
+/* nav items - right aligned 
+#right {
+position: fixed;
+right: 0;
+}*/
+
+/* nav items - left*/
+#right {
+    margin-top:-1px;
+    margin-left:2.25rem;
+}
+
+/* nav item spacing */
+ul#navcontent li {
+    display: inline;
+    margin-right:4rem;
+}
+
+/* nav item text styling */
+ul#navcontent a {
+    font-family: 'Karla', sans-serif;
+    font-style:normal;
+    font-size: 1.5rem;
+    letter-spacing: .025rem;
+}
+
+
+/* Media Queries ––––––––––––––––––––––––––– */
+
+/* Mobile: Hide nav */
+@media (min-width: 320px) {
+    nav{
+        display:none;
+    }
+}
+
+/* Tablet + larger: Show nav */
+@media (min-width: 768px) {
+    nav{
+        display:flex;
+    }
+}
+
+
+
+/* CONTENT CONTAINER 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Media Queries ––––––––––––––––––––––––––– */
+
+/* Mobile */
+@media (min-width: 320px) {
+    .container {
+        margin: 10% 8%;
+    }
+}
+
+/* Tablet + large */
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+
+/* ABOUT 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Mobile */
+@media (min-width: 320px) {
+    #about {
+        text-align:left;
+    }
+    #arrow {
+        display:none;
+    }
+}
+
+/* Tablet + larger */
+@media (min-width: 768px) {
+    #about {
+        padding-top:35vh;
+        padding-bottom:25vh;
+        /*center text*/
+        text-align: center;
+    }
+    #arrow {
+        display:inline;
+    }
+}
+
+/* HORIZONTAL RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Mobile */
+@media (min-width: 320px) {
+    hr {
+        opacity:0;
+        margin-bottom: 10%; 
+    }
+}
+
+/* Tablet + larger */
+@media (min-width: 768px) {
+    hr {
+        opacity:0;
+        margin-bottom: 150px; 
+    }
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Mobile */
+@media (min-width: 320px) {
+    footer {
+        box-shadow: 0px 6px 10px rgb(0,0,0,0.75);
+        padding: 5rem 0rem;
+    }
+    #footercontent {
+        width: 83%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet + larger */
+@media (min-width: 768px) {
+    footer {
+        box-shadow: 0px 6px 10px rgb(0,0,0,0.75);
+        margin-top:20rem;
+        padding: 5rem 0;
+    }
+
+    #footercontent {
+        width: 80%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Baseline Type Styles –––––––––––––––––––––––––––– */
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    background-color: white;
+    font-family: 'IBM Plex Serif', serif;
+    letter-spacing: -.025rem;
+    color: black;
+    font-size:2rem;
+}
+
+/* Mobile */
+@media (min-width: 320px) {
+    h1 {
+        font-family: 'IBM Plex Serif', serif;
+        font-style:italic;
+        font-size:3rem;
+        font-weight: 400;
+        margin-top:-1.25rem;
+        margin-bottom:0;
+        line-height:120%;
+        letter-spacing:-0.05rem;
+    }
+    h2, p {
+        font-size:2rem;
+        font-weight:400;
+        line-height: 1.6;
+    }
+    h3 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height:140%;
+        margin-top:-.75rem;
+    }
+}
+
+/* Tablet + larger */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight:400;
+        line-height: 1.6;
+    }
+
+    h3 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height:140%;
+        margin-top:-.75rem;
+    }
+    p {
+         font-size: 2rem;
+    line-height: 3.5rem;
+    }
+}
+
+
+/* Custom Type Styles –––––––––––––––––––––––––––– */
+
+p.eyebrow {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+}
+
+.architecture {
+    font-size:1.5rem;
+    line-height:2rem;
+}
+
+
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a, a:link, a:visited, a h3 {
+    color: black;
+    text-decoration: none;   
+    transition: color .35s;
+}
+
+a:hover, a:focus, a:active, a h3:hover {
+    color: #fdc53a;
+}
+
+.project a:hover {
+    color: black;
+}
+
+
+
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; }
-.row {
-    margin-bottom: 4.75rem;
+.project {
+    margin-bottom: 3rem;
 }
+
 .column,
 .columns {
     width: 100%;
     float: left;
-    box-sizing: border-box; }
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-#hero {
-    background-image:url("/assets/enjoy-hero.jpg");
+    box-sizing: border-box; 
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-    .container {
-        width: 85%;
-        padding: 0; }
-}
+
+
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
-    .container {
-        width: 80%; }
+@media (min-width: 768px) {
     .column,
     .columns {
-        margin-left: 0; }
+        margin-left: 4%; 
+    }
     .column:first-child,
     .columns:first-child {
-        margin-left: 0; }
+        margin-left: 0;
+    }
 
     .one.column,
     .one.columns                    { width: 4.66666666667%; }
@@ -101,70 +366,21 @@
 }
 
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
-html {
-    font-size: 62.5%; }
-body {
-    background-color: white;
-    font-family: 'IBM Plex Serif', serif;
-    font-size: 2.3rem;
-    line-height: 1.6;
-    letter-spacing: 0rem;
-    color: black;
-}
 
 
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-h1 {
-    color: black;
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 0rem;
-    padding-bottom: 2rem;}
-
-h3 {
-    color: black;
-    font-family: 'IBM Plex Serif', serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top:-.75rem;}
-
-p.eyebrow {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.4rem;
-    text-transform: uppercase;}
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a, a:link, a:visited {
-    color: black;
-    text-decoration: none;
-    border-bottom: dashed 1px;
-    transition: color .5s; }
-a:hover, a:focus, a:active {
-    color: #fdc53a;
-}
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-    list-style: cir outside; }
 ol {
-    list-style: decimal inside; }
-ol, ul {
+    list-style-type: "💌   ";
+    padding-left: 3.5rem;
+}
+ul {
+    list-style: circle outside; 
     padding-left: 2.1rem;
 }
 li {
     margin-bottom:.4rem;
-}
-li span {
-    font-size: 90%;
 }
 
 
@@ -172,10 +388,42 @@ li span {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 img {
-    width: 25%;
-    padding-bottom:5%;
+    width:100%;
+    margin-bottom:5%;
+    display: block;
+    background: white;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project img {
+    margin-bottom:0%;
+}
+
+.caption {
+    margin-top: -5%;
+    text-align: right;
+    color: slategrey;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+#credit {
+    color: slategrey;
+}
+
+#credit:hover{
+    color: black;
+}
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -191,80 +439,46 @@ img {
     float: left; }
 
 
-/* Clearing
+/* Self Clearing Goodness
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Self Clearing Goodness */
 .container:after,
-.row:after,
-.u-cf {
+.row:after {
     content: "";
     display: table;
     clear: both; }
 
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
-
 
 /* Animation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.row {
-    /*animation*/
-    opacity:0%;
-    position: relative;
-    -webkit-animation-name: row;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-name: row;
-    animation-duration: .5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+/*--- scroll ---*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*---- rows ----*/
+
+.container {
+opacity:0%;
+position: relative;
+-webkit-animation-name: row;
+-webkit-animation-duration: .5s;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-fill-mode: forwards;
+animation-name: row;
+animation-duration: .5s;
+animation-timing-function: ease-out;
+animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes row {
-    0% {opacity: 0%; top:2rem;}
-    100% {opacity: 100%; top:0;}
+0% {opacity: 0%; top:2rem;}
+100% {opacity: 100%; top:0;}
 }
 
 @keyframes row {
-    0% {opacity: 0%; top:2rem;}
-    100% {opacity: 100%; top:0;}
-}
-
-.row:nth-child(3) {
-    animation-delay: .1s;
-}
-
-.row:nth-child(5) {
-    animation-delay: .2s;
-}
-
-.row:nth-child(7) {
-    animation-delay: .3s;
+0% {opacity: 0%; top:2rem;}
+100% {opacity: 100%; top:0;}
 }

@@ -5,102 +5,277 @@
         <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta charset="utf-8">
-        <title>Good At Being</title>
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <title>Janice Pang</title>
+        <meta name="keywords" content="Janice Pang, Janice Jamye Pang, Portfolio, Good At Being, Design, Designer, UI, UX, Grow, On-Screen, Zines, Norfolk, VA">
+        <meta name="description" content="Janice Pang is a digital product designer & design educator living in Norfolk, VA.">
+        <meta name="author" content="Janice Pang">
 
         <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
-
-        <!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
 
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="icon" type="image/png" href="images/star-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/star-16x16.png" sizes="16x16" />
 
+        <!-- Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i|Karla&display=swap" rel="stylesheet">
+
+        <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/portfolio.css">
     </head>
 
-    <body>
+
+    <body id="home">
+        <!-- Navigation ----------------------------------->
+        <nav>
+            <div id="left">
+                <a href="#home"><img src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:6px;" id="rotate"></a>
+            </div>
+            <div id="right">
+                <ul id="navcontent">
+                    <li><a href="#client">Client Work</a></li>
+                    <li><a href="#community">Community Projects</a></li>
+                    <!--<li><a href="#personal">Personal Experiments</a></li>-->
+                    <li><a href="#contact">Reach Out</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- Primary Page Layout ----------------------------------->
-        <div class="container" style="margin-top: 7%; margin-bottom: 5%">
+        <div class="container">
 
-            <!-- About ----------------------------------->
+            <!-- Nav ----------------------------------->
+            <div class="row" id="about">
+                <div class="twelve columns">
+                    <h1>Hello, Internet explorer!</h1>
+                    <h2>My name is Janice Pang. I'm a digital designer & educator living in the beautiful, bike-friendly city of Norfolk, VA. I'm passionate about building platforms and experiences that strengthen communities.</h2>
+                    <p>You can find my resume <a href="assets/resume-janicepang.pdf" target="_blank" style="font-style: italic;">here</a> and my select works below.</p>
+                    <p><a href="#client" id="arrow">↓</a></p>
+                </div>
+            </div>
+
+
+            <!-- Client Projects ----------------------------------->
+            <hr id="client">
             <div class="row">
-                    <img src="images/logo.png">
+                <div class="eight columns">
+                    <h1>Client Work</h1>
+                    <p>In my 6 years of professional design experience, I've had the privilege to work with and lead multidisciplinary teams to create digitial platforms and campaigns for clients including Google, Adidas, and Adult Swim. Here's a selection of my most recent work.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns project">
+                    <a onClick="gateKeeper()" style="cursor: cell">
+                        <img src="assets/ts-hero.png" alt="Trust & Safety Research screens" style="margin-top: 3%;">
+                        <p class="eyebrow">Google Trust & Safety Research</p>
+                        <h3>Bringing awareness to Google's best kept secret <span style="font-style: normal; float:right">🗝</span></h3>
+                    </a>
+                </div>
             </div>
             
             <div class="row">
-                <h1>Hello, Internet Explorer.</h1>
-                <p>
-                    Good At Being is the creative studio of Janice Pang.
-                </p>
+                <div class="twelve columns project even">
+                    <a onClick="gateKeeper()" style="cursor: cell">
+                        <img src="assets/pixel-hero.png" alt="Series of Pixel 3 phones with Pixel 3 retail demo stills">
+                        <p class="eyebrow">Google Pixel 3</p>
+                        <h3>Transforming consideration into purchase at retail <span style="font-style: normal; float:right">🗝</span></h3>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="twelve columns project">
+                    <a href="enjoy.html" target="_self">
+                        <img src="assets/smb-hero.png" alt="Google review poster in an interior design store">
+                        <p class="eyebrow">Google My Business</p>
+                        <h3>Illustrating the power of a review <span style="font-style: normal; float:right">🗝</span></h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Community Projects ----------------------------------->
+            <hr id="community">
+            <div class="row">
+                <div class="eight columns">
+                    <h1>Community Projects</h1>
+                    <p>I firmly believe we create the communities we want to be part of. Over the 5 years I've lived in Norfolk, I've had the opportunity to collaborate with individuals & organizations who share this value. Together, we've launched and sustained initiatives that enable our community to thrive. Here's a selection of the projects closest to my heart.</p>
+                </div>
             </div>
 
             <div class="row">
-                <h1>Janice currently<span>:</span></h1>
-                <ul>
-                    <li><span>Makes Internet things as an Associate Creative Director at <a href="http://thisisgrow.com" target="_blank">Grow</a>.</span></li>
-                    <li><span>Organizes <a href="https://www.instagram.com/p/BwiF7VchvUy/" target="_blank">a</a> <a href="https://www.instagram.com/p/B1M2QemhJws/" target="_blank">quarterly</a> <a href="https://www.instagram.com/p/BlyJ9BhFIWA/?taken-by=janicepangcake" target="_blank">zine</a> <a href="https://www.instagram.com/p/BrlpHYTBcRN/" target="_blank">swap</a> of over 40 creative folks across the U.S. <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_VxtgvO-37dPqbS_E4fsr5i6bOFZa4hl568Jwrp6q7KnNDA/viewform" target="_blank">Join the next one!</a></span></li>
-                    <!--
-                    <li><span>Hosts a <u>Show & Tell</u> series for creatives in Hampton Roads.</span></li>
-                   <li><span>Plans the first <a href="http://instagram.com/hrdesignfestival" target="_blank">Hampton Roads Design Festival</a>.</span></li>
-                    <li><span>Hosts a monthly <a href="http://instagram.com/hrdesignfestival" target="_blank">creative dinner series</a> with her friends <a href="http://instagram.com/comokitchen" target="_blank">Dani</a>, <a href="http://instagram.com/eljogogo" target="_blank">Elaine</a>, and <a href="http://instagram.com/megsheets" target="_blank">Meg</a>.</span></li> -->
-                </ul>
+                <div class="twelve columns project">
+                    <a href="enjoy.html" target="_self">
+                        <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:" style="margin-top: 3%;">
+                        <p class="eyebrow">ENJOY:</p>
+                        <h3>Crafting a brand & space for experiences in food, art, and culture.  <span style="font-style: normal; float:right">↬</span></h3>
+                    </a>
+                </div>
             </div>
 
             <div class="row">
-                <h1>She recently<span>:</span></h1>
-                <ul>
-                    <li><span>Concepted and lead a 12-week <a href="https://goodatbeing.studio/onscreen-bootcamp" target="_blank">digital design bootcamp</a> & <a href="https://onscreen-speakers.eventbrite.com" target="_blank">speaker series</a> called On-Screen.</span></li>
-                    <li><span>Crafted the brand & space for <a href="https://enjoywith.us/" target="_blank">ENJOY:</a> A space for experiences in food, art, and culture.</span></li>
-                    <li><span>Designed branding & wayfinding materials for the <a href="http://elizabethrivertrail.com/" target="_blank">Elizabeth River Trail</a>.</span></li>
-                </ul>
+                <div class="twelve columns project even">
+                    <a href="enjoy.html" target="_self">
+                        <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+                        <p class="eyebrow">Elizabeth River Trail</p>
+                        <h3>Giving our urban trail an identity <span style="font-style: normal; float:right">↬</span></h3>
+                    </a>
+                </div>
             </div>
 
             <div class="row">
-                <h1>She previously<span>:</span></h1>
-                <ul>
-                    <li><span>Got her design chops at <a href="http://viget.com" target="_blank">Viget</a>, <a href="http://sequence.com" target="_blank">Sequence</a>, and <a href="http://mcsweeneys.net" target="_blank">McSweeney's</a>.</span></li>
-                    <li><span>Taught 5 years of project-based User Experience classes & workshops.</span></li>
-                    <li><span>Organized design events as the Programming Director for <a href="http://hamptonroads.aiga.org/about-us/mission/" target="blank">AIGA HR</a>.</span></li>
-                </ul>
+                <div class="twelve columns project">
+                    <a href="enjoy.html" target="_self">
+                        <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+                        <p class="eyebrow">Zine Swap</p>
+                        <h3>Creating a cross-country community<span style="font-style: normal; float:right">↬</span></h3>
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns project">
+                <a href="enjoy.html" target="_self">
+                    <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+                    <p class="eyebrow">On-Screen: Digital Design Bootcamp</p>
+                    <h3>Bringing digital design education to Norfolk<span style="font-style: normal; float:right">↬</span></h3>
+                </a>
 
-            <div class="row">
-                <h1>You can find her<span>:</span></h1>
-                <ul>
-                    <li><span>Most active on <a href="https://www.instagram.com/goodatbeing/" target="_blank">Instagram</a>.</span></li>
-                    <li><span>Monthly playlists on <a href="https://open.spotify.com/user/janicejpang" target="_blank">Spotify</a>.</span></li>
-                </ul>
             </div>
-
-            <div class="row">
-                <h1>Want to chat? Email<span>:</span></h1>
-                <p>
-                    <a href="mailto:janice@goodatbeing.studio?Subject=Hello!">janice@goodatbeing.studio</a>
-                </p>
-            </div>
-
         </div>
 
+        <!-- Personal Projects 
+<hr id="personal">
+<div class="row">
+<div class="eight columns">
+<h1>Personal Experiments</h1>
+<p>When I'm not designing, I enjoy crafting things by hand and in code. I use my personal experiments as opportunities to learn and apply new tools, processes, and styles.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="twelve columns project">
+<a href="enjoy.html" target="_self">
+<img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:" style="margin-top: 3%;">
+<p class="eyebrow">Zines</p>
+<h3>Trying new things with 40+ creators across the U.S. every 3 months<span style="font-style: normal; float:right">☞</span></h3>
+</a>
+</div>
+</div>
+
+<div class="row">
+<div class="six columns project even">
+<a href="enjoy.html" target="_self">
+<img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+<p class="eyebrow">Sleep & Creativity</p>
+<h3>Visualizing relationships in Processing<span style="font-style: normal; float:right">☞</span></h3>
+</a>
+</div>
+<div class="six columns project">
+<a href="enjoy.html" target="_self">
+<img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
+<p class="eyebrow">Show & Tell</p>
+<h3>Practicing the art of interviewing<span style="font-style: normal; float:right">☞</span></h3>
+</a>
+</div>
+</div> ----------------------------------->
+
+        <!-- Reach Out ----------------------------------->
+        <hr id="contact">
+        <div class="row">
+            <div class="twelve columns">
+                <h1>Reach Out</h1>
+                <p> You can reach me by email at <em><a href="mailto:janice@goodatbeing.studio?Subject=Hello!" style="margin-left:3px;">janice@goodatbeing.studio</a></em> &nbsp;💌</p>
+                <p>I'd especially love to hear from you if you'd like to collaborate on:</p> 
+                <ol>
+                    <li>
+                        UX and visual design for your digital design product
+                    </li>
+                    <li>UX and visual design workshops</li>
+                    <li>
+                        Branding for your small business or community initiative
+                    </li>
+                    <li>
+                        Music-related design projects
+                    </li>
+                </ol>
+            </div>
+        </div>
+        </div>
+
+    <!-- Footer - Site Architecture ----------------------------------->
+    <footer>
+        <div id="footercontent">
+            <div class="row">
+                <div class="six columns architecture">
+                    <p class="eyebrow row">Site Notes</p>
+                    <p class="architecture">
+                    <ul>
+                        <li style="list-style-type: '👍 ';"><a href="https://goodatbeing.studio" target="_blank" alt="Skeleton boilerplate on GitHub">Developed by Janice Pang</a></li>
+                        <li style="list-style-type: '💀 ';"><a href="https://github.com/dhg/Skeleton" target="_blank" alt="Skeleton boilerplate on GitHub">Built with Skeleton</a> </li>
+                        <li style="list-style-type: '🐱 ';"><a href="https://github.com" target="_blank" alt="GitHub">Hosted on GitHub</a></li>
+                        <li style="list-style-type: '🎵 ';"><a href="https://open.spotify.com/user/janicejpang?si=bHdpgVA6REWWunn8487qNg" target="_blank" alt="Janice Pang's Spotify playlist">Fueled by soulful tunes</a></li>
+                    </ul>
+                </div>
+
+                <div class="three columns architecture">
+                    <p class="eyebrow">Client Work</p>
+                    <ul>
+                        <li>
+                            <a href="enjoy.html">Google T & S Research</a>
+                        </li>
+                        <li>
+                            <a href="enjoy.html">Google Retail</a>
+                        </li>
+                        <li>
+                            <a href="enjoy.html">Google My Business</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="three columns architecture">
+                    <p class="eyebrow">Community Projects</p>
+                    <ul>
+                        <li>
+                            <a href="enjoy.html">ENJOY:</a>
+                        </li>
+                        <li>
+                            <a href="enjoy.html">Elizabeth River Trail</a>
+                        </li>
+                        <li>
+                            <a href="enjoy.html">Zine Swap</a>
+                        </li>
+                        <li>
+                            <a href="enjoy.html">On-Screen</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+
+            </div>
+        </div>
+    </footer>
 
 
 
 
-
-
-        <!-- End Document
+    <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--JS -->
+    <SCRIPT LANGUAGE="javascript">
+        /*----PW PROTECTOR----*/
+        var nifty_little_window = null;
+        function gateKeeper() {
+            nifty_little_window = window.open('password.html', 'theKeeper','width=500,height=225,resizable=1,left='+window.screen.width/2+',top='+window.screen.height/2+'resizeable=1');
+        }
+
+    </SCRIPT>
 
     </body>
 
