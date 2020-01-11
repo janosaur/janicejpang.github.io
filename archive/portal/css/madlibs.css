@@ -1,0 +1,160 @@
+form {
+margin-bottom:4vh;
+}
+
+/* TEXT INPUT BOXES */
+
+input {
+    margin: 0px 0px 30px 0px;
+    background: none;
+    height: 20px;
+    width: 150px;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+    border-color: black;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    color: #4c6a6c;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+label {
+    padding-right: .5vw;
+}
+
+legend {
+    font-size:16px;
+    font-family: "Karla", sans-serif;
+    margin-left: -2px;
+    margin-bottom: 2vh;
+}
+
+fieldset {
+    border-style: none;
+    padding-left: 0;
+    margin-bottom: 2vh;
+}
+
+
+label[for=textLn] {
+    margin-left: 168px;
+}
+
+label[for=textDreamBig]{
+    margin-left: 95px;
+}
+
+label[for=textTerrifies]{
+    margin-left: 40px;
+}
+
+/* SUBMIT BUTTON */
+
+#submitPress {
+    background: white;
+    color:black;
+    font-size:16px;
+    letter-spacing: .02rem;
+    font-weight:bold;
+    border: 1px dashed #000;
+    padding: 20px 30px;
+    margin-right: 25px;
+    width: auto;
+    height: auto;
+}
+
+#resetPress {
+    background: white;
+    color:black;
+    font-size:16px;
+    letter-spacing: .02rem;
+    font-weight:bold;
+    border: 1px dashed #000;
+    padding: 20px 30px;
+    width: auto;
+    height: auto;
+}
+
+/* CARD (SIDE ONE) TYPOGRAPHY*/
+
+.cardBg {
+    position: relative;
+    background: #fff9e7;
+    padding: 20px 30px;
+    width: 480px;
+    height: 235px;
+    border-width: 2px 2px 30px 2px;
+    border-style:inset;
+    border-color: #6c5b60;
+    border-radius: 25px;
+    color: #6c5b60;
+}
+
+.cardContent {
+    width: 335px;
+   word-wrap: break-word;
+}
+
+.cardJob {
+    width: 375px;
+   word-wrap: break-word;
+}
+
+.friendHeader {
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: .01rem;
+}
+
+.badge {
+    float: right;
+}
+
+.cardBg h1 {
+    line-height: normal;   
+    margin-bottom: 0px;
+    
+}
+
+.friendJob {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #afb7a0;
+    margin-bottom:40px;
+}
+
+/* CARD (SIDE TWO) TYPOGRAPHY*/
+
+.cardBgBack {
+    position: relative;
+    background: #6c5b60;
+    padding: 20px 30px;
+    width: 480px;
+    height: 235px;
+    border-width: 0px 0px 30px 0px;
+    border-style:inset;
+    border-color: #6c5b60;
+    border-radius: 25px;
+    color: #fff9e7;
+    display: table;
+    position:  absolute;
+    margin-bottom: 7vh;
+}
+
+.friendshipValid {
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+    font-style:italic;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size:12px;
+}
+
+/* RESET */
+
+#cardBegin {
+    display:none;
+}

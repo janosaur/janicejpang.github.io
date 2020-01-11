@@ -1,0 +1,364 @@
+/*
+=^. .^=
+*/
+
+
+/* GENERAL STYLING */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff9e7;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+section {
+    width: 70vw;
+    margin-left:15vw;
+    margin-right:15vw;
+    margin-bottom: 4vh;
+}
+
+footer {
+    display: inline-block;
+    text-align:center;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    color: #1b1e27;
+    font-family: "Droid Sans Mono", sans-serif;
+    font-size: 13px;
+    letter-spacing: .02em;
+}
+
+h1 {
+    font-family: "Karla", sans-serif;
+    font-size: 48px;
+    line-height: 73px;
+    margin-bottom: 25px;
+    margin-top:0px;
+    float:none;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 18px;
+    padding-left: .50vw;
+    margin-bottom: 30px;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a:hover, #noLink {
+    text-decoration: none;
+}
+
+/* BANNER */
+
+header {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 4vh;
+}
+
+header img {
+    width: 100vw;
+    height: auto;
+}
+
+
+/* NAVIGATION */
+
+/* navigation header typography */
+p.section-title {
+    font-family: "Karla", sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+/* add space below each nav section */
+.navSection {
+    padding-bottom:40px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    padding-left:1.5vw;
+}
+
+nav li {
+    width: auto;
+    padding-top: .42vh;
+    padding-bottom: .42vh;
+}
+
+/* linebreaks around Filter title */
+.filterLine {
+    margin: 15px 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+.filterLineBottom {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+}
+
+
+/* linebreaks between Location filters */
+.linebreak {
+    margin: 10px 0px 10px 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+}
+
+.filterItem {
+    margin: 15px 0px;
+}
+
+.filterItem a {
+    text-decoration: none;
+}
+
+.filterItem a:hover {
+    color: #393f4c;
+}
+
+#square {
+    width:13px;
+    height:13px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+
+/* CONTENT */
+
+.mainContent {
+    float: left;
+    width: 50vw;
+    margin-bottom:8vh;
+}
+
+.description {
+    color: #c6ad97;
+    float: right;
+    display: inline-flex;
+    margin-top:3vh;
+    margin-left:-57px;
+}
+
+table {
+    width:100%;
+}
+
+table, th, td {
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px dotted black;
+    border-top: 0px;
+}
+
+th {
+    background-color: #afb7a0;
+    border-bottom: 0px;
+}
+
+th:first-child {
+    border-top-left-radius: 5px;
+
+}
+
+th:last-child {
+    border-top-right-radius: 5px;
+}
+
+/* no table border */
+table tr:first-child th {
+  border-top: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+/* table columns width */
+th:nth-child(1), tr td:nth-child(1) {
+    width: 15%;
+}
+
+th:nth-child(2), tr td:nth-child(2) {
+    width: 12%;
+}
+
+th:nth-child(3), tr td:nth-child(3) {
+    width: 73%;
+}
+
+/* data location + mood filters */
+#atHome, #inTransit, #atWork, #inClass, #superAwake, #aOK, #sleepy, #dying, #allMoods {
+    cursor: pointer;
+}
+
+.atHome, .inTransit, .atWork, .inClass, .superAwake, .aOK, .sleepy, .dying, .allMoods {
+    cursor: pointer;
+    background-color:rgb(255, 249, 231);
+}
+
+/* toggle filters */
+
+/* animate location */
+td:nth-child(2) {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:20px;
+    background-clip: content-box;
+}
+
+tr:hover td:nth-child(2) {
+    background-size:23px;
+}
+
+/* location bg */
+.atHome td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380082/6d0691d2-edae-11e4-9215-f9ec2ed8e812.png");
+}
+
+.inTransit td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380092/6d2f1dfa-edae-11e4-93ec-3bc7914f0b78.png");
+}
+
+.atWork td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380086/6d194c46-edae-11e4-8dcd-ef2f0087c1a2.png");
+}
+
+.inClass td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380095/6d304432-edae-11e4-9048-13e12ae3ff1e.png");
+}
+
+/* hover location */
+.atHome:hover td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380085/6d0a8ae4-edae-11e4-8734-6769d22acee0.gif");
+}
+
+.inTransit:hover td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380093/6d2f7b60-edae-11e4-9f57-dcaa9df16701.gif");
+    background-size:23px;
+}
+
+.atWork:hover td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380089/6d1a9592-edae-11e4-80b1-01d17404db48.gif");
+}
+
+.inClass:hover td:nth-child(2) {
+    background-image: url("https://cloud.githubusercontent.com/assets/7544281/7380091/6d1e69ba-edae-11e4-81e6-96533ddda118.gif");
+}
+
+/* hover mood */
+.superAwake:hover td:nth-child(3) {
+    background-color: #faeada;
+    border-radius: 0px;
+}
+
+.aOK:hover td:nth-child(3) {
+    background-color: #f2cfc4;
+    border-radius: 0px;
+}
+
+.sleepy:hover td:nth-child(3) {
+    background-color: #e9b4ac;
+    border-radius: 0px;
+}
+
+.dying:hover td:nth-child(3) {
+    background-color: #d0958f;
+    border-radius: 0px;
+}
+
+
+/* TOOL TIP */
+
+.filterLocation, .filterMood {
+    cursor: pointer;
+}
+
+.tip {
+    position: absolute;
+    margin-top: -40px;
+    overflow: hidden;
+    color:gray;
+    border-radius: 2px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 12px;
+}
+
+
+/* ENTRIES */
+
+.entryOne, .entryTwo, .entryThree, .entryFour, .entryFive, .entrySix, .entrySeven, .entryEight,
+ .entryNine, .entryTen, .entryEleven, .entryTwelve, .entryThirteen, .entryFourteen, .entryFifteen,
+  .entrySixteen, .entrySeventeen {
+    background:;
+    padding:48px;
+    line-height: 22px;
+    letter-spacing:.5px;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+/* MUSIC */
+
+.bigText {
+    font-family: 'Karla';
+    font-size: 15px;
+    margin-top:50px;
+    letter-spacing:.5px;
+}
+
+.intro {
+    font-family: 'Karla';
+    font-size: 20px;
+    letter-spacing:.75px;
+    line-height: 30px;
+}
+
+
+.musicDetail a, .musicInfo a {
+    color: #d4cfaf;
+    text-decoration: none;
+}
+
+.musicDetail a:hover, .musicInfo a:hover  {
+    color: white;
+    text-decoration: none;
+}

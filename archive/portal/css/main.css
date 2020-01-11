@@ -1,0 +1,204 @@
+/*
+=^. .^=
+*/
+/* GENERAL STYLING */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff9e7;
+  width: 100vw;
+  height: 100vh; }
+
+section {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4vh;
+  overflow: hidden; }
+
+footer {
+  display: inline-block;
+  text-align: center; }
+
+/* TYPOGRAPHY */
+body {
+  color: #1b1e27;
+  font-family: "Droid Sans Mono", sans-serif;
+  font-size: 13px;
+  letter-spacing: .02em; }
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-top: 0px;
+  float: none;
+  display: inline-block; }
+
+h1 a {
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+  padding-bottom: 3px; }
+
+h2 {
+  font-size: 18px;
+  padding-left: .50vw;
+  margin-bottom: 30px; }
+
+h2 a {
+  text-decoration: none; }
+
+a {
+  color: #363e4b;
+  font-weight: bold; }
+
+a:hover, #noLink {
+  text-decoration: none; }
+
+nav p {
+  font-family: "Karla", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: .65vw; }
+
+nav p a {
+  text-decoration: none; }
+
+nav p:not(:first-of-type) {
+  margin-top: 30px; }
+
+/* BANNER */
+header {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 4vh; }
+
+header img {
+  width: 100vw;
+  height: auto; }
+
+/* NAVIGATION */
+nav {
+  float: right; }
+
+nav img {
+  margin-bottom: 30px; }
+
+nav li {
+  width: auto;
+  padding-top: .42vh;
+  padding-bottom: .42vh; }
+
+nav ul {
+  padding-left: 1.5vw; }
+
+nav[role="main"] {
+  float: left; }
+
+/* PORTAL PAGE */
+.about {
+  float: left;
+  width: 28vw;
+  padding-right: 12vw;
+  margin-bottom: 6vh; }
+
+.about p {
+  line-height: 25px;
+  margin-bottom: 23px; }
+
+/* PROJECTS + PROJECT PAGES */
+.does .mainContent .project, .projectPage .mainContent .project {
+  margin-bottom: 40px; }
+  .does .mainContent .project img, .projectPage .mainContent .project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .does .mainContent .project a.imageWrapper, .projectPage .mainContent .project a.imageWrapper {
+    display: block; }
+  .does .mainContent .project h1, .projectPage .mainContent .project h1 {
+    margin-right: 40px; }
+
+.projectPage {
+  padding-top: 10vh; }
+  .projectPage .video-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative; }
+    .projectPage .video-wrapper iframe, .projectPage .video-wrapper video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; }
+    .projectPage .video-wrapper.first {
+      margin-bottom: 20px; }
+
+/* BLOG PAGE */
+.mainContent {
+  float: left;
+  width: 70%;
+  max-width: calc(100% - 275px);
+  margin-bottom: 6vh; }
+
+.mainContent p {
+  line-height: 25px;
+  margin-bottom: 23px;
+  text-align: justify; }
+
+.date {
+  margin-top: 1em;
+  color: #c6ad97;
+  float: right;
+  display: inline-flex; }
+
+.linebreak {
+  margin: 55px 0px 75px 0px;
+  border-width: 0px 0px 1px 0px;
+  border-style: dotted; }
+
+/* MAD LIBS PAGE */
+.fopl {
+  float: left;
+  width: 50vw;
+  margin-bottom: 3vh; }
+
+.fopl h1 {
+  letter-spacing: -1px; }
+
+@media (max-width: 850px) {
+  section {
+    width: 85vw; } }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 24px; }
+  .mainContent {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 5%; }
+  .mainContent:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: dotted 1px black; }
+  nav {
+    float: none; }
+  nav ul, nav p {
+    padding: 0; }
+  nav li {
+    display: inline; }
+  nav li:not(:last-of-type):after {
+    content: ","; }
+  nav li:last-of-type:before {
+    content: "and "; } }
