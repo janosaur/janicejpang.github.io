@@ -247,13 +247,14 @@ body {
     }
 }
 
-
+s
 /* Custom Type Styles –––––––––––––––––––––––––––– */
 
 p.eyebrow {
     font-family: 'Karla', sans-serif;
     font-size: 1.4rem;
     letter-spacing: .05rem;
+    margin-bottom:.5rem;
     text-transform: uppercase;
 }
 
@@ -288,7 +289,7 @@ a:hover, a:focus, a:active, a h3:hover {
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .project {
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
 }
 
 .column,
