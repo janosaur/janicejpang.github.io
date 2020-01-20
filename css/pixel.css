@@ -10,37 +10,37 @@ Based on Skeleton V2.0.4 by Dave Gamache
 
 /*------Smartphone-----*/
 @media (min-width: 0px) {
-    #attractmobile {
+    .mobile {
         display: block;
     }
-    #attracttablet {
+    .tablet {
         display: none;
     }
-    #attract {
+    .desktop {
         display: none;
     }
 }
 
 @media (min-width: 420px) {
-    #attractmobile {
+    .mobile {
         display: none;
     }
-    #attracttablet {
+    .tablet {
         display: block;
     }
-    #attract {
+    .desktop {
         display: none;
     }
 
 }
 @media (min-width: 1280px) {
-    #attractmobile {
+    .mobile {
         display: none;
     }
-    #attracttablet {
+    .tablet {
         display: none;
     }
-    #attract {
+    .desktop {
         display: block;
     }
 }
@@ -593,6 +593,17 @@ ul#navcontent a {
         font-size: 1.25rem;
         line-height:140%;
         letter-spacing: .05rem;
+    }
+    blockquote {
+        margin-top:5.5rem;
+        font-size:2.4rem;
+        line-height:3.75rem;
+
+    }
+    blockquote:before {     position: absolute;
+        margin-left: -11px;
+        content: open-quote;
+        quotes: "\201C" "\201D" "\2018" "\2019";
     }
 }
 
