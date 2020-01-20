@@ -1,6 +1,6 @@
-<svg width="320" height="144" viewBox="0 0 320 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="320" height="125" viewBox="0 0 320 125" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<rect width="320" height="144" fill="white"/>
+<rect width="320" height="125" fill="white"/>
 <line x1="8.74228e-08" y1="71" x2="320" y2="71" stroke="#F5F5F5" stroke-width="2"/>
 <rect x="16" y="-53" width="249" height="16" transform="rotate(90 16 -53)" fill="url(#paint0_linear)"/>
 <rect x="304" y="196" width="249" height="16" transform="rotate(-90 304 196)" fill="url(#paint1_linear)"/>
@@ -21,7 +21,7 @@
 <stop offset="0.791667" stop-color="white"/>
 </linearGradient>
 <clipPath id="clip0">
-<rect width="320" height="144" fill="white"/>
+<rect width="320" height="125" fill="white"/>
 </clipPath>
 </defs>
 </svg>
