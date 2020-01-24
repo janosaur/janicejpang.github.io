@@ -275,7 +275,7 @@ a, a:link, a:visited, a h3 {
 }
 
 a:hover, a:focus, a:active, a h3:hover {
-    color: #fdc53a;
+    color: #4285F4;
 }
 
 .project a:hover {
@@ -283,6 +283,12 @@ a:hover, a:focus, a:active, a h3:hover {
 }
 
 
+u {
+    text-decoration: none;
+    border-bottom: dashed 1px lightgrey;
+    line-height: 1;
+    transition: border-bottom .35s;
+}
 
 
 

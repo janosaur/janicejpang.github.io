@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Small Thanks – Janice Pang</title>
+        <meta name="description" content="Small Thanks case study by Janice Pang">
+        <meta name="author" content="Janice Pang">
+
+
+        <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i|Karla&display=swap" rel="stylesheet">
+
+        <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/smallthanks.css">
+        <link rel="stylesheet" href="css/lity.css">
+
+        <!-- JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src='js/jquery.min.js'></script>
+
+        <!--PROGRESS BAR-->
+        <script>
+            /* call function on window scroll */
+            window.onscroll = function(){
+
+                /* height scrolled from top */
+                var scrolled_top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+                /* total scrollable height */
+                var to_scroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - (document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight) 
+
+                /* percentage of height scrolled */
+                var horizontal_width = (scrolled_top/to_scroll)*100;
+
+                /* assigning calculated width to progress bar */
+                document.getElementById('progressindicator').style.width = horizontal_width + '%';
+            }
+        </script>
+
+        <script src='js/jquery.zoom.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('.ex1').zoom();
+            });
+        </script>
+
+        <!--LIGHTBOX-->
+        <script>
+
+        </script>
+
+        <!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/star-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/star-16x16.png" sizes="16x16" />
+
+    </head>
+
+    <body>
+
+        <!-- Navigation ----------------------------------->
+        <nav>
+            <div id="left">
+                <a href="index.html"><img src="assets/itme.png" data-src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:4px;" class="noload" id="rotate"></a>
+            </div>
+            <div id="right">
+                <ul id="navcontent">
+                    <li><a href="index.html#client">Client Work</a></li>
+                    <li><a href="index.html#community">Community Projects</a></li>
+                    <li><a href="index.html#contact">Reach Out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Progress Bar ----------------------------------->
+        <div id="progress">
+            <div id="progressindicator"></div>
+        </div>
+
+        <!-- Content ----------------------------------->
+        <!----------------------Hero-------------------->
+        <div class="noload fade-in" id="hero">
+            <img src="assets/pixel-header.png" data-src="assets/pixel-header.png" class="desktop" alt="Pixel 3 with Alternate Moments UI video on screen. Pixel 3 set atop a landscape photo matching the landscape in the UI video.">
+            <img src="assets/pixel-hero-tablet.png" data-src="assets/pixel-hero-tablet.png" class="tablet" alt="Pixel 3 with Alternate Moments UI video on screen. Pixel 3 set atop a landscape photo matching the landscape in the UI video.">
+            <img src="assets/pixel-hero-mobile.png" data-src="assets/pixel-hero-mobile.png" class="mobile" alt="Pixel 3 with Alternate Moments UI video on screen. Pixel 3 set atop a landscape photo matching the landscape in the UI video.">
+        </div>
+
+
+        <div class="container">
+            <!----------------------0: Intro---------------------->
+            <div class="sectionshadow">
+                <div class="text row" style="margin-top:0%;">
+
+                    <!----------0.1: Project Overview---------->
+                    <div class="eight columns">
+                        <h1 id="title">Supporting small business through the power of reviews</h1>
+                        <p>It’s easy to overlook small businesses because, well, they’re small. But the reality is small businesses make a huge impact on our economy, our local communities, and our daily lives – and they don’t often get the recognition they deserve.</p>
+                        <p>My team at <u><a href="https://thisisgrow.com" target="_blank" alt="Link to the digital agency Grow">Grow</a></u> partnered with Google’s Art, Copy, & Code team to launch Small Thanks: a platform offering free, customized marketing materials for every small business in America, powered by their Google data. We created Small Thanks to recognize our small businesses for all they do, and in turn drive more business their way.</p>
+                        <p>Our saying goes: “A small thanks goes a long way.”</p>
+                    </div>
+                    <!----------0.2: Project Details---------->
+                    <div class="offset-by-two two columns projectdetails">
+                        <div class="detail">
+                            <p class="eyebrow">Contributions</p>
+                            <ul class="info">
+                                <li>Concepting</li>
+                                <li>UX Design</li>
+                                <li>Visual Design</li>
+                                <li>Art Direction</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <p class="eyebrow">Tools</p>
+                            <ul class="info">
+                                <li>Sketch</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Google Slides</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <p class="eyebrow">Teammates</p>
+                            <ul class="info">
+                                <li>Matt Campbell</li>
+                                <li>Alex Christian</li>
+                                <li>Eric Lohman</li>
+                                <li>Gabe Molochko</li>
+                                <li>Todd Lower</li>
+                                <li>Jeff Penano</li>
+                                <li>J.R. Smith</li>
+                                <li>Sarah Walters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------Getting to know small business America---------------------->
+            <div class="text row medspace">
+                <div class="eight columns">
+                    <h2>Getting to know small business America</h2>
+                    <p>We began our project with a deep dive into Google’s qualitative research on small business owner & consumer mindsets. We surfaced these key motivations and challenges:</p>
+                </div>
+            </div>
+            <!----------Audience Mindset---------->
+            <div class="sectionshadow">
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <h3>Small Business Owners</h3>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="six columns smallspace">
+                        <p class="eyebrow"><span class="emoji">🙌</span> MOTIVATION</p>
+                        <p><strong>Small business owners are rewarded by people, not profits. </strong></p>
+                        <p class="sub">Customer satisfaction is the greatest reward for a small business owner. At the end of the day, what they care most about is people and the human connection–and ensuring they provide customers with the highest quality products or experiences.</p>
+                    </div>
+                    <div class="six columns medspace">
+                        <p class="eyebrow"><span class="emoji">🙏</span> CHALLENGE</p>
+                        <p><strong>Their craft is their <em>passion</em>, but business is <em>work</em>.</strong></p>
+                        <p class="sub">Small business owners are deeply passionate about their chosen trade, but have a love-hate relationship when it comes to the ‘many hats’ of ownership. The business side, especially marketing, feels outside their wheelhouse and like a chore – something they’d quickly outsource if they felt anyone could ‘get it right’.</p>
+                    </div>
+                </div>
+
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <h3>Consumers</h3>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="six columns smallspace">
+                        <p class="eyebrow"><span class="emoji">🙌</span> MOTIVATION</p>
+                        <p><strong>Consumers want to be the type of people who support small businesses in their community.</strong></p>
+                        <p class="sub">Consumers know that shopping at small, independent businesses is the “right thing” to do and have absorbed “shop local” and “shop small” messages. They take pride in supporting small business experiences that are exclusive to their community.</p>
+                    </div>
+                    <div class="six columns medspace">
+                        <p class="eyebrow"><span class="emoji">🙏</span> CHALLENGE</p>
+                        <p><strong>It’s easier said than done.</strong></p>
+                        <p class="sub">They want to align their behavior with their value of community – but in practice, big business convenience and price points often win. Aside from shopping small, consumers don’t feel like they have other ways of supporting small businesses in their community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------So how can we help?---------------------->
+            <div class="sectionshadow">
+                <div class="text row">
+                    <div class="eight columns">
+                        <h2>So how can we help?</h2>
+                        <p>Our insights into the motivations & challenges of small business owners and consumers informed our two-part strategy.</p>
+                    </div>
+                </div>
+
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <h3>Consumers</h3>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="six columns smallspace">
+                        <p class="eyebrow"><span class="emoji">🤝</span> HELPING SMB’S</p>
+                        <p><strong>Make it easy to spread customer love.</strong></p>
+                        <p class="sub">Small business owners measure success in customer love and their reputation. As such, online reviews are critical to a business’ success. We can help small business owners by creating a one-stop marketing tool that amplifies the things customers love about their business – all based on reviews.</p>
+                    </div>
+                    <div class="six columns medspace">
+                        <p class="eyebrow"><span class="emoji">👏</span> HELPING CONSUMERS</p>
+                        <p><strong>Make it aspirational to be a small business ally.</strong></p>
+                        <p class="sub">The best way to give thanks to a small business is with a great review. We can help consumers become small business allies by turning their online reviews into points of pride for themselves and the businesses they support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------Taking reviews beyond recommendations---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Taking reviews beyond recommendations</h2>
+                        <p>To bring our strategy to life, we built an engine that collects a business’ top Google reviews and stylizes them into works of art. Here’s how we built the engine:</p>
+                    </div>
+                </div>
+
+                <div class="text row">
+                    <div class="three columns smallspace">
+                        <img src="assets/smb-step1.svg" data-src="assets/smb-step1.svg">
+                    </div>
+                    <div class="five columns smallspace">
+                        <p class="eyebrow-light">STEP 1</p>
+                        <h3>Surface great reviews.</h3>
+                        <p>Using star ratings and sentiment analysis (via <a href="https://cloud.google.com/natural-language/" target="_blank" alt="Link to Google's Cloud Natural Language"><u>natural language processing</u></a>), we extracted the best reviews for each business from their Google profiles.</p>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="three columns smallspace">
+                        <img src="smb-step2.svg" data-src="assets/smb-step2.svg">
+                    </div>
+                    <div class="five columns smallspace">
+                        <p class="eyebrow-light">STEP 2</p>
+                        <h3>Process the reviews.</h3>
+                        <p>From the curated reviews, we used natural language processing to extract the strongest snippets and identify each word in order to inform the creative styling and visual hierarchy. </p>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="three columns smallspace">
+                        <img src="smb-step3.svg" data-src="assets/smb-step3.svg">
+                    </div>
+                    <div class="six columns smallspace">
+                        <p class="eyebrow-light">STEP 3</p>
+                        <h3>Stylize the reviews.</h3>
+                        <p>We applied predefined artwork styles and formats (more on this in the next section!) to the plain text review snippet. Our artwork design system allowed us to tweak the colors, fonts, and layouts of each asset.</p>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="three columns smallspace">
+                        <img src="assets/pixel-attract1.png" data-src="assets/pixel-attract1.png">
+                    </div>
+                    <div class="six columns smallspace">
+                        <p class="eyebrow-light">STEP 4</p>
+                        <h3>Export the reviews.</h3>
+                        <p>The artwork is then exported into a digital format that can be downloaded, shared, or printed.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!----------------------Turning reviews into share-worthy artwork---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Turning reviews into artwork</h2>
+                        <p>For our project to be successful, we needed to create review artwork that business owners and consumers would <em>want</em> to share. At the same time, the artwork  brand the artwork in a subtle, yet undeniably Google way. To ensure we achieved both goals, we stepped out the artwork design process.</p>
+                    </div>
+                </div>
+                <!----------Step 1---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 1</p>
+                        <h3>Wireframe the content</h3>
+                        <p>Before diving into visual design, we explored content structures to determine <em>what</em> information needed to be included in each piece of art and <em>how</em> the information needed to be prioritized. At a baseline, we knew we needed to include:</p>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="four columns smallspace">
+                        <ul>
+                            <li>The business name</li>
+                            <li>The review</li>
+                        </ul>
+                    </div>
+                    <div class="four columns smallspace">
+                        <ul>
+                            <li>The reviewer’s star rating</li>
+                            <li>The reviewer’s name</li>
+                        </ul>
+                    </div>
+                    <div class="four columns smallspace">
+                        <ul>
+                            <li>CTA to review the business</li>
+                            <li>Google branding</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>We explored structures that emphasized different elements...</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>And explored ways to include multiple reviews on an asset…</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>With the goal of turning reviews into share-worthy artwork in mind, we aligned on the following wireframes:</p>
+                    </div>
+                </div>
+                <div class="text row extrabigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+
+                <!----------Step 2---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 2</p>
+                        <h3>Explore artwork styles.</h3>
+                        <p>With a wireframe structure defined, we could go wide with our design exploration. And wide we went!</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>For the initial launch, we moved forward with 3 styles: </p>
+                    </div>
+                </div>
+                <div class="text row extrabigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+
+                <!----------Step 3---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 3</p>
+                        <h3>Explore variations.</h3>
+                        <p>To ensure business owners could customize their review artwork to their liking, we provided variations for each artwork style, drawing from Google’s expansive Material Design color palette.</p>
+                    </div>
+                </div>
+                <div class="text row">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+
+            </div>
+
+
+            <!----------------------Building a one-stop platform---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Building a one-stop platform</h2>
+                        <p>With an engine in place & its products defined, we built a platform for small business owners to access their review artwork, customize it to their liking, and share it everywhere – from their storefront to their social media accounts. Here’s how we built the platform:</p>
+                    </div>
+                </div>
+                <!----------Step 1---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 1</p>
+                        <h3>Define user experience priorities.</h3>
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="four columns smallspace">
+                        <p><strong>Save business owners time.</strong></p>
+                        <p class="sub">Serve them assets they can use right away. At any point – whether they choose to customize the asset or not – let them download, print, or share.</p>
+                    </div>
+                    <div class="four columns smallspace">
+                        <p><strong>Put business owners in control.</strong></p>
+                        <p class="sub">If they <em>do</em> choose to customize their artwork, make it easy for them to change the reviews or styles.</p>
+                    </div>
+                    <div class="four columns smallspace">
+                        <p><strong>Raise awareness.</strong></p>
+                        <p class="sub">When appropriate, educate businss owners on the positive impacts of listing and verifying their business on Google.</p>
+                    </div>
+                </div>
+
+                <!----------Step 2---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 2</p>
+                        <h3>Prototype the user flow.</h3>
+                        <p>To design the best experience for business owners, we needed to understand how they would get to our platform. We created an entry flow to map out the pages we needed to design & what content would live on these pages.</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>With the entry points defined, we dove into the full user experience. Based on research that <span style="color:red;">[% of business owners that use mobile phones as their primary device]</span>, we prioritized the experience on mobile:</p>
+                    </div>
+                </div>
+                <div class="text row extrabigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+
+                <!----------Step 3---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 3</p>
+                        <h3>Test, iterate, and repeat.</h3>
+                        <p>Throughout the wireframing process, we created clickable InVision prototypes that allowed us to quickly test & refine user flows and content hierarchy. We shared these prototypes with a select group of small business owners, observing what they found helpful & intuitive, and, perhaps more importantly, what wasn’t.</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p>Our prototyping process helped us wireframe a responsive platform that served business owners throughout the experience.</p>
+                    </div>
+                </div>
+                <div class="text row extrabigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+
+                <!----------Step 4---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <p class="eyebrow-light">STEP 4</p>
+                        <h3>Apply visual design.</h3>
+                        <p>With the experience wireframed, we designed the platform to Google brand standards – ensuring the platform was unmistakably Googley.</p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+            </div>
+
+
+
+
+            <!----------------------Launching Small Thanks---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Launching Small Thanks</h2>
+                        <p>We launched the platform on National Small Business Week 2017. We worked closely with Google to plan the launch, which included a photoshoot, a blog post, and an email to every small business owner on Google.</p>
+                    </div>
+                </div>
+
+                <!----------Photoshoot---------->
+
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <h3>The Photoshoot</h3>
+                        <p>To show small business owners how our platform could help them, we directed a photoshoot featuring real review artwork for small businesses in Norfolk. We worked with photographer <a href="https://www.toddwrightphoto.com" target="_blank" alt="Link to portfolio of photographer Todd Wright"><u>Todd Wright</u></a> to capture small businesses that represented a variety of business verticals. </p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+                <!----------Email---------->
+                <div class="text row">
+                    <div class="eight columns smallspace">
+                        <h3>The Email</h3>
+                        <p>To notify small business owners about our platform, we included notifications in 2 existing email formats. </p>
+                    </div>
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/smb-hero.png" data-src="assets/smb-hero.png">
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------Takeaways---------------------->
+        <div class="text row bigspace">
+            <div class="eight columns">
+                <h2>Looking forward & reflecting back</h2>
+                <p>In its first year, the Small Thanks platform had 113K unique users. Additionally, over 20% of visitors downloaded or shared a Small Thanks asset.</p>
+                <p>The positive feedback Google received from small business owners and Google business partners led to our continued relationship with the Art, Copy, and Code team. When the Art, Copy, and Code team was absorbed into the Google My Business team in 2018, Small Thanks received even more support. The Google team has since built on our existing website structure and poster designs to offer business owners even more assets to promote their business.</p>
+                <p>In the 6 months my team took Small Thanks from concept to launch, we learned several valuable lessons that positively impacted the way we approach our design process & client relationships.</p>
+            </div>
+        </div>
+        <div class="sectionshadow">
+            <div class="text row">
+                <div class="four columns medspace">
+                    <p class="eyebrow-light">Takeaway 1</p>
+                    <h4>Keep your audience at the forefront.</h4>
+                    <p class="sub">You are not designing these posters for yourself – your personal design style isn’t necessarily what will resonate with the end user.</p>
+                </div>
+                <div class="four columns medspace">
+                    <p class="eyebrow-light">Takeaway 2</p>
+                    <h4>Everything can be wireframed!</h4>
+                    <p class="sub">Wireframe = hierarchy = understanding what’s important, and how people interact with something.
+                    </p>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">Takeaway 3</p>
+                    <h4>A project isn’t over when it launches.</h4>
+                    <p class="sub">Being a good partner means being invested in a project’s success, even when your part is done.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------11: Reach Out---------------------->
+        <div id="end">
+            <div class="text row">
+                <div class="twelve columns">
+                    <h1>Reach Out</h1>
+                    <p>If you’d like to learn more about this project, I’d love to hear from you. I’d be happy to share how this work has performed since its launch, and how we can work together to launch your projects.</p>
+                    <p>You can reach me by email at <em><a href="mailto:janice.jamye.pang@gmail.com?Subject=Hello!" style="margin-left:3px;">janice.jamye.pang@gmail.com</a></em>&nbsp; 💌</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!--LIGHTBOX-->
+    <script src="js/lity.js"></script>
+
+    <!--LAZY LOAD-->
+    <script src="js/lazyload.js"></script>
+    <script>
+        (function() {
+            function logElementEvent(eventName, element) {
+                console.log(
+                    Date.now(),
+                    eventName,
+                    element.getAttribute("data-src")
+                );
+            }
+            var callback_enter = function(element) {
+                logElementEvent("🔑 ENTERED", element);
+            };
+            var callback_exit = function(element) {
+                logElementEvent("🚪 EXITED", element);
+            };
+            var callback_reveal = function(element) {
+                logElementEvent("👁️ REVEALED", element);
+            };
+            var callback_loaded = function(element) {
+                logElementEvent("👍 LOADED", element);
+            };
+            var callback_error = function(element) {
+                logElementEvent("💀 ERROR", element);
+                element.src =
+                    "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+            };
+            var callback_finish = function() {
+                logElementEvent("✔️ FINISHED", document.documentElement);
+            };
+            var ll = new LazyLoad({
+                threshold: 0,
+                // Assign the callbacks defined above
+                callback_enter: callback_enter,
+                callback_exit: callback_exit,
+                callback_reveal: callback_reveal,
+                callback_loaded: callback_loaded,
+                callback_error: callback_error,
+                callback_finish: callback_finish
+            });
+        })();
+    </script>
+
+
+    <!--PW PROTECTION-->
+    <script>
+
+        var pass=new Array()
+        var t3=""
+        var lim=5
+        pass[0]="iBzX0xYJ5dSekiy"
+        pass[1]="Bv4PuUqqeRQ4cA6"
+        pass[2]="Fhiu6F9aNZRtqu"
+        pass[3]="VwALlboBRFsHNJ9"
+        pass[4]="51dvXo6SqsaTV2d"
+        pass[5]="551dvXo6SqsaTV2"
+
+        //configure extension to reflect the extension type of the target web page (ie: .htm or .html)
+        var extension=".html"
+        var enablelocking=0
+        var numletter="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        var temp3=''
+        var cur=0
+
+
+        function max(which){
+            return (pass[Math.ceil(which)+(3&15)].substring(0,1))
+        }
+
+        function testit(input){
+            temp=numletter.indexOf(input)
+            var temp2=temp^parseInt(pass[phase1-1+(1|3)].substring(0,2))
+            temp2=numletter.substring(temp2,temp2+1)
+            return (temp2)
+        }
+
+
+        function submitentry(){
+            t3=''
+            verification=document.password1.password2.value
+            phase1=Math.ceil(Math.random())-6+(2<<2)
+            var indicate=true
+            for (i=(1&2);i<window.max(Math.LOG10E);i++)
+                t3+=testit(verification.charAt(i))
+            for (i=(1&2);i<lim;i++){
+                if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
+                    indicate=false
+            }
+            if (verification.length!=window.max(Math.LOG10E))
+                indicate=false
+            if (indicate)
+                window.location=verification+extension
+            else
+                alert("Invalid password. Please try again")
+        }
+    </script>
+
+
+    <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    </body>
+
+</html>
