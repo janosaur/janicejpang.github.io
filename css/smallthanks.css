@@ -364,6 +364,17 @@ ul#navcontent a {
         text-transform: uppercase;
         color:#919191;
     }
+    .eyebrow-takeaway {
+        margin-top:1.5rem;
+        margin-bottom:0rem;
+        line-height:1.75rem;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 800;
+        letter-spacing: .076rem;
+        text-transform: uppercase;
+        color:#919191;
+    }
     .sub {
         font-size:1.7rem;
         line-height:3rem;
