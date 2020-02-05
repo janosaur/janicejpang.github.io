@@ -352,9 +352,19 @@ ul#navcontent a {
         margin-top:2rem;
         margin-bottom:-2rem;
     }
+    .eyebrow-detail {
+        font-family: 'Karla', sans-serif;
+        font-size: 1.45rem;
+        font-weight: 800;
+        letter-spacing: .05rem;
+        text-transform: uppercase;
+        margin:auto;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
     .eyebrow-light {
         margin-top:1.5rem;
-        margin-bottom:-4rem;
+        margin-bottom:-1.5rem;
         line-height:1.75rem;
         font-family: 'Karla', sans-serif;
         font-size: 1.4rem;
@@ -375,6 +385,7 @@ ul#navcontent a {
         color:#919191;
     }
     .sub {
+        margin-top:2.25rem;
         font-size:1.7rem;
         line-height:3rem;
     }
@@ -543,6 +554,10 @@ ul.info {
 
 li {
     margin-bottom:.8rem;
+}
+
+.sub li {
+    margin-bottom:0rem;
 }
 
 
