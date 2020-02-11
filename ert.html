@@ -61,8 +61,8 @@
 
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="images/star-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="images/star-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
 
     </head>
 
@@ -363,17 +363,17 @@
                 var indicate=true
                 for (i=(1&2);i<window.max(Math.LOG10E);i++)
                     t3+=testit(verification.charAt(i))
-                for (i=(1&2);i<lim;i++){
-                    if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-                        indicate=false
-                }
+                    for (i=(1&2);i<lim;i++){
+                        if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
+                            indicate=false
+                            }
                 if (verification.length!=window.max(Math.LOG10E))
                     indicate=false
-                if (indicate)
-                    window.location=verification+extension
-                else
-                    alert("Invalid password. Please try again")
-            }
+                    if (indicate)
+                        window.location=verification+extension
+                        else
+                            alert("Invalid password. Please try again")
+                            }
         </script>
 
 
