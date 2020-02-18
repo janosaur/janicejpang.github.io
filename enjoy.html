@@ -5,8 +5,8 @@
         <!-- Basic Page Needs
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta charset="utf-8">
-        <title>Janice Pang – Google Trust & Safety Research</title>
-        <meta name="description" content="Google Trust & Safety Research website case study by Janice Pang">
+        <title>ENJOY: – Janice Pang</title>
+        <meta name="description" content="ENJOY: Branding & Marketing case study by Janice Pang">
         <meta name="author" content="Janice Pang">
 
 
@@ -16,63 +16,359 @@
 
         <!-- FONT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i|Karla&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700,700i|Karla&display=swap" rel="stylesheet">
 
         <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/enjoy.css">
+        <link rel="stylesheet" href="css/lity.css">
+
+        <!-- JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src='js/jquery.min.js'></script>
+
+        <!--PROGRESS BAR-->
+        <script>
+            /* call function on window scroll */
+            window.onscroll = function(){
+
+                /* height scrolled from top */
+                var scrolled_top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+                /* total scrollable height */
+                var to_scroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - (document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight) 
+
+                /* percentage of height scrolled */
+                var horizontal_width = (scrolled_top/to_scroll)*100;
+
+                /* assigning calculated width to progress bar */
+                document.getElementById('progressindicator').style.width = horizontal_width + '%';
+            }
+        </script>
+
+        <script src='js/jquery.zoom.js'></script>
+        <script>
+            $(document).ready(function(){
+                $('.ex1').zoom();
+            });
+        </script>
+
+        <!--LIGHTBOX-->
+        <script>
+
+        </script>
 
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <link rel="icon" type="image/png" href="images/star-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="images/star-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
 
     </head>
 
     <body>
 
-        <!-- Primary Page Layout ----------------------------------->
-        <div class="container" style="padding-top:0%;">
+        <!-- Navigation ----------------------------------->
+        <nav>
+            <div id="left">
+                <a href="index.html"><img src="assets/itme.png" data-src="assets/itme.png" alt="Janice Memoji giving a thumbs up" style="position:relative; width:40px; margin-top:4px;" class="noload" id="rotate"></a>
+            </div>
+            <div id="right">
+                <ul id="navcontent">
+                    <li><a href="index.html#client">Client Work</a></li>
+                    <li><a href="index.html#community">Community Projects</a></li>
+                    <li><a href="index.html#contact">Reach Out</a></li>
+                </ul>
+            </div>
+        </nav>
 
-            <!-- Nav ----------------------------------->
-            <div class="row nav" style="position: sticky; padding:10px 0px;">
-                <div class="twelve columns">
-                    <p class="eyebrow"><a href="index.html#home">Home</a></p>
+        <!-- Progress Bar ----------------------------------->
+        <div id="progress">
+            <div id="progressindicator"></div>
+        </div>
+
+        <!-- Content ----------------------------------->
+        <!----------------------Hero-------------------->
+        <div class="noload fade-in" id="hero">
+            <img src="assets/enjoy-header.png" data-src="assets/enjoy-header.png" class="desktop" alt="People working inside of ENJOY:">
+            <img src="assets/enjoy-header-tablet.png" data-src="assets/enjoy-header-tablet.png" class="tablet" alt="People working inside of ENJOY:">
+            <img src="assets/enjoy-header-mobile.png" data-src="assets/enjoy-header-mobile.png" class="mobile" alt="People working inside of ENJOY:">
+        </div>
+        <p class="attribution">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
+
+
+        <div class="container">
+            <!----------------------0: Intro---------------------->
+            <div class="sectionshadow">
+                <div class="text row" style="margin-top:2%;">
+
+                    <!----------0.1: Project Overview---------->
+                    <div class="eight columns">
+                        <h1 id="title">Creating a space for food, art, and culture.</h1>
+                        <p>In December 2017, Field Guide closed its doors. On a personal level, I lost one of my favorite lunch and dinner joints; on a community level, Norfolk lost a gathering place.</p>
+                        <p>The following fall, <u><a href="https://thisisgrow.cpm" target="_blank" alt="Link to the digital design agency Grow's wesite">Grow</a></u> opened the doors to <u><a href="https://enjoywith.us" target="_blank" alt="Link to ENJOY:'s wesite">ENJOY:</a></u> in Field Guide’s place. Following the restaurant’s communal model, Grow developed the space to serve as the lunchroom and common space for its 50+ employees during the day, and to reconfigure at night to fit the experiential needs of various pop-ups.</p>
+                        <p>I worked with a small group at Grow to craft ENJOY:’s brand & marketing system, directing the brand’s physical and digital presence. </p>
+                    </div>
+                    <!----------0.2: Project Details---------->
+                    <div class="offset-by-two two columns projectdetails">
+                        <div class="detail">
+                            <p class="eyebrow">Contributions</p>
+                            <ul class="info">
+                                <li>Naming</li>
+                                <li>Branding</li>
+                                <li>Web Design</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <p class="eyebrow">Tools</p>
+                            <ul class="info">
+                                <li>Sketch</li>
+                                <li>Google Slides</li>
+                            </ul>
+                        </div>
+                        <div class="detail">
+                            <p class="eyebrow">Partners</p>
+                            <ul class="info">
+                                <li>Drew, CCO</li>
+                                <li>Elaine Gozar</li>
+                                <li>Neil Pullman</li>
+                                <li>Andy Stites</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- About ----------------------------------->
-            <div class="row">
-                <img src="assets/enjoy-hero.jpg" alt="The interior of ENJOY:">
-                <p class="caption">The interior of ENJOY: photographed by <a id="credit" href="https://www.instagram.com/mikewashington/" target="_blank" alt="Mike Washington's Instagram account">Mike Washington</a></p>
-            </div>
-            <div class="row">
-                <p class="eyebrow">ENJOY:</p>
-                <h1>Crafting a brand & space for experiences in food, art, and culture.</h1>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="seven columns">
-                    <p class="eyebrow">Background</p>
-                    <h3>High level description of who I am</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et convallis mauris. Aliquam pellentesque molestie mi nec auctor. Quisque mi dui, volutpat at dictum ac, elementum quis neque. Morbi tellus justo, aliquam laoreet lorem eu, molestie vulputate.</p>
-                    <p>Sed pharetra purus ligula, eu commodo erat ultricies porta. Aliquam a augue viverra, lobortis nunc sodales, lobortis odio. Sed in quam et dolor rhoncus lobortis. Nulla volutpat porttitor porttitor. Vestibulum sed pretium urna, a consequat justo. Donec quis felis mauris. Morbi rutrum ultricies felis.</p>
+            <!----------------------The Concept---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Beginning with a name</h2>
+                        <p>We saw the space as an opportunity to celebrate creative expression — both for the agency and for Norfolk’s broader community – and we wanted to name to reflect that.</p>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="seven columns">
-                    <p class="eyebrow">Reach out</p>
-                    <h3>Let's make something good.</h3>
-                    <p>Email <a href="mailto:janice@goodatbeing.studio?Subject=Hello!">janice@goodatbeing.studio</a></p>
+                <div class="text row bigspace">
+                    <p class="eyebrow">ENJOY:</p>
+                    <h1><i>A space dedicated to the joy of creative exploration.</i></h1>
+                </div>
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <p>With a name to build on, I explored design concepts with physical & digital applications in mind. Here’s a sample of the digital explorations:</p>
+                    </div>
+                </div>
+                <!----------Visuals---------->
+                <div class="text row medspace">
+                    <div class="four columns">
+                        <p class="caption">Concept 1</p>
+                        <img src="assets/enjoy-concept1a.png" data-src="assets/enjoy-concept1a.png" class="medspace shadow">
+                        <img src="assets/enjoy-concept1b.png" data-src="assets/enjoy-concept1b.png" class="medspace shadow">
+                    </div>
+                    <div class="four columns smallspace">
+                        <p class="caption">Concept 2</p>
+                        <img src="assets/enjoy-concept2a.png" data-src="assets/enjoy-concept2a.png" class="medspace shadow">
+                        <img src="assets/enjoy-concept2b.png" data-src="assets/enjoy-concept2b.png" class="medspace shadow">
+                    </div>
+                    <div class="four columns">
+                        <p class="caption">Concept 3</p>
+                        <img src="assets/enjoy-concept3a.png" data-src="assets/enjoy-concept3a.png" class="medspace shadow">
+                        <img src="assets/enjoy-concept3b.png" data-src="assets/enjoy-concept3b.png" class="medspace shadow">
+                    </div>
+                </div>
+                <div class="text row">
+                    <div class="eight columns">
+                        <p><strong><a href="https://docs.google.com/presentation/d/1nGp3IxHWUb1EnrA7y38Gmsrpxa2khVKdeixvdpCGMRk/edit?usp=sharing" target="_blank"><u>See the full branding exploration here</u> &nbsp;↬</a></strong></p>
+                    </div>
                 </div>
             </div>
 
+            <!----------SELECT---------->
+            <div class="sectionshadow">
+                <div class="text row">
+                    <div class="eight columns bigspace">
+                        <h2>Building the brand</h2>
+                        <p>We solidified the brand by combining the best aspects of each concept – the excitement of Concept 1; the refinement of Concept 2; and the quirkiness of Concept 3 – drawing from the visual language in Concept 3.</p>
+                    </div>
+                </div>
+                <!----------Visual---------->
+                <div class="text row bigspace">
+                    <img src="assets/enjoy-brand-colors.png" data-src="assets/enjoy-brand-colors.png">
+                </div>
+                <div class="text row medspace">
+                    <img src="assets/enjoy-brand-flyers.png" data-src="assets/enjoy-brand-flyers.png">
+                </div>
+                <div class="text row bigspace">
+                    <img src="assets/enjoy-brand-collateral.png" data-src="assets/enjoy-brand-collateral.png">
+                </div>
+            </div>
+
+
+            <!----------------------Website---------------------->
+            <div class="sectionshadow">
+                <div class="text row medspace">
+                    <div class="eight columns">
+                        <h2>Telling our story online</h2>
+                        <p>Before opening ENJOY:’s doors to the public, we introduced the concept and the brand with a website that showcased the space’s potential. The website was our opportunity to show how every aspect of the space is dynamic — from menu boards that turn into product displays, to a bar that transforms into a display counter.</p>
+                        <p><strong><a href="https://enjoywith.us" target="_blank"><u>See the live site at enjoynfk.com</u> &nbsp;↬</a></strong></p>
+                    </div>
+                </div>
+                <div class="text row extrabigspace">
+                    <p class="caption">Landing Page - Desktop</p>
+                    <img src="assets/enjoy-web1.png" data-src="assets/enjoy-web1.png">
+                </div>
+                <div class="text row extrabigspace">
+                    <p class="caption">Space Configurations – Mobile</p>
+                    <img src="assets/enjoy-web2.png" data-src="assets/enjoy-web2.png">
+                </div>
+                <div class="text row">
+                    <div class="six columns smallspace">
+                        <p class="caption">Multifunctional Bar</p>
+                        <img src="assets/enjoy-website-bar.gif" data-src="assets/enjoy-website-bar.gif">
+                    </div>
+                    <div class="six columns">
+                        <p class="caption">Modular Shelving</p>
+                        <img src="assets/enjoy-website-shelves.gif" data-src="assets/enjoy-website-shelves.gif">
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------Marketing---------------------->
+            <!--<div class="sectionshadow">
+<div class="text row medspace">
+<div class="eight columns">
+<h2>Building a flexible marketing system</h2>
+<p>Knowing that ENJOY: would be a business of its own, that meant it would have a dedicated brand manager. To ensure that the brand lived truly beyond me, I created a system of marketing tools on Sketch.</p>
+</div>
+</div>
+<div class="text row medspace">
+<div class="eight columns">
+<h3>Print System</h3>
+</div>
+</div>
+<div class="text row extrabigspace">
+<div class="four columns smallspace">
+<p class="caption">Land</p>
+<img src="assets/ert-colors-land.svg" data-src="assets/ert-colors-land.svg">
+</div>
+<div class="four columns smallspace">
+<p class="caption">Water</p>
+<img src="assets/ert-colors-water.svg" data-src="assets/ert-colors-water.svg">
+</div>
+<div class="four columns smallspace">
+<p class="caption">Trail</p>
+<img src="assets/ert-colors-trail.svg" data-src="assets/ert-colors-trail.svg">
+</div>
+</div>
+<div class="text row medspace">
+<div class="eight columns">
+<h3>Digital System</h3>
+</div>
+</div>
+<div class="text row extrabigspace">
+<div class="four columns smallspace">
+<p class="caption">Land</p>
+<img src="assets/ert-colors-land.svg" data-src="assets/ert-colors-land.svg">
+</div>
+<div class="four columns smallspace">
+<p class="caption">Water</p>
+<img src="assets/ert-colors-water.svg" data-src="assets/ert-colors-water.svg">
+</div>
+<div class="four columns smallspace">
+<p class="caption">Trail</p>
+<img src="assets/ert-colors-trail.svg" data-src="assets/ert-colors-trail.svg">
+</div>
+</div>
+</div>-->
+
+            <!----------------------Impact---------------------->
+            <div class="text row">
+                <div class="eight columns">
+                    <h2>Branding in action</h2>
+                </div>
+            </div>
+            <div class="text row bigspace">
+                <div class="four columns smallspace">
+                    <p class="eyebrow-light">1</p>
+                    <p>Since opening in 2018, ENJOY: has hosted over 20 events – including chef pop-ups, documentary screenings, art galleries, and professional development workshops. I’m excited to see what 2020 has in store!</p>
+                </div>
+                <div class="four columns smallspace">
+                    <p class="eyebrow-light">2</p>
+                    <p>I’ve worked with 3 operating managers to ensure brand consistency.</p>
+                </div>
+                <div class="four columns">
+                    <p class="eyebrow-light">3</p>
+                    <p>I hosted my own event at ENJOY: in August 2019 & got to put the brand system to the test. Check out photos from my Zine Swap event below!</p>
+                </div>
+            </div>
+            <div class="threefourths row">
+                <img src="assets/enjoy-collage.png" data-src="assets/enjoy-collage.png" class="extrabigspace">
+            </div>
+            
+            <!----------------------Reach Out---------------------->
+            <div id="end">
+                <div class="text row">
+                    <div class="eight columns">
+                        <h1>Reach Out</h1>
+                        <p>If you’d like to learn more about this project, I’d love to hear from you. I’d be happy to share how the branding has taken shape, and how we can work together to shape your brand.</p>
+                        <p>You can reach me by email at <em><a href="mailto:janice.jamye.pang@gmail.com?Subject=Hello!" style="margin-left:3px;">janice.jamye.pang@gmail.com</a></em>&nbsp; 💌</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
+        <!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+        <!--LIGHTBOX-->
+        <script src="js/lity.js"></script>
+
+        <!--LAZY LOAD-->
+        <script src="js/lazyload.js"></script>
+        <script>
+            (function() {
+                function logElementEvent(eventName, element) {
+                    console.log(
+                        Date.now(),
+                        eventName,
+                        element.getAttribute("data-src")
+                    );
+                }
+                var callback_enter = function(element) {
+                    logElementEvent("🔑 ENTERED", element);
+                };
+                var callback_exit = function(element) {
+                    logElementEvent("🚪 EXITED", element);
+                };
+                var callback_reveal = function(element) {
+                    logElementEvent("👁️ REVEALED", element);
+                };
+                var callback_loaded = function(element) {
+                    logElementEvent("👍 LOADED", element);
+                };
+                var callback_error = function(element) {
+                    logElementEvent("💀 ERROR", element);
+                    element.src =
+                        "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+                };
+                var callback_finish = function() {
+                    logElementEvent("✔️ FINISHED", document.documentElement);
+                };
+                var ll = new LazyLoad({
+                    threshold: 0,
+                    // Assign the callbacks defined above
+                    callback_enter: callback_enter,
+                    callback_exit: callback_exit,
+                    callback_reveal: callback_reveal,
+                    callback_loaded: callback_loaded,
+                    callback_error: callback_error,
+                    callback_finish: callback_finish
+                });
+            })();
+        </script>
+
+
+        <!--PW PROTECTION-->
         <script>
 
             var pass=new Array()
@@ -112,21 +408,19 @@
                 var indicate=true
                 for (i=(1&2);i<window.max(Math.LOG10E);i++)
                     t3+=testit(verification.charAt(i))
-                for (i=(1&2);i<lim;i++){
-                    if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-                        indicate=false
-                }
+                    for (i=(1&2);i<lim;i++){
+                        if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
+                            indicate=false
+                            }
                 if (verification.length!=window.max(Math.LOG10E))
                     indicate=false
-                if (indicate)
-                    window.location=verification+extension
-                else
-                    alert("Invalid password. Please try again")
-            }
+                    if (indicate)
+                        window.location=verification+extension
+                        else
+                            alert("Invalid password. Please try again")
+                            }
         </script>
 
-
-        
 
         <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
