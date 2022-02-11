@@ -10,14 +10,14 @@ var colors = ['blue', 'yellow', 'red', 'orange', 'green', 'purple']; // colors o
 
 // sounds
 
-var sound_aww = new Audio("assets/sounds/aww.mp3");
-var sound_blending = new Audio("assets/sounds/blending.mp3");
-var sound_letsgroove = new Audio("assets/sounds/letsgroove.mp3");
-var sound_tada = new Audio("assets/sounds/tada.mp3");
+var sound_aww = new Audio("groovyassets/sounds/aww.mp3");
+var sound_blending = new Audio("groovyassets/sounds/blending.mp3");
+var sound_letsgroove = new Audio("groovyassets/sounds/letsgroove.mp3");
+var sound_tada = new Audio("groovyassets/sounds/tada.mp3");
 
-var yayArray = [new Audio("assets/sounds/yay.mp3"),
-                new Audio("assets/sounds/yay2.mp3"),
-                new Audio("assets/sounds/yay3.mp3")]
+var yayArray = [new Audio("groovyassets/sounds/yay.mp3"),
+                new Audio("groovyassets/sounds/yay2.mp3"),
+                new Audio("groovyassets/sounds/yay3.mp3")]
 
 // select random array
 function getRandomYay() {
